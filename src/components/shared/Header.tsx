@@ -1,123 +1,111 @@
 "use client";
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import { Facebook, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import { Menu, Phone } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
+import { FaFacebook, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import { Button } from "../ui/button";
+import { LeftNavigationMenu } from "./left-navigation-menu";
+import { RightNavigationMenu } from "./right-navigation-menu";
+
 export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
-   <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-  <div>
-    {/* Light Blue top bar*/}
-    <div className="hidden md:grid w-full bg-secondary text-[#0d2861] px-4 py-2 h-12 grid-cols-3 items-center text-xs font-sans font-bold">
-  {/* Email */}
-  <div className="justify-self-start">
-    <div className='flex items-center space-x-1'>
-    <Mail color="#0d2861" size={20} /><a href=''><p>moiz@gmail.com</p></a>
-    </div>
-  </div>
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="hidden md:grid w-full bg-secondary text-primary px-5 py-1 h-11 grid-cols-3 items-center text-xs font-bold">
+        <div className="justify-start">
+          <div className="flex items-center space-x-2">
+            <IoMdMail color="text-primary" size={20} />
+            <Link href="mailto:info@traidglobaltrading.com">
+              <p className="font-medium text-base">
+                info@traidglobaltrading.com
+              </p>
+            </Link>
+          </div>
+        </div>
 
-  {/* Tagline */}
-  <div className="text-center">
-    <p>Your one-stop solution for all your trading needs.</p>
-  </div>
+        <div className="text-center text-lg font-medium">
+          <p>Your one-stop solution for all your trading needs.</p>
+        </div>
 
-  {/* Phone + Socials */}
-  <div className="flex justify-end items-center space-x-6">
-    {/* Phone */}
-    <div className="flex items-center space-x-1">
-      <Phone color="#0d2861" size={20} />
-      <p><a href=''>+91 97654 78876</a></p>
-    </div>
+        <div className="flex items-center justify-end gap-15">
+          <div className="flex items-center space-x-1 text-base font-medium">
+            <Phone color="text-primary" size={20} />
+            <p>+91 9876543210</p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaFacebook color="text-primary" size={20} />
+            <FaInstagramSquare color="text-primary" size={20} />
+            <FaLinkedin color="text-primary" size={20} />
+          </div>
+        </div>
+      </div>
 
-    {/* Social Icons */}
-    <div className="flex items-center space-x-1">
-      <a href=''><Facebook color="#0d2861" size={20} /></a>
-      <a href=''><Instagram color="#0d2861" size={20} /></a>
-      <a href=''><Linkedin color="#0d2861" size={20} /></a>
-    </div>
-  </div>
-</div>
-
-
-    {/* Dark blue bottom Bar */}
-    <div className="w-full bg-primary">
-      <div className="container mx-auto flex items-center justify-between px-4 py-4">
-        {/* Burger Menu - shown only on mobile */}
-        <div className="md:hidden">
-          <button
-            className="text-white"
-            onClick={() => {
-              const menu = document.getElementById("mobileMenu");
-              if (menu) menu.classList.toggle("hidden");
-            }}
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+      <div className="w-full bg-primary">
+        <div className="flex items-center justify-between px-5 py-7">
+          <div className="md:hidden">
+            <Button
+              onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+              variant={"ghost"}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+              <Menu />
+            </Button>
+          </div>
+
+          <div className="hidden md:flex justify-start">
+            <LeftNavigationMenu />
+          </div>
+
+          {/* Logo in center */}
+          <div className="flex justify-center items-center">
+            {/* <img
+              src="../../public/images/logo.png"
+              alt="Company Logo"
+              className="h-12 w-auto" // Adjust height as needed
+            /> */}
+          </div>
+
+          <div className="hidden md:flex justify-end items-center space-x-4">
+            <RightNavigationMenu />
+            <Button
+              className={`hidden md:block border border-white hover:text-secondary px-4 py-2 rounded-full ${
+                isMobileMenuOpen ? "hidden" : ""
+              }`}
+            >
+              BROCHURE
+            </Button>
+          </div>
         </div>
 
-        {/* Navigation - menu */}
-        <div className="hidden md:flex justify-start">
-          <ul className="flex space-x-6 text-xs text-white font-sans font-semibold">
-            <li className="hover:text-secondary">
-              <a href="#" className="flex items-center">
-                PRODUCTS <ChevronDownIcon className="w-5 h-5 ml-1" />
-              </a>
-            </li>
-            <li className="hover:text-secondary">
-              <a href="#" className="flex items-center">
-                ABOUT US <ChevronDownIcon className="w-5 h-5 ml-1" />
-              </a>
-            </li>
-            <li className="hover:text-secondary">
-              <a href="#" className="flex items-center">
-                HARVEST CHART
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Right Navigation - Desktop */}
-        <div className="hidden md:flex">
-          <ul className="flex items-center space-x-6 text-xs text-white font-sans font-semibold">
-            <li className="hover:text-secondary"><a href=''>INQUIRY</a></li>
-            <li className="hover:text-secondary"><a href=''>BLOG</a></li>
-            <li className="hover:text-secondary"><a href=''>CONTACT</a></li>
+        <div className={`md:hidden ${isMobileMenuOpen ? "" : "hidden"}`}>
+          <ul className="flex flex-col space-y-2 text-white  text-sm font-semibold">
             <li>
-             <button className={`hidden md:block border border-white hover:text-secondary px-4 py-2 rounded-full ${isMobileMenuOpen ? 'hidden' : ''}`}>
+              <a href="#">PRODUCTS</a>
+            </li>
+            <li>
+              <a href="#">ABOUT US</a>
+            </li>
+            <li>
+              <a href="#">HARVEST CHART</a>
+            </li>
+            <li>
+              <a href="#">INQUIRY</a>
+            </li>
+            <li>
+              <a href="#">BLOG</a>
+            </li>
+            <li>
+              <a href="#">CONTACT</a>
+            </li>
+            <li>
+              <button className="border border-white px-4 py-2 rounded-full w-full text-left">
                 BROCHURE
               </button>
             </li>
           </ul>
         </div>
       </div>
-
-      {/* Mobile Dropdown Menu */}
-      <div id="mobileMenu" className="md:hidden hidden px-4 pb-4">
-        <ul className="flex flex-col space-y-2 text-white font-sans text-sm font-semibold">
-          <li><a href="#">PRODUCTS</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">HARVEST CHART</a></li>
-          <li><a href="#">INQUIRY</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li>
-            <button className="border border-white px-4 py-2 rounded-full w-full text-left">
-              BROCHURE
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header>
-
+    </header>
   );
 }
