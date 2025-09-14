@@ -122,3 +122,15 @@
     @apply bg-background text-foreground font-poppins;
   }
 }
+
+@layer utilities {
+  .py-container {
+    @apply py-10 md:py-16;
+  }
+  .px-container {
+    @apply px-4 md:px-6;
+  }
+  .text-heading {
+    @apply text-2xl md:text-3xl font-bold;
+  }
+}
