@@ -6,11 +6,14 @@ import ProductSpecs from "@/components/products/product-specs";
 import ProductOrigin from "@/components/products/product-origin";
 import ProductHeroSection from "@/components/shared/hero/product-hero";
 
+export default async function ProductPage({
+  params,
+}: {
+  params: Promise<{ productId: string }>;
+}) {
+  const { productId } = await params;
 
-type Params = { productId: string };
-
-export default function ProductPage({ params }: { params: Params }) {
-  const product = getProductBySlug(params.productId);
+  const product = getProductBySlug(productId);
   if (!product) return notFound();
 
   return (
