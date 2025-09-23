@@ -4,18 +4,17 @@ import { getCategoryBySlug } from "@/lib/categories";
 import { getProductsByCategory } from "@/lib/products";
 import { notFound } from "next/navigation";
 
-type Params = {
-  categoryId: string;
-};
 
-type Props = {
-  params: Params;
-};
+export default async function CategoryPage({
+  params,
+}: {
+  params: Promise<{ categoryId: string }>;
+}) {
+  // Await the params first
+  const { categoryId } = await params;
 
-export default async function CategoryPage({ params }: Props) {
-  // Ensure your data functions are async
-  const category = await getCategoryBySlug(params.categoryId);
-  const relatedProducts = await getProductsByCategory(params.categoryId);
+  const category = await getCategoryBySlug(categoryId);
+  const relatedProducts = await getProductsByCategory(categoryId);
 
   if (!category) return notFound();
 
