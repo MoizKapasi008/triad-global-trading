@@ -16,7 +16,7 @@ export default function Footer() {
                 <p className="text-sm leading-relaxed">
                   We Believe In Our Strength And Our
                   <br />
-                  Strength Is "Quality". We are Natural
+                  Strength Is &quot;Quality&quot;. We are Natural
                   <br />
                   Spices Wholesale Supplier & Exporter
                 </p>
