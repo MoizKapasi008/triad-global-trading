@@ -10,14 +10,14 @@ export function AboutSection() {
             Hi, We Are Triad Global Trading!
           </h2>
           <p className="text-base md:text-lg lg:text-xl font-light leading-relaxed">
-            Since 2015, we've been exporting and importing spices, oilseeds, and
-            herbs worldwide. Currently, we export to over 81 countries and
-            import from more than 9 countries. Our rapid growth over these 9
-            years is a testament to our commitment to quality. As our tagline
-            says,
+            Since 2015, we&apos;ve been exporting and importing spices,
+            oilseeds, and herbs worldwide. Currently, we export to over 81
+            countries and import from more than 9 countries. Our rapid growth
+            over these 9 years is a testament to our commitment to quality. As
+            our tagline says,
           </p>
           <h4 className="text-xl font-bold text-primary">
-            "We grow Quality, We harvest Trust."
+            &quot;We grow Quality, We harvest Trust.&quot;
           </h4>
         </article>
 
