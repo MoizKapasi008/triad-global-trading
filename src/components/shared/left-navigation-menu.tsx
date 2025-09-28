@@ -20,7 +20,7 @@ export function LeftNavigationMenu() {
     <NavigationMenu viewport={false}>
       <NavigationMenuList className="text-sm">
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent text-white hover:bg-transparent hover:text-blue-900 focus:bg-transparent focus:text-blue-900 disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-transparent data-[state=open]:text-blue-900 data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent">
+          <NavigationMenuTrigger className="bg-transparent text-primary-foreground hover:bg-transparent hover:text-secondary-foreground focus:bg-transparent focus:text-blue-900 disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-transparent data-[state=open]:text-secondary-foreground data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent">
             PRODUCTS
           </NavigationMenuTrigger>
 
@@ -31,12 +31,12 @@ export function LeftNavigationMenu() {
               onMouseLeave={() => setActiveCategory(null)}
             >
               {/* Categories List */}
-              <ul className="gap-2 text-sm w-fit whitespace-nowrap">
+              <ul className="gap-2 text-sm w-fit text-primary whitespace-nowrap">
                 {categories.map((category) => (
                   <li key={category.id}>
                     <NavigationMenuLink
                       onMouseEnter={() => setActiveCategory(category.id)}
-                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer relative"
+                      className="px-4 py-2 hover:bg-gray-100  cursor-pointer relative"
                       asChild
                     >
                       <Link href={`/categories/${category.id}`}>
@@ -49,7 +49,7 @@ export function LeftNavigationMenu() {
 
               {/* Product List - hidden initially */}
               <div
-                className={`hidden md:block  ml-2 overflow-hidden transition-all duration-300 ease-in-out ${
+                className={`hidden md:block  ml-2 overflow-hidden text-primary transition-all duration-300 ease-in-out ${
                   activeCategory ? "w-[200px] opacity-100" : "w-0 opacity-0"
                 }`}
               >
@@ -76,19 +76,24 @@ export function LeftNavigationMenu() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent text-white hover:bg-transparent hover:text-blue-900 focus:bg-transparent focus:text-blue-900 disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-transparent data-[state=open]:text-blue-900 data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent">
+          <NavigationMenuTrigger className="bg-transparent text-primary-foreground hover:bg-transparent hover:text-secondary-foreground focus:bg-transparent focus:text-secondary-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-transparent data-[state=open]:text-secondary-foreground data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent">
             ABOUT US
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[200px] gap-2 text-blue-900 text-sm">
+            <ul className="grid w-[200px] gap-2 text-primary text-sm">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Components</Link>
+                  <Link href="#">Infrastructure</Link>
                 </NavigationMenuLink>
               </li>
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#">Documentation</Link>
+                  <Link href="#">Global Export</Link>
+                </NavigationMenuLink>
+              </li>
+              <li>
+                <NavigationMenuLink asChild>
+                  <Link href="#">Our Team</Link>
                 </NavigationMenuLink>
               </li>
             </ul>
@@ -98,9 +103,9 @@ export function LeftNavigationMenu() {
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className="bg-transparent text-white hover:bg-transparent hover:text-blue-900 font-medium text-sm"
+            className="bg-transparent font-medium text-primary-foreground hover:bg-transparent hover:text-secondary-foreground "
           >
-            <Link href="/docs">HARVEST CHART</Link>
+            <Link href="#">HARVEST CHART</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>

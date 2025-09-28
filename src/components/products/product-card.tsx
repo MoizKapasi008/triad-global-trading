@@ -34,7 +34,7 @@ export default function ProductCard({
       </div>
 
       <CardHeader className="p-4 sm:p-5 flex flex-col flex-1">
-        <CardTitle className="text-base sm:text-lg font-semibold line-clamp-2">
+        <CardTitle className="text-base sm:text-lg font-semibold line-clamp-2 text-primary">
           {title}
         </CardTitle>
         <CardDescription className="text-sm sm:text-base text-gray-600 line-clamp-3 flex-1">

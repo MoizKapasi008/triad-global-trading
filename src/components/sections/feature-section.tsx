@@ -18,7 +18,7 @@ function FeatureCard({ icon, title }: Feature) {
 
       {/* Title */}
       <div>
-        <h3 className="font-bold mb-1 text-primary text-base md:text-lg">
+        <h3 className="font-bold mb-1 text-secondary-foreground text-base md:text-lg">
           {title}
         </h3>
       </div>

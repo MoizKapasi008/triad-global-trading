@@ -12,11 +12,11 @@ import {
 export function RightNavigationMenu() {
   return (
     <NavigationMenu viewport={false}>
-      <NavigationMenuList className="text-2xl">
+      <NavigationMenuList className="text-2xl text-primary-foreground">
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className="bg-transparent text-white hover:bg-transparent hover:text-blue-900  font-medium"
+            className="bg-transparent hover:bg-transparent hover:text-blue-900  font-medium"
           >
             <Link href="/docs">INQUIRY</Link>
           </NavigationMenuLink>
@@ -24,7 +24,7 @@ export function RightNavigationMenu() {
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className="bg-transparent text-white hover:bg-transparent hover:text-blue-900  font-medium"
+            className="bg-transparent hover:bg-transparent hover:text-blue-900  font-medium"
           >
             <Link href="/docs">BLOG</Link>
           </NavigationMenuLink>
@@ -32,7 +32,7 @@ export function RightNavigationMenu() {
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className="bg-transparent text-white hover:bg-transparent hover:text-blue-900  font-medium"
+            className="bg-transparent hover:bg-transparent hover:text-blue-900  font-medium"
           >
             <Link href="/docs">CONTACT</Link>
           </NavigationMenuLink>

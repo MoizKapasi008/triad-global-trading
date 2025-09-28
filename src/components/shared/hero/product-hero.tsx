@@ -10,7 +10,7 @@ export default function ProductHeroSection({
   heroImage?: string;
 }) {
   return (
-    <section className="relative grid md:grid-cols-2 min-h-[180px] md:min-h-[220px] lg:min-h-[280px]">
+    <section className="relative grid md:grid-cols-2 min-h-[180px] md:min-h-[220px] lg:min-h-[280px] text-secondary-foreground">
       {/* Text Section */}
       <div
         className=" z-10 flex items-center justify-center text-center px-4 sm:px-6 md:px-10 py-6 sm:py-8 md:py-10 

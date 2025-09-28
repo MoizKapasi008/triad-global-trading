@@ -3,10 +3,10 @@ import Image from "next/image";
 export function AboutSection() {
   return (
     <section className="bg-secondary border border-secondary text-white w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 min-h-[500px] text-primary-foreground font-bold">
         {/* Text Side */}
         <article className="flex flex-col justify-center px-6 md:px-12 py-8 md:py-12 space-y-6">
-          <h2 className="text-heading font-bold text-primary">
+          <h2 className="text-heading ">
             Hi, We Are Triad Global Trading!
           </h2>
           <p className="text-base md:text-lg lg:text-xl font-light leading-relaxed">
@@ -16,7 +16,7 @@ export function AboutSection() {
             over these 9 years is a testament to our commitment to quality. As
             our tagline says,
           </p>
-          <h4 className="text-xl font-bold text-primary">
+          <h4 className="text-xl">
             &quot;We grow Quality, We harvest Trust.&quot;
           </h4>
         </article>
