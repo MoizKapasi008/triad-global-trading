@@ -16,15 +16,15 @@ export function RightNavigationMenu() {
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className="bg-transparent hover:bg-transparent hover:text-blue-900  font-medium"
+            className="bg-transparent text-primary-foreground hover:bg-transparent hover:text-secondary-foreground focus:bg-transparent focus:text-secondary-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-transparent data-[state=open]:text-secondary-foreground data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent"
           >
-            <Link href="/docs">INQUIRY</Link>
+            <Link href="/inquiry">INQUIRY</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className="bg-transparent hover:bg-transparent hover:text-blue-900  font-medium"
+            className="bg-transparent text-primary-foreground hover:bg-transparent hover:text-secondary-foreground focus:bg-transparent focus:text-secondary-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-transparent data-[state=open]:text-secondary-foreground data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent"
           >
             <Link href="/docs">BLOG</Link>
           </NavigationMenuLink>
@@ -32,9 +32,9 @@ export function RightNavigationMenu() {
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className="bg-transparent hover:bg-transparent hover:text-blue-900  font-medium"
+            className="bg-transparent text-primary-foreground hover:bg-transparent hover:text-secondary-foreground focus:bg-transparent focus:text-secondary-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-transparent data-[state=open]:text-secondary-foreground data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent"
           >
-            <Link href="/docs">CONTACT</Link>
+            <Link href="/contact">CONTACT</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>

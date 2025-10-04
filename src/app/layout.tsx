@@ -3,6 +3,7 @@ import Header from "@/components/shared/Header";
 import type { Metadata } from "next";
 import { Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "@/components/shared/whatsapp";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${geistMono.variable} antialiased`}>
         <Header />
         {children}
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>

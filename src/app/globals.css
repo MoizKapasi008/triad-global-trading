@@ -44,80 +44,144 @@
 }
 
 :root {
+  /* Border Radius */
   --radius: 0.625rem;
-  --background: rgb(231, 234, 235);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.6642 0.0311 171.54);
-  --primary-foreground: oklch(0.9473 0.0199 109.87);
-  --secondary: oklch(0.7844 0.045 146.17);
-  --secondary-foreground: oklch(0.9473 0.0199 109.87);
-  --tertiary: oklch(0.8698 0.0358 119.4);
-  --tertiary-foreground: oklch(0.9473 0.0199 109.87);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+
+  /* Base Colors - Fresh & Natural */
+  --background: oklch(0.97 0.01 140);
+  /* Soft sage-tinted cream */
+  --foreground: oklch(0.28 0.04 140);
+  /* Deep forest green text */
+
+  /* Card Colors - Clean natural white */
+  --card: oklch(0.99 0.005 140);
+  --card-foreground: oklch(0.28 0.04 140);
+
+  /* Popover Colors */
+  --popover: oklch(0.99 0.005 140);
+  --popover-foreground: oklch(0.28 0.04 140);
+
+  /* Primary - Fresh Sage Green */
+  --primary: oklch(0.65 0.12 150);
+  /* Soft sage green, very calming */
+  --primary-foreground: oklch(0.99 0 0);
+
+  /* Secondary - Warm Herb Green */
+  --secondary: oklch(0.58 0.14 135);
+  /* Warm basil/herb green */
+  --secondary-foreground: oklch(0.99 0 0);
+
+  /* Tertiary - Earthy Turmeric Gold */
+  --tertiary: oklch(0.70 0.16 80);
+  /* Soft golden yellow */
+  --tertiary-foreground: oklch(0.28 0.04 140);
+
+  /* Muted Colors - Soft natural tones */
+  --muted: oklch(0.94 0.008 145);
+  --muted-foreground: oklch(0.52 0.03 140);
+
+  /* Accent Colors - Light mint highlight */
+  --accent: oklch(0.92 0.015 150);
+  --accent-foreground: oklch(0.28 0.04 140);
+
+  /* Destructive - Natural red */
+  --destructive: oklch(0.60 0.20 25);
+
+  /* Borders & Inputs - Soft green-grey */
+  --border: oklch(0.87 0.01 145);
+  --input: oklch(0.90 0.01 145);
+  --ring: oklch(0.65 0.12 150);
+
+  /* Chart Colors - Natural Garden Palette */
+  --chart-1: oklch(0.65 0.12 150);
+  /* Sage Green */
+  --chart-2: oklch(0.72 0.14 165);
+  /* Mint Green */
+  --chart-3: oklch(0.58 0.14 135);
+  /* Herb Green */
+  --chart-4: oklch(0.70 0.16 80);
+  /* Golden Yellow */
+  --chart-5: oklch(0.62 0.18 25);
+  /* Terracotta */
+
+  /* Sidebar Colors */
+  --sidebar: oklch(0.98 0.005 145);
+  --sidebar-foreground: oklch(0.28 0.04 140);
+  --sidebar-primary: oklch(0.65 0.12 150);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.92 0.015 150);
+  --sidebar-accent-foreground: oklch(0.28 0.04 140);
+  --sidebar-border: oklch(0.87 0.01 145);
+  --sidebar-ring: oklch(0.65 0.12 150);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  /* Dark Theme - Cozy & Sophisticated */
+  --background: oklch(0.18 0.03 30);
+  /* Deep warm brown background */
+  --foreground: oklch(0.95 0.015 70);
+  /* Soft warm cream text */
+
+  /* Card Colors - Elevated warm surface */
+  --card: oklch(0.24 0.04 35);
+  --card-foreground: oklch(0.95 0.015 70);
+
+  /* Popover Colors */
+  --popover: oklch(0.24 0.04 35);
+  --popover-foreground: oklch(0.95 0.015 70);
+
+  /* Primary - Glowing Saffron */
+  --primary: oklch(0.78 0.22 55);
+  --primary-foreground: oklch(0.18 0.03 30);
+
+  /* Secondary - Vibrant Jade Green */
+  --secondary: oklch(0.72 0.20 155);
+  --secondary-foreground: oklch(0.18 0.03 30);
+
+  /* Muted Colors - Warm neutrals */
+  --muted: oklch(0.30 0.04 35);
+  --muted-foreground: oklch(0.70 0.02 70);
+
+  /* Accent Colors - Warm glow */
+  --accent: oklch(0.35 0.05 40);
+  --accent-foreground: oklch(0.95 0.015 70);
+
+  /* Destructive - Bright alert */
+  --destructive: oklch(0.68 0.26 22);
+
+  /* Borders & Inputs - Defined warm borders */
+  --border: oklch(0.38 0.05 40);
+  --input: oklch(0.32 0.05 38);
+  --ring: oklch(0.78 0.22 55);
+
+  /* Chart Colors - Luminous Spice Palette */
+  --chart-1: oklch(0.78 0.22 55);
+  /* Glowing Saffron */
+  --chart-2: oklch(0.72 0.20 155);
+  /* Bright Jade */
+  --chart-3: oklch(0.70 0.26 22);
+  /* Fiery Cayenne */
+  --chart-4: oklch(0.75 0.20 85);
+  /* Bright Golden Turmeric */
+  --chart-5: oklch(0.72 0.22 310);
+  /* Vibrant Purple */
+
+  /* Sidebar Colors */
+  --sidebar: oklch(0.20 0.035 32);
+  --sidebar-foreground: oklch(0.95 0.015 70);
+  --sidebar-primary: oklch(0.78 0.22 55);
+  --sidebar-primary-foreground: oklch(0.18 0.03 30);
+  --sidebar-accent: oklch(0.35 0.05 40);
+  --sidebar-accent-foreground: oklch(0.95 0.015 70);
+  --sidebar-border: oklch(0.38 0.05 40);
+  --sidebar-ring: oklch(0.78 0.22 55);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground font-poppins;
   }
@@ -127,25 +191,26 @@
   .py-container {
     @apply py-10 md:py-16;
   }
+
   .px-container {
     @apply px-4 md:px-6;
   }
+
   .text-heading {
     @apply text-2xl md:text-3xl font-bold;
   }
+
   .icon-badge::after {
     content: "";
     position: absolute;
     top: 0;
-    left: -80%; 
+    left: -80%;
     width: 50%;
     height: 100%;
-    background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.3) 50%,
-      rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0) 100%);
     transform: skewX(-25deg);
     z-index: 2;
     pointer-events: none;
@@ -153,15 +218,42 @@
 
   /* Trigger forward-only shine on hover */
   .icon-badge:hover::after {
-    animation: shine 0.7s forwards; /* forwards = stays at end position during animation */
+    animation: shine 0.7s forwards;
   }
 
   @keyframes shine {
     0% {
       left: -80%;
     }
+
     100% {
-      left: 110%; /* moves fully forward */
+      left: 110%;
     }
   }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+
+  14% {
+    transform: scale(1.3);
+  }
+
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.3);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite;
 }

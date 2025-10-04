@@ -5,6 +5,7 @@ import ProductDetails from "@/components/products/product-details";
 import ProductSpecs from "@/components/products/product-specs";
 import ProductOrigin from "@/components/products/product-origin";
 import ProductHeroSection from "@/components/shared/hero/product-hero";
+import ProductRelated from "@/components/products/product-related";
 
 export default async function ProductPage({
   params,
@@ -39,6 +40,8 @@ export default async function ProductPage({
         />
 
         <ProductOrigin originMapSrc={product.originMapSrc} />
+
+        <ProductRelated relatedProducts={product.related_products} />
       </section>
     </main>
   );

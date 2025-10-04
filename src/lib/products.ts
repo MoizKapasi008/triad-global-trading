@@ -14,8 +14,8 @@ export type Product = {
   physicalSpecs?: SpecRow[];
   chemicalSpecs?: SpecRow[];
   originMapSrc?: string;
+  related_products?: { id: string; title: string; image: string }[];
 };
-
 
 export const products: Product[] = [
   // -------------------- SPICES --------------------
@@ -45,6 +45,28 @@ export const products: Product[] = [
     originMapSrc: "/images/product-origin.jpg",
     specs: { "HS Code": "090421", Origin: "India" },
     badges: ["FSSAI", "HACCP"],
+    related_products: [
+      {
+        id: "turmeric-powder",
+        title: "Turmeric Powder",
+        image: "/images/turmeric-powder.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
   },
   {
     id: "turmeric-powder",
@@ -109,13 +131,35 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail pouches | Custom",
     },
     badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
   },
   {
     id: "black-pepper",
     title: "Black Pepper",
     categoryId: "spices",
     description:
-      "The ‘King of Spices’, known for its bold flavor and medicinal properties.",
+      "The 'King of Spices', known for its bold flavor and medicinal properties.",
     image: "/images/black-pepper.webp",
     heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
     detailSections: [
@@ -168,6 +212,28 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail jars | Custom",
     },
     badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "turmeric-powder",
+        title: "Turmeric Powder",
+        image: "/images/turmeric-powder.png",
+      },
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
   },
 
   {
@@ -228,6 +294,28 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail pouches | Custom",
     },
     badges: ["FSSAI", "HACCP"],
+    related_products: [
+      {
+        id: "turmeric-powder",
+        title: "Turmeric Powder",
+        image: "/images/turmeric-powder.png",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "curry-leaves",
+        title: "Curry Leaves",
+        image: "/images/curry-leaves.jpg",
+      },
+    ],
   },
 
   // -------------------- HERBS & LEAVES --------------------
@@ -281,6 +369,23 @@ export const products: Product[] = [
       Packaging: "Cartons | Custom",
     },
     badges: ["FSSAI", "HACCP"],
+    related_products: [
+      {
+        id: "mint-leaves",
+        title: "Mint Leaves",
+        image: "/images/mint-leaves.jpg",
+      },
+      {
+        id: "curry-leaves",
+        title: "Curry Leaves",
+        image: "/images/curry-leaves.jpg",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+    ],
   },
 
   {
@@ -332,6 +437,23 @@ export const products: Product[] = [
       Packaging: "Cartons | Pouches | Custom",
     },
     badges: ["FSSAI", "HACCP"],
+    related_products: [
+      {
+        id: "fresh-basil",
+        title: "Fresh Basil",
+        image: "/images/basil-sweet-leaves.webp",
+      },
+      {
+        id: "curry-leaves",
+        title: "Curry Leaves",
+        image: "/images/curry-leaves.jpg",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+    ],
   },
 
   {
@@ -387,6 +509,28 @@ export const products: Product[] = [
       Packaging: "Cartons | Pouches | Custom",
     },
     badges: ["FSSAI", "HACCP"],
+    related_products: [
+      {
+        id: "mint-leaves",
+        title: "Mint Leaves",
+        image: "/images/mint-leaves.jpg",
+      },
+      {
+        id: "fresh-basil",
+        title: "Fresh Basil",
+        image: "/images/basil-sweet-leaves.webp",
+      },
+      {
+        id: "turmeric-powder",
+        title: "Turmeric Powder",
+        image: "/images/turmeric-powder.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+    ],
   },
 
   // -------------------- SEEDS --------------------
@@ -447,6 +591,28 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail pouches | Custom",
     },
     badges: ["FSSAI", "Kosher"],
+    related_products: [
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "sesame-seeds",
+        title: "Sesame Seeds",
+        image: "/images/sesame-seeds.jpg",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "flax-seeds",
+        title: "Flax Seeds",
+        image: "/images/flax-seeds.jpg",
+      },
+    ],
   },
 
   {
@@ -507,6 +673,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI", "HACCP"],
+    related_products: [
+      {
+        id: "flax-seeds",
+        title: "Flax Seeds",
+        image: "/images/flax-seeds.jpg",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+      {
+        id: "almonds",
+        title: "Almonds",
+        image: "/images/almonds.jpg",
+      },
+    ],
   },
 
   {
@@ -566,6 +749,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI", "Organic"],
+    related_products: [
+      {
+        id: "sesame-seeds",
+        title: "Sesame Seeds",
+        image: "/images/sesame-seeds.jpg",
+      },
+      {
+        id: "quinoa",
+        title: "Quinoa",
+        image: "/images/quinoa.png",
+      },
+      {
+        id: "almonds",
+        title: "Almonds",
+        image: "/images/almonds.jpg",
+      },
+    ],
   },
 
   // -------------------- MILLETS & GRAINS --------------------
@@ -626,6 +826,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "quinoa",
+        title: "Quinoa",
+        image: "/images/quinoa.png",
+      },
+      {
+        id: "barley",
+        title: "Barley",
+        image: "/images/barley.jpg",
+      },
+      {
+        id: "flax-seeds",
+        title: "Flax Seeds",
+        image: "/images/flax-seeds.jpg",
+      },
+    ],
   },
   {
     id: "quinoa",
@@ -684,6 +901,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI", "Organic"],
+    related_products: [
+      {
+        id: "foxtail-millet",
+        title: "Foxtail Millet",
+        image: "/images/foxtail-millet.jpg",
+      },
+      {
+        id: "barley",
+        title: "Barley",
+        image: "/images/barley.jpg",
+      },
+      {
+        id: "flax-seeds",
+        title: "Flax Seeds",
+        image: "/images/flax-seeds.jpg",
+      },
+    ],
   },
   {
     id: "barley",
@@ -742,6 +976,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "quinoa",
+        title: "Quinoa",
+        image: "/images/quinoa.png",
+      },
+      {
+        id: "foxtail-millet",
+        title: "Foxtail Millet",
+        image: "/images/foxtail-millet.jpg",
+      },
+      {
+        id: "flax-seeds",
+        title: "Flax Seeds",
+        image: "/images/flax-seeds.jpg",
+      },
+    ],
   },
 
   // -------------------- DRIED FRUITS & NUTS --------------------
@@ -803,6 +1054,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "cashews",
+        title: "Cashews",
+        image: "/images/cashews.jpg",
+      },
+      {
+        id: "raisins",
+        title: "Raisins",
+        image: "/images/raisins.jpg",
+      },
+      {
+        id: "sesame-seeds",
+        title: "Sesame Seeds",
+        image: "/images/sesame-seeds.jpg",
+      },
+    ],
   },
   {
     id: "cashews",
@@ -861,6 +1129,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "almonds",
+        title: "Almonds",
+        image: "/images/almonds.jpg",
+      },
+      {
+        id: "raisins",
+        title: "Raisins",
+        image: "/images/raisins.jpg",
+      },
+      {
+        id: "desiccated-coconut",
+        title: "Desiccated Coconut",
+        image: "/images/desiccated-coconut.png",
+      },
+    ],
   },
   {
     id: "raisins",
@@ -919,6 +1204,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "almonds",
+        title: "Almonds",
+        image: "/images/almonds.jpg",
+      },
+      {
+        id: "cashews",
+        title: "Cashews",
+        image: "/images/cashews.jpg",
+      },
+      {
+        id: "desiccated-coconut",
+        title: "Desiccated Coconut",
+        image: "/images/desiccated-coconut.png",
+      },
+    ],
   },
 
   // -------------------- DEHYDRATED PRODUCTS --------------------
@@ -928,7 +1230,7 @@ export const products: Product[] = [
     categoryId: "dehydrated-products",
     description: "Flakes, kibbled, powder, and granules for food processing.",
     image: "/images/dehydrated-onion.webp",
-    heroImage: "/images/dehydrated-banner.jpg",
+    heroImage: "/images/dehydrated-products-banner.jpg",
     detailSections: [
       {
         title: "Product Information",
@@ -979,6 +1281,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "dehydrated-garlic",
+        title: "Dehydrated Garlic",
+        image: "/images/dehydrated-garlic.jpg",
+      },
+      {
+        id: "dehydrated-carrot",
+        title: "Dehydrated Carrot",
+        image: "/images/dehydrated-carrot.webp",
+      },
+      {
+        id: "turmeric-powder",
+        title: "Turmeric Powder",
+        image: "/images/turmeric-powder.png",
+      },
+    ],
   },
   {
     id: "dehydrated-garlic",
@@ -986,7 +1305,7 @@ export const products: Product[] = [
     categoryId: "dehydrated-products",
     description: "Powder and flakes with strong aroma and long shelf life.",
     image: "/images/dehydrated-garlic.jpg",
-    heroImage: "/images/dehydrated-banner.jpg",
+    heroImage: "/images/dehydrated-products-banner.jpg",
     detailSections: [
       {
         title: "Product Information",
@@ -1037,6 +1356,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "dehydrated-onion",
+        title: "Dehydrated Onion",
+        image: "/images/dehydrated-onion.webp",
+      },
+      {
+        id: "dehydrated-carrot",
+        title: "Dehydrated Carrot",
+        image: "/images/dehydrated-carrot.webp",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+    ],
   },
   {
     id: "dehydrated-carrot",
@@ -1044,7 +1380,7 @@ export const products: Product[] = [
     categoryId: "dehydrated-products",
     description: "Convenient dried carrots for soups and ready meals.",
     image: "/images/dehydrated-carrot.webp",
-    heroImage: "/images/dehydrated-banner.jpg",
+    heroImage: "/images/dehydrated-products-banner.jpg",
     detailSections: [
       {
         title: "Product Information",
@@ -1095,6 +1431,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "dehydrated-onion",
+        title: "Dehydrated Onion",
+        image: "/images/dehydrated-onion.webp",
+      },
+      {
+        id: "dehydrated-garlic",
+        title: "Dehydrated Garlic",
+        image: "/images/dehydrated-garlic.jpg",
+      },
+      {
+        id: "turmeric-powder",
+        title: "Turmeric Powder",
+        image: "/images/turmeric-powder.png",
+      },
+    ],
   },
 
   // -------------------- COCONUT PRODUCTS --------------------
@@ -1155,6 +1508,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "coconut-oil",
+        title: "Coconut Oil",
+        image: "/images/coconut-oil.webp",
+      },
+      {
+        id: "coconut-milk-powder",
+        title: "Coconut Milk Powder",
+        image: "/images/coconut-milk-powder.jpeg",
+      },
+      {
+        id: "cashews",
+        title: "Cashews",
+        image: "/images/cashews.jpg",
+      },
+    ],
   },
   {
     id: "coconut-oil",
@@ -1213,6 +1583,23 @@ export const products: Product[] = [
       Packaging: "1L/5L/20L | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "desiccated-coconut",
+        title: "Desiccated Coconut",
+        image: "/images/desiccated-coconut.png",
+      },
+      {
+        id: "coconut-milk-powder",
+        title: "Coconut Milk Powder",
+        image: "/images/coconut-milk-powder.jpeg",
+      },
+      {
+        id: "sesame-seeds",
+        title: "Sesame Seeds",
+        image: "/images/sesame-seeds.jpg",
+      },
+    ],
   },
   {
     id: "coconut-milk-powder",
@@ -1271,6 +1658,23 @@ export const products: Product[] = [
       Packaging: "25kg PP | Retail packs | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "coconut-oil",
+        title: "Coconut Oil",
+        image: "/images/coconut-oil.webp",
+      },
+      {
+        id: "desiccated-coconut",
+        title: "Desiccated Coconut",
+        image: "/images/desiccated-coconut.png",
+      },
+      {
+        id: "turmeric-powder",
+        title: "Turmeric Powder",
+        image: "/images/turmeric-powder.png",
+      },
+    ],
   },
 
   // -------------------- COFFEE --------------------
@@ -1331,6 +1735,18 @@ export const products: Product[] = [
       Packaging: "5kg/10kg/60kg | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "robusta-coffee",
+        title: "Robusta Coffee Beans",
+        image: "/images/robusta-coffee.webp",
+      },
+      {
+        id: "ground-coffee",
+        title: "Ground Coffee",
+        image: "/images/ground-coffee.png",
+      },
+    ],
   },
   {
     id: "robusta-coffee",
@@ -1390,6 +1806,18 @@ export const products: Product[] = [
       Packaging: "5kg/10kg/60kg | Custom",
     },
     badges: ["FSSAI"],
+    related_products: [
+      {
+        id: "arabica-coffee",
+        title: "Arabica Coffee Beans",
+        image: "/images/arabica-coffee.webp",
+      },
+      {
+        id: "ground-coffee",
+        title: "Ground Coffee",
+        image: "/images/ground-coffee.png",
+      },
+    ],
   },
   {
     id: "ground-coffee",
@@ -1448,7 +1876,19 @@ export const products: Product[] = [
       Packaging: "1kg/5kg/10kg | Custom",
     },
     badges: ["FSSAI"],
-  },
+    related_products: [
+      {
+        id: "arabica-coffee",
+        title: "Arabica Coffee Beans",
+        image: "/images/arabica-coffee.webp",
+      },
+      {
+        id: "robusta-coffee",
+        title: "Robusta Coffee Beans",
+        image: "/images/robusta-coffee.webp",
+      },
+    ],
+  }  
 ];
 
 export function getAllProductSlugs() {
