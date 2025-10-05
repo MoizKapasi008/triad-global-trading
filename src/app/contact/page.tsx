@@ -66,18 +66,17 @@ export default function ContactPage() {
       />
 
       {/* Contact Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20">
         <div className="mx-auto max-w-[1140px] px-6 md:px-3">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Left Side - Contact Information */}
-            <div>
-              <div className="mb-8">
+            <div className="bg-gray-50 p-8 rounded-lg">
+              <div className="mb-5">
                 <h2 className="text-3xl font-bold text-primary mb-4">
                   Get In Touch
                 </h2>
                 <p className="text-gray-600">
-                  We`&apos;`d love to hear from you. Our team is always here to
-                  help with any questions or concerns.
+                  We&apos;d love to hear from you.
                 </p>
               </div>
 
@@ -149,7 +148,7 @@ export default function ContactPage() {
                 Send Us a Message
               </h3>
               <p className="text-gray-600 mb-6">
-                Fill out the form and we`&apos;`ll get back to you within 24
+                Fill out the form and we&apos;ll get back to you within 24
                 hours.
               </p>
 
@@ -272,7 +271,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-12">
         <div className="mx-auto max-w-[1140px] px-6 md:px-3">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-primary mb-3">
@@ -298,11 +297,11 @@ export default function ContactPage() {
       </section>
 
       {/* Additional Info Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16">
         <div className="mx-auto max-w-[1140px] px-6 md:px-3">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-primary mb-4">
-              We`&apos;`re Here to Help
+              We&apos;re Here to Help
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Whether you have a question about our services, need technical
@@ -310,9 +309,8 @@ export default function ContactPage() {
               assist you.
             </p>
           </div>
-
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6">
+            <div className="text-center p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-primary"
@@ -333,8 +331,7 @@ export default function ContactPage() {
                 We respond to all inquiries within 24 business hours.
               </p>
             </div>
-
-            <div className="text-center p-6">
+            <div className="text-center p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-primary"
@@ -355,8 +352,7 @@ export default function ContactPage() {
                 Our experienced professionals are ready to assist you.
               </p>
             </div>
-
-            <div className="text-center p-6">
+            <div className="text-center p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-primary"

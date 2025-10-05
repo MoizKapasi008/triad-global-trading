@@ -1,31 +1,48 @@
 "use client";
+
+import { useState } from "react";
+import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import Image from "next/image";
-import { useState } from "react";
+} from "../ui/carousel";
 import { Skeleton } from "../ui/skeleton";
 
-type RelatedProduct = {
-  id: string;
-  title: string;
+// Define the product type
+interface Product {
+  id: string | number;
   image: string;
-};
+  title: string;
+}
 
-export default function ProductRelated({
+// Define props interface
+interface ProofOfExcellenceSectionsProps {
+  relatedProducts?: Product[];
+}
+
+export default function ProofOfExcellenceSections({
   relatedProducts = [],
-}: {
-  relatedProducts?: RelatedProduct[];
-}) {
-  const [isLoading, setIsLoading] = useState(true);
+}: ProofOfExcellenceSectionsProps) {
+  const [loadingStates, setLoadingStates] = useState<
+    Record<string | number, boolean>
+  >(
+    relatedProducts.reduce(
+      (acc, product) => ({ ...acc, [product.id]: true }),
+      {}
+    )
+  );
+
+  const handleImageLoad = (productId: string | number) => {
+    setLoadingStates((prev) => ({ ...prev, [productId]: false }));
+  };
+
   return (
     <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-[1140px] mt-10 space-y-8">
       <h3 className="text-center text-3xl font-bold text-primary mb-6">
-        Related Products
+        Proof of Excellence
       </h3>
       {relatedProducts.length > 0 ? (
         <Carousel
@@ -43,7 +60,7 @@ export default function ProductRelated({
               >
                 <div className="border rounded-lg overflow-hidden bg-primary-foreground hover:shadow-lg transition-shadow duration-300 h-full">
                   <div className="relative w-full aspect-square">
-                    {isLoading && (
+                    {loadingStates[product.id] && (
                       <Skeleton className="w-full h-full absolute inset-0" />
                     )}
                     <Image
@@ -53,7 +70,7 @@ export default function ProductRelated({
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       priority
-                      onLoadingComplete={() => setIsLoading(false)}
+                      onLoad={() => handleImageLoad(product.id)}
                     />
                   </div>
                   <div className="p-4">

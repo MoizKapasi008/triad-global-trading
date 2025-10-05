@@ -69,15 +69,15 @@ export default function Footer() {
                 </div>
               </Link>
 
-              <p className="text-secondary-foreground/90 text-sm leading-relaxed mb-8 max-w-sm">
+              <p className="text-primary-foreground text-sm leading-relaxed mb-8 max-w-sm">
                 We Believe In Our Strength And Our Strength Is
                 &quot;Quality&quot;. We are Natural Spices Wholesale Supplier &
                 Exporter delivering premium products worldwide.
               </p>
 
               {/* Social Media */}
-              <div className="space-y-4">
-                <p className="text-sm font-semibold text-secondary-foreground uppercase tracking-wide">
+              <div className="space-y-4 text-primary-foreground">
+                <p className="text-sm font-semibold uppercase tracking-wide">
                   Follow Us
                 </p>
                 <div className="flex gap-3">
@@ -108,7 +108,7 @@ export default function Footer() {
 
             {/* Information - Takes 2 columns */}
             <div className="lg:col-span-2">
-              <h3 className="text-base font-semibold mb-6 text-secondary-foreground">
+              <h3 className="text-base font-semibold mb-6 text-primary-foreground">
                 Information
               </h3>
               <ul className="space-y-3">
@@ -116,7 +116,7 @@ export default function Footer() {
                   <li key={item.id}>
                     <Link
                       href={item.href}
-                      className="text-sm text-secondary-foreground/80 hover:text-secondary-foreground transition-colors inline-block"
+                      className="text-sm text-primary-foreground hover:text-secondary transition-colors inline-block"
                     >
                       {item.title}
                     </Link>
@@ -127,7 +127,7 @@ export default function Footer() {
 
             {/* Products - Takes 3 columns */}
             <div className="lg:col-span-3">
-              <h3 className="text-base font-semibold mb-6 text-secondary-foreground">
+              <h3 className="text-base font-semibold mb-6 text-primary-foreground">
                 Our Products
               </h3>
               <ul className="space-y-3">
@@ -135,7 +135,7 @@ export default function Footer() {
                   <li key={item.id}>
                     <Link
                       href={item.href}
-                      className="text-sm text-secondary-foreground/80 hover:text-secondary-foreground transition-colors inline-block"
+                      className="text-sm text-primary-foreground hover:text-secondary transition-colors inline-block"
                     >
                       {item.title}
                     </Link>
@@ -145,46 +145,33 @@ export default function Footer() {
             </div>
 
             {/* Contact - Takes 3 columns */}
-            <div className="lg:col-span-3">
-              <h3 className="text-base font-semibold mb-6 text-secondary-foreground">
-                Contact Us
-              </h3>
+            <div className="lg:col-span-3 text-primary-foreground">
+              <h3 className="text-base font-semibold mb-6 ">Contact Us</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <MapPin
-                    size={18}
-                    className="text-secondary-foreground/70 mt-1 flex-shrink-0"
-                  />
-                  <div className="text-sm text-secondary-foreground/90">
-                    <p className="font-medium text-secondary-foreground mb-1">
-                      Head Office
-                    </p>
+                  <MapPin size={18} className=" mt-1 flex-shrink-0" />
+                  <div className="text-sm ">
+                    <p className="font-medium mb-1">Head Office</p>
                     <p>Bhomeshwar Plot, Jamnagar road</p>
                     <p>Rajkot - 360006, Gujarat, India</p>
                   </div>
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <Mail
-                    size={18}
-                    className="text-secondary-foreground/70 mt-1 flex-shrink-0"
-                  />
+                  <Mail size={18} className="mt-1 flex-shrink-0" />
                   <a
                     href="mailto:info@triadglobaltrading.com"
-                    className="text-sm text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
+                    className="text-sm  hover:text-secondary-foreground transition-colors"
                   >
                     info@triadglobaltrading.com
                   </a>
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <Globe
-                    size={18}
-                    className="text-secondary-foreground/70 mt-1 flex-shrink-0"
-                  />
+                  <Globe size={18} className="mt-1 flex-shrink-0" />
                   <a
                     href="https://www.triadglobaltrading.com"
-                    className="text-sm text-secondary-foreground/80 hover:text-secondary-foreground transition-colors"
+                    className="text-sm  hover:text-secondary-foreground transition-colors"
                   >
                     www.triadglobaltrading.com
                   </a>

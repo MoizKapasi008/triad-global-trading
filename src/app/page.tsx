@@ -15,7 +15,12 @@ export default function Home() {
       <div className="flex w-full bg-tertiary">
         <CategoriesSection />
       </div>
-      <WhyChooseUsSection/>
+      <div className="flex w-full bg-tertiary">
+        <WhyChooseUsSection />
+      </div>
+      <div className="flex w-full bg-tertiary">
+        {/* <ProofOfExcellenceSections /> */}
+      </div>
     </main>
   );
 }

@@ -47,72 +47,73 @@
   /* Border Radius */
   --radius: 0.625rem;
 
-  /* Base Colors - Fresh & Natural */
-  --background: oklch(0.97 0.01 140);
-  /* Soft sage-tinted cream */
-  --foreground: oklch(0.28 0.04 140);
-  /* Deep forest green text */
+  /* Base Colors - Warm Beige Background */
+  --background: #F3E8D3;
+  /* Your original beige - warm and inviting */
+  --foreground: #133215;
+  /* Your dark green - crisp text */
 
-  /* Card Colors - Clean natural white */
-  --card: oklch(0.99 0.005 140);
-  --card-foreground: oklch(0.28 0.04 140);
+  /* Card Colors - Pure white for contrast */
+  --card: #FFFFFF;
+  --card-foreground: #133215;
 
   /* Popover Colors */
-  --popover: oklch(0.99 0.005 140);
-  --popover-foreground: oklch(0.28 0.04 140);
+  --popover: #FFFFFF;
+  --popover-foreground: #133215;
 
-  /* Primary - Fresh Sage Green */
-  --primary: oklch(0.65 0.12 150);
-  /* Soft sage green, very calming */
-  --primary-foreground: oklch(0.99 0 0);
+  /* Primary - Your Dark Green */
+  --primary: #133215;
+  /* Deep forest green - authority and trust */
+  --primary-foreground: #FFFFFF;
 
-  /* Secondary - Warm Herb Green */
-  --secondary: oklch(0.58 0.14 135);
-  /* Warm basil/herb green */
-  --secondary-foreground: oklch(0.99 0 0);
+  /* Secondary - Lighter Lime Green */
+  --secondary: #A8C99A;
+  /* Softer, lighter lime green - elegant accent */
+  --secondary-foreground: #133215;
 
-  /* Tertiary - Earthy Turmeric Gold */
-  --tertiary: oklch(0.70 0.16 80);
-  /* Soft golden yellow */
-  --tertiary-foreground: oklch(0.28 0.04 140);
+  /* Tertiary - Warm accent for CTAs */
+  --tertiary: #C77D4C;
+  /* Warm terracotta/copper for important buttons */
+  --tertiary-foreground: #FFFFFF;
 
-  /* Muted Colors - Soft natural tones */
-  --muted: oklch(0.94 0.008 145);
-  --muted-foreground: oklch(0.52 0.03 140);
+  /* Muted Colors - Soft neutral beige */
+  --muted: #F3E8D3;
+  /* Your original beige for subtle backgrounds */
+  --muted-foreground: #5A6F54;
 
-  /* Accent Colors - Light mint highlight */
-  --accent: oklch(0.92 0.015 150);
-  --accent-foreground: oklch(0.28 0.04 140);
+  /* Accent Colors - Very light warm tone */
+  --accent: #F8F3E8;
+  --accent-foreground: #133215;
 
-  /* Destructive - Natural red */
-  --destructive: oklch(0.60 0.20 25);
+  /* Destructive - Muted red */
+  --destructive: #B84A3C;
 
-  /* Borders & Inputs - Soft green-grey */
-  --border: oklch(0.87 0.01 145);
-  --input: oklch(0.90 0.01 145);
-  --ring: oklch(0.65 0.12 150);
+  /* Borders & Inputs - Refined neutral */
+  --border: #E0D5C0;
+  --input: #F0E8D8;
+  --ring: #133215;
 
-  /* Chart Colors - Natural Garden Palette */
-  --chart-1: oklch(0.65 0.12 150);
-  /* Sage Green */
-  --chart-2: oklch(0.72 0.14 165);
-  /* Mint Green */
-  --chart-3: oklch(0.58 0.14 135);
-  /* Herb Green */
-  --chart-4: oklch(0.70 0.16 80);
-  /* Golden Yellow */
-  --chart-5: oklch(0.62 0.18 25);
-  /* Terracotta */
+  /* Chart Colors - Balanced Professional Palette */
+  --chart-1: #133215;
+  /* Your Dark Green */
+  --chart-2: #A8C99A;
+  /* Lighter Lime Green */
+  --chart-3: #C77D4C;
+  /* Warm Terracotta */
+  --chart-4: #5D8A57;
+  /* Medium Sage */
+  --chart-5: #2D4A30;
+  /* Deep Forest */
 
   /* Sidebar Colors */
-  --sidebar: oklch(0.98 0.005 145);
-  --sidebar-foreground: oklch(0.28 0.04 140);
-  --sidebar-primary: oklch(0.65 0.12 150);
-  --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.92 0.015 150);
-  --sidebar-accent-foreground: oklch(0.28 0.04 140);
-  --sidebar-border: oklch(0.87 0.01 145);
-  --sidebar-ring: oklch(0.65 0.12 150);
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #133215;
+  --sidebar-primary: #133215;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F8F3E8;
+  --sidebar-accent-foreground: #133215;
+  --sidebar-border: #E0D5C0;
+  --sidebar-ring: #133215;
 }
 
 .dark {

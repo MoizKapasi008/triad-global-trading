@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -6,6 +9,7 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
 
 type ProductCardProps = {
   id: string;
@@ -20,16 +24,24 @@ export default function ProductCard({
   description,
   image,
 }: ProductCardProps) {
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <Card className="group w-full h-full flex flex-col p-0 overflow-hidden rounded-2xl shadow-md hover:shadow-lg transition-transform hover:-translate-y-1 cursor-pointer">
-      <div className="aspect-[4/3] sm:aspect-[16/10] overflow-hidden">
+      <div className="aspect-[4/3] sm:aspect-[16/10] overflow-hidden relative">
+        {/* Skeleton Placeholder */}
+        {isLoading && <Skeleton className="w-full h-full absolute inset-0" />}
+
+        {/* Product Image */}
         <Image
           src={image}
           alt={title}
           width={600}
           height={400}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          className={`w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 ${
+            isLoading ? "opacity-0" : "opacity-100"
+          }`}
+          onLoadingComplete={() => setIsLoading(false)}
         />
       </div>
 

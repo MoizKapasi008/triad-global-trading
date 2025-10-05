@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -17,20 +18,44 @@ import { aboutSections } from "@/lib/aboutUs";
 // Desktop Navigation
 function DesktopNavigation() {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const pathname = usePathname();
+
+  // Check if current path matches products or categories
+  const isProductsActive =
+    pathname.startsWith("/products") || pathname.startsWith("/categories");
+
+  // Check if current path matches about sections
+  const isAboutActive = aboutSections.some(
+    (section) => pathname === section.href
+  );
+
+  const getTriggerClassName = (isActive: boolean) => `
+    !bg-transparent 
+    ${isActive ? "!text-secondary" : "!text-primary-foreground"}
+    hover:!bg-transparent 
+    hover:!text-secondary 
+    focus:!bg-transparent 
+    active:!bg-transparent
+    active:!text-secondary 
+    data-[state=open]:!bg-transparent
+    data-[state=open]:!text-secondary 
+    data-[active]:!bg-transparent
+    data-[active]:!text-secondary
+    transition-colors
+  `;
 
   return (
     <NavigationMenu className="hidden lg:block">
       <NavigationMenuList className="text-sm">
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent text-primary-foreground hover:bg-transparent hover:text-secondary-foreground focus:bg-transparent focus:text-secondary-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-transparent data-[state=open]:text-secondary-foreground data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent">
+          <NavigationMenuTrigger
+            className={getTriggerClassName(isProductsActive)}
+          >
             PRODUCTS
           </NavigationMenuTrigger>
 
           <NavigationMenuContent>
-            <div
-              className="flex text-primary"
-              onMouseLeave={() => setActiveCategory(null)}
-            >
+            <div className="flex" onMouseLeave={() => setActiveCategory(null)}>
               <ul className="gap-2 text-sm w-fit text-primary whitespace-nowrap">
                 {categories.map((category) => (
                   <li key={category.id}>
@@ -75,7 +100,7 @@ function DesktopNavigation() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="bg-transparent text-primary-foreground hover:bg-transparent hover:text-secondary-foreground focus:bg-transparent focus:text-secondary-foreground disabled:pointer-events-none disabled:opacity-50 data-[state=open]:hover:bg-transparent data-[state=open]:text-secondary-foreground data-[state=open]:focus:bg-transparent data-[state=open]:bg-transparent">
+          <NavigationMenuTrigger className={getTriggerClassName(isAboutActive)}>
             ABOUT US
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -97,9 +122,13 @@ function DesktopNavigation() {
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className="bg-transparent font-medium text-primary-foreground hover:bg-transparent hover:text-secondary-foreground "
+            className={`bg-transparent hover:bg-transparent hover:text-secondary focus:bg-transparent focus:text-secondary active:bg-transparent active:text-secondary transition-colors ${
+              pathname === "/harvest"
+                ? "text-secondary"
+                : "text-primary-foreground"
+            }`}
           >
-            <Link href="#">HARVEST CHART</Link>
+            <Link href="/harvest">HARVEST CHART</Link>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
@@ -312,7 +341,7 @@ function MobileNavigation() {
 
             {/* HARVEST CHART */}
             <Link
-              href="#"
+              href="/harvest"
               onClick={() => setIsOpen(false)}
               className="block px-4 py-3 font-bold text-gray-900 hover:bg-gray-100 rounded-md"
             >

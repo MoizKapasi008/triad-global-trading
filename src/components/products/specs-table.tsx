@@ -1,34 +1,59 @@
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
 
-export default function SpecsTable({
-  title,
-  rows,
-}: {
+interface SpecsTableRow {
+  parameter: string;
+  value: string;
+}
+
+interface SpecsTableProps {
   title: string;
-  rows: { parameter: string; value: string }[];
-}) {
+  rows: SpecsTableRow[];
+}
+
+export default function SpecsTable({ title, rows }: SpecsTableProps) {
+  if (!rows || rows.length === 0) {
+    return null;
+  }
+
   return (
-    <section className="mt-10">
-      <h3 className="text-center text-heading text-primary mb-4">{title}</h3>
-      <div className="overflow-x-auto rounded-md shadow">
-        <Table>
+    <section className="mt-10" aria-labelledby="specs-table-title">
+      <h3
+        id="specs-table-title"
+        className="text-center text-2xl font-semibold text-primary mb-4"
+      >
+        {title}
+      </h3>
+      <div className="overflow-x-auto rounded-lg border-none border-primary shadow-md">
+        <Table className="bg-white">
           <TableHeader>
-            <TableRow className="bg-primary hover:bg-primary">
-              <TableHead className="px-4 py-3 text-left text-white">
+            <TableRow className="bg-primary hover:bg-primary border-b-2 border-primary">
+              <TableHead className="px-4 py-3 text-left text-white font-semibold">
                 Parameter
               </TableHead>
-              <TableHead className="px-4 py-3 text-left text-white">
+              <TableHead className="px-4 py-3 text-left text-white font-semibold">
                 Range / Specification
               </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
-            {rows.map((r, i) => (
-              <TableRow key={i}>
+            {rows.map((row, index) => (
+              <TableRow
+                key={`${row.parameter}-${index}`}
+                className="hover:bg-primary/10 transition-colors border-b border-primary/20"
+              >
                 <TableCell className="px-4 py-3 font-medium text-foreground">
-                  {r.parameter}
+                  {row.parameter}
                 </TableCell>
-                <TableCell className="px-4 py-3 text-foreground">{r.value}</TableCell>
+                <TableCell className="px-4 py-3 text-foreground">
+                  {row.value}
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>

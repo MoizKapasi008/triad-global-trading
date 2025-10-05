@@ -4,7 +4,6 @@ import { getCategoryBySlug } from "@/lib/categories";
 import { getProductsByCategory } from "@/lib/products";
 import { notFound } from "next/navigation";
 
-
 export default async function CategoryPage({
   params,
 }: {
@@ -26,7 +25,7 @@ export default async function CategoryPage({
         heroImage={category.image}
       />
 
-      <section className="py-10 bg-white">
+      <section className="py-10">
         <div className="max-w-[1140px] mx-auto px-container">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {relatedProducts.map((product) => (

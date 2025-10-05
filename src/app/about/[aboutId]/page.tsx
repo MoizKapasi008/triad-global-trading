@@ -59,7 +59,7 @@ export default async function AboutUsPage({ params }: AboutParams) {
       />
 
       {/* Content Section */}
-      <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+      <section className="py-16">
         <div className="mx-auto w-full px-6 md:px-8 max-w-[1200px]">
           {/* OUR TEAM SECTION */}
           {section.id === "our-team" && (

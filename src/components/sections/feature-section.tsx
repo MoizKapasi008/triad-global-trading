@@ -1,5 +1,8 @@
+"use client";
 import { Feature, features } from "@/lib/feature";
 import Image from "next/image";
+import { useState } from "react";
+import { Skeleton } from "../ui/skeleton";
 
 function FeatureCard({ icon, title }: Feature) {
   return (
@@ -27,11 +30,14 @@ function FeatureCard({ icon, title }: Feature) {
 }
 
 export default function WhyChooseUsSection() {
+  const [isLoading, setIsLoading] = useState(true);
   return (
     <section className="bg-secondary border border-secondary text-white w-full my-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[350px] lg:min-h-[500px] gap-6 lg:gap-8">
         {/* Image Side */}
         <div className="w-full h-[250px] sm:h-[300px] lg:h-full">
+          {isLoading && <Skeleton className="w-full h-full absolute inset-0" />}
+
           <Image
             src={"/images/chilli-harvesting_1.jpg"}
             alt="Triad Global Trading - Spices and Herbs"
@@ -39,6 +45,7 @@ export default function WhyChooseUsSection() {
             height={600}
             className="w-full h-full object-cover shadow-lg"
             priority
+            onLoadingComplete={() => setIsLoading(false)}
           />
         </div>
 

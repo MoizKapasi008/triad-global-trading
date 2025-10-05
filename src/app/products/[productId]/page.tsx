@@ -25,7 +25,7 @@ export default async function ProductPage({
         heroImage={product.heroImage}
       />
 
-      <section className="py-10 bg-white">
+      <section className="py-10">
         <div className="mx-auto w-full px-6 md:px-3 max-w-[1140px] grid gap-8 md:grid-cols-[300px_1fr] lg:grid-cols-[400px_1fr]">
           <ProductGallery image={product.image} title={product.title} />
           <ProductDetails

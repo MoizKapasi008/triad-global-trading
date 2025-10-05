@@ -1,9 +1,10 @@
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
+import WhatsAppButton from "@/components/shared/whatsapp";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
-import WhatsAppButton from "@/components/shared/whatsapp";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -19,6 +20,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Triad Global Trading",
   description: "Import export trading company",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +35,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${geistMono.variable} antialiased`}>
         <Header />
         {children}
+        <Analytics />
         <WhatsAppButton />
         <Footer />
       </body>

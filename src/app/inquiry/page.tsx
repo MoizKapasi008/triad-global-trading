@@ -65,11 +65,11 @@ export default function InquiryPage() {
       />
 
       {/* Inquiry Form Section */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-[1140px] px-6 md:px-3">
+      <section className="py-20 ">
+        <div className="mx-auto max-w-[1140px] px-6 md:px-3 ">
           <div className="grid md:grid-cols-2 gap-16 items-start">
             {/* Form Left Side */}
-            <div className="bg-gray-50 p-8 rounded-lg h-fit">
+            <div className="bg-primary-foreground p-8 rounded-lg h-fit">
               <h3 className="text-2xl font-bold text-primary mb-2">
                 Send us your inquiry
               </h3>
@@ -194,7 +194,7 @@ export default function InquiryPage() {
             </div>
 
             {/* Contact Information Right Side */}
-            <div className="bg-gray-50 p-8 rounded-lg h-full">
+            <div className="bg-primary-foreground p-8 rounded-lg h-full">
               <h3 className="text-2xl font-bold text-primary mb-6">
                 Get in Touch
               </h3>
@@ -230,13 +230,13 @@ export default function InquiryPage() {
       </section>
 
       {/* Info Section */}
-      <section className="py-16 bg-gray-50 border-t border-gray-200">
+      <section className="py-16  border-t border-gray-200">
         <div className="mx-auto max-w-4xl px-6 md:px-3">
           <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-6">
             Why Contact Us?
           </h2>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <div className="text-center">
+            <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-primary"
@@ -252,12 +252,14 @@ export default function InquiryPage() {
                   />
                 </svg>
               </div>
-              <h3 className="font-semibold text-lg mb-2">Quick Response</h3>
-              <p className="text-gray-600">
+              <h3 className="font-semibold text-lg mb-2 text-center">
+                Quick Response
+              </h3>
+              <p className="text-gray-600 text-center">
                 Our team ensures timely and detailed responses to all messages.
               </p>
             </div>
-            <div className="text-center">
+            <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg
                   className="w-8 h-8 text-primary"
@@ -273,8 +275,10 @@ export default function InquiryPage() {
                   />
                 </svg>
               </div>
-              <h3 className="font-semibold text-lg mb-2">Expert Guidance</h3>
-              <p className="text-gray-600">
+              <h3 className="font-semibold text-lg mb-2 text-center">
+                Expert Guidance
+              </h3>
+              <p className="text-gray-600 text-center">
                 Get professional advice and assistance from our experienced
                 team.
               </p>

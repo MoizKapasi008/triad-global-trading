@@ -1,4 +1,7 @@
+"use client";
+import { Skeleton } from "@/components/ui/skeleton";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function ProductHeroSection({
   title,
@@ -9,6 +12,8 @@ export default function ProductHeroSection({
   description?: string;
   heroImage?: string;
 }) {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <section className="relative grid md:grid-cols-2 min-h-[180px] md:min-h-[220px] lg:min-h-[280px] text-secondary-foreground">
       {/* Text Section */}
@@ -28,12 +33,14 @@ export default function ProductHeroSection({
 
       {/* Image (background on mobile, side image on desktop) */}
       <div className="absolute inset-0 md:relative">
+        {isLoading && <Skeleton className="w-full h-full absolute inset-0" />}
         <Image
           src={heroImage || ""}
           alt={title}
           fill
           className="object-cover transition-transform duration-300 md:group-hover:scale-105"
           priority
+          onLoadingComplete={() => setIsLoading(false)}
         />
         {/* Dark overlay only on small screens for readability */}
         <div className="absolute inset-0 bg-black/40 md:hidden"></div>
