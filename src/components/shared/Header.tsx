@@ -56,7 +56,7 @@ export default function Header() {
     },
     { id: "harvest", title: "HARVEST CHART", href: "/harvest" },
     { id: "inquiry", title: "INQUIRY", href: "/inquiry" },
-    { id: "blog", title: "BLOG", href: "/blog" },
+    { id: "Quality-policy", title: "QUALITY POLICY", href: "/quality-policy" },
     { id: "contact", title: "CONTACT", href: "/contact" },
   ];
 
