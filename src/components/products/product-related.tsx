@@ -7,6 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect, useCallback } from "react";
 import { Skeleton } from "../ui/skeleton";
 import type { CarouselApi } from "@/components/ui/carousel";
@@ -41,6 +42,11 @@ export default function ProductRelated({
     return () => clearInterval(intervalId);
   }, [api, scrollNext]);
 
+  const handleProductClick = (productId: string) => {
+    console.log(`Navigating to product: ${productId}`);
+    // You can add additional click tracking or analytics here
+  };
+
   return (
     <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-[1140px] mt-10 space-y-8">
       <h3 className="text-center text-3xl font-bold text-primary mb-6">
@@ -61,27 +67,32 @@ export default function ProductRelated({
                 key={product.id}
                 className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/4"
               >
-                <div className="border rounded-lg overflow-hidden bg-primary-foreground hover:shadow-lg transition-shadow duration-300 h-full">
-                  <div className="relative w-full aspect-square">
-                    {isLoading && (
-                      <Skeleton className="w-full h-full absolute inset-0" />
-                    )}
-                    <Image
-                      src={product.image}
-                      alt={product.title}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      priority
-                      onLoadingComplete={() => setIsLoading(false)}
-                    />
+                <Link
+                  href={`/products/${product.id}`}
+                  onClick={() => handleProductClick(product.id)}
+                >
+                  <div className="border rounded-lg overflow-hidden bg-primary-foreground hover:shadow-lg transition-shadow duration-300 h-full cursor-pointer">
+                    <div className="relative w-full aspect-square">
+                      {isLoading && (
+                        <Skeleton className="w-full h-full absolute inset-0" />
+                      )}
+                      <Image
+                        src={product.image}
+                        alt={product.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        priority
+                        onLoadingComplete={() => setIsLoading(false)}
+                      />
+                    </div>
+                    <div className="p-4">
+                      <h4 className="text-lg font-semibold line-clamp-2">
+                        {product.title}
+                      </h4>
+                    </div>
                   </div>
-                  <div className="p-4">
-                    <h4 className="text-lg font-semibold line-clamp-2">
-                      {product.title}
-                    </h4>
-                  </div>
-                </div>
+                </Link>
               </CarouselItem>
             ))}
           </CarouselContent>

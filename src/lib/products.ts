@@ -95,8 +95,8 @@ export const products: Product[] = [
         image: "/images/turmeric-finger.jpg",
       },
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
       {
@@ -196,8 +196,8 @@ export const products: Product[] = [
         image: "/images/whole-red-chili-peppers.png",
       },
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
       {
@@ -323,8 +323,8 @@ export const products: Product[] = [
         image: "/images/chillii-powder.jpg",
       },
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
       {
@@ -449,8 +449,8 @@ export const products: Product[] = [
         image: "/images/turmeric-powder.png",
       },
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
       {
@@ -667,8 +667,8 @@ export const products: Product[] = [
     badges: ["FSSAI", "HACCP", "ISO 22000"],
     related_products: [
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
       {
@@ -843,17 +843,17 @@ export const products: Product[] = [
     title: "Corriander Powder",
     categoryId: "spices",
     description:
-      "Add a burst of freshness to your dishes with the zesty aroma of coriander !",
+      "Add a burst of freshness to your dishes with the zesty aroma of Corriander !",
     image: "/images/cumin-powder.png",
     heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
     detailSections: [
       {
         title: "Product Details",
         items: [
-          "Product : Coriander Powder (Ground Coriander)",
+          "Product : Corriander Powder (Ground Corriander)",
           "Origin : India",
           "Botanical Name :Coriandrum sativum",
-          "Form :Fine powder made from dried coriander seeds",
+          "Form :Fine powder made from dried Corriander seeds",
           "Color :Light brown to yellowish-brown",
           "Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat",
         ],
@@ -876,7 +876,7 @@ export const products: Product[] = [
       {
         title: "Key Features",
         items: [
-          "Made from high-quality coriander seeds that are cleaned, dried, and finely ground.",
+          "Made from high-quality Corriander seeds that are cleaned, dried, and finely ground.",
           "Rich, citrusy flavor and aromatic profile.",
           "Free from additives, artificial colors, and preservatives.",
           "Consistent color, texture, and flavor.",
@@ -1187,8 +1187,8 @@ export const products: Product[] = [
         image: "/images/cumin-powder.png",
       },
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
       {
@@ -1911,8 +1911,8 @@ export const products: Product[] = [
         image: "/images/chillii-powder.jpg",
       },
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
       {
@@ -2168,8 +2168,8 @@ export const products: Product[] = [
         image: "/images/ginger-powder.webp",
       },
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
       {
@@ -2290,8 +2290,8 @@ export const products: Product[] = [
         image: "/images/black-pepper1.png",
       },
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
       {
@@ -2370,8 +2370,8 @@ export const products: Product[] = [
         image: "/images/curry-leaves.jpg",
       },
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
     ],
@@ -2438,8 +2438,8 @@ export const products: Product[] = [
         image: "/images/curry-leaves.jpg",
       },
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
     ],
@@ -2515,8 +2515,8 @@ export const products: Product[] = [
         image: "/images/turmeric-powder.png",
       },
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
     ],
@@ -2582,8 +2582,8 @@ export const products: Product[] = [
     badges: ["FSSAI", "Kosher"],
     related_products: [
       {
-        id: "coriander-powder",
-        title: "Coriander Powder",
+        id: "corriander-powder",
+        title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
       {
