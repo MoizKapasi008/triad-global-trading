@@ -66,30 +66,32 @@ export default function ContactPage() {
       />
 
       {/* Contact Section */}
-      <section className="py-20">
-        <div className="mx-auto max-w-[1140px] px-6 md:px-3">
-          <div className="grid md:grid-cols-2 gap-12">
+      <section className="py-12 sm:py-16 md:py-20">
+        <div className="mx-auto max-w-[1140px] px-4 sm:px-6 md:px-8">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
             {/* Left Side - Contact Information */}
-            <div className="bg-gray-50 p-8 rounded-lg">
-              <div className="mb-5">
-                <h2 className="text-3xl font-bold text-primary mb-4">
+            <div className="bg-gray-50 p-6 sm:p-8 rounded-lg">
+              <div className="mb-6 sm:mb-8">
+                <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-3 sm:mb-4">
                   Get In Touch
                 </h2>
-                <p className="text-gray-600">
+                <p className="text-gray-600 text-sm sm:text-base">
                   We&apos;d love to hear from you.
                 </p>
               </div>
 
               {/* Contact Details */}
-              <div className="space-y-6">
+              <div className="space-y-5 sm:space-y-6">
                 {/* Address */}
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-primary" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Our Address</h3>
-                    <p className="text-gray-600">
+                    <h3 className="font-semibold text-base sm:text-lg mb-1">
+                      Our Address
+                    </h3>
+                    <p className="text-gray-600 text-sm sm:text-base">
                       Bhomeshwar Plot, Jamnagar road
                       <br />
                       Rajkot - 360006, Gujarat
@@ -100,63 +102,74 @@ export default function ContactPage() {
                 </div>
 
                 {/* Phone */}
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-primary" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Phone</h3>
-                    <p className="text-gray-600">+91 79904 29441</p>
-                    <p className="text-gray-600">+91 63558 94754</p>
+                    <h3 className="font-semibold text-base sm:text-lg mb-1">
+                      Phone
+                    </h3>
+                    <p className="text-gray-600 text-sm sm:text-base">
+                      +91 79904 29441
+                    </p>
+                    <p className="text-gray-600 text-sm sm:text-base">
+                      +91 63558 94754
+                    </p>
                   </div>
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-primary" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Email</h3>
-                    <p className="text-gray-600">info@triadglobaltrading.com</p>
-                    <p className="text-gray-600">
+                    <h3 className="font-semibold text-base sm:text-lg mb-1">
+                      Email
+                    </h3>
+                    <p className="text-gray-600 text-sm sm:text-base break-words">
+                      info@triadglobaltrading.com
+                    </p>
+                    <p className="text-gray-600 text-sm sm:text-base break-words">
                       support@triadglobaltrading.com
                     </p>
                   </div>
                 </div>
 
                 {/* Business Hours */}
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-primary" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">
+                    <h3 className="font-semibold text-base sm:text-lg mb-1">
                       Business Hours
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-gray-600 text-sm sm:text-base">
                       Monday - Saturday: 9:00 AM - 6:00 PM
                     </p>
-
-                    <p className="text-gray-600">Sunday: 9:00 AM - 1:00 PM</p>
+                    <p className="text-gray-600 text-sm sm:text-base">
+                      Sunday: 9:00 AM - 1:00 PM
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Right Side - Contact Form */}
-            <div className="bg-gray-50 p-8 rounded-lg h-fit">
-              <h3 className="text-2xl font-bold text-primary mb-2">
+            <div className="bg-gray-50 p-6 sm:p-8 rounded-lg h-fit">
+              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-2">
                 Send Us a Message
               </h3>
-              <p className="text-gray-600 mb-5">
+              <p className="text-gray-600 mb-5 sm:mb-6 text-sm sm:text-base">
                 Fill out the form and we&apos;ll get back to you within 24
                 hours.
               </p>
 
               <div className="flex flex-col gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
                     Name *
                   </label>
                   <Input
@@ -165,11 +178,12 @@ export default function ContactPage() {
                     value={formData.name}
                     onChange={handleChange}
                     required
+                    className="text-sm sm:text-base"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
                     Email *
                   </label>
                   <Input
@@ -179,11 +193,12 @@ export default function ContactPage() {
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    className="text-sm sm:text-base"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
                     Phone
                   </label>
                   <Input
@@ -191,11 +206,12 @@ export default function ContactPage() {
                     placeholder="+91 12345 67890"
                     value={formData.phone}
                     onChange={handleChange}
+                    className="text-sm sm:text-base"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
                     Subject
                   </label>
                   <Input
@@ -203,11 +219,12 @@ export default function ContactPage() {
                     placeholder="How can we help?"
                     value={formData.subject}
                     onChange={handleChange}
+                    className="text-sm sm:text-base"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
                     Message *
                   </label>
                   <Textarea
@@ -217,19 +234,20 @@ export default function ContactPage() {
                     onChange={handleChange}
                     rows={5}
                     required
+                    className="text-sm sm:text-base"
                   />
                 </div>
 
                 <Button
                   type="button"
-                  className="w-full"
+                  className="w-full text-sm sm:text-base h-10 sm:h-11"
                   disabled={isLoading}
                   onClick={handleSubmit}
                 >
                   {isLoading ? (
                     <span className="flex items-center justify-center gap-2">
                       <svg
-                        className="animate-spin h-5 w-5"
+                        className="animate-spin h-4 w-4 sm:h-5 sm:w-5"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -273,17 +291,17 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="py-12">
-        <div className="mx-auto max-w-[1140px] px-6 md:px-3">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-primary mb-3">
+      <section className="py-10 sm:py-12">
+        <div className="mx-auto max-w-[1140px] px-4 sm:px-6 md:px-8">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-2 sm:mb-3">
               Find Us Here
             </h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-sm sm:text-base px-4">
               Visit our office or explore the surrounding area
             </p>
           </div>
-          <div className="rounded-lg overflow-hidden border border-gray-200 shadow-sm h-96">
+          <div className="rounded-lg overflow-hidden border border-gray-200 shadow-sm h-64 sm:h-80 md:h-96">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.548533322894!2d70.78540927505234!3d22.31357667969254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c992a8c31375%3A0x815c11b23ac98c5f!2sBhomeshwar%20Plot%2C%20Rajkot%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1730463600000!5m2!1sen!2sin"
               width="100%"
@@ -299,23 +317,23 @@ export default function ContactPage() {
       </section>
 
       {/* Additional Info Section */}
-      <section className="py-16">
-        <div className="mx-auto max-w-[1140px] px-6 md:px-3">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-4">
+      <section className="py-12 sm:py-16">
+        <div className="mx-auto max-w-[1140px] px-4 sm:px-6 md:px-8">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-3 sm:mb-4 px-4">
               We&apos;re Here to Help
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base px-4">
               Whether you have a question about our services, need technical
               support, or just want to provide feedback, our team is ready to
               assist you.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="text-center p-5 sm:p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                 <svg
-                  className="w-8 h-8 text-primary"
+                  className="w-7 h-7 sm:w-8 sm:h-8 text-primary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -328,15 +346,17 @@ export default function ContactPage() {
                   />
                 </svg>
               </div>
-              <h3 className="font-semibold text-lg mb-2">Quick Response</h3>
-              <p className="text-gray-600">
+              <h3 className="font-semibold text-base sm:text-lg mb-2">
+                Quick Response
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
                 We respond to all inquiries within 24 business hours.
               </p>
             </div>
-            <div className="text-center p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-5 sm:p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                 <svg
-                  className="w-8 h-8 text-primary"
+                  className="w-7 h-7 sm:w-8 sm:h-8 text-primary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -349,15 +369,17 @@ export default function ContactPage() {
                   />
                 </svg>
               </div>
-              <h3 className="font-semibold text-lg mb-2">Expert Team</h3>
-              <p className="text-gray-600">
+              <h3 className="font-semibold text-base sm:text-lg mb-2">
+                Expert Team
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
                 Our experienced professionals are ready to assist you.
               </p>
             </div>
-            <div className="text-center p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-5 sm:p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow sm:col-span-2 md:col-span-1">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                 <svg
-                  className="w-8 h-8 text-primary"
+                  className="w-7 h-7 sm:w-8 sm:h-8 text-primary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -370,8 +392,10 @@ export default function ContactPage() {
                   />
                 </svg>
               </div>
-              <h3 className="font-semibold text-lg mb-2">Secure & Private</h3>
-              <p className="text-gray-600">
+              <h3 className="font-semibold text-base sm:text-lg mb-2">
+                Secure & Private
+              </h3>
+              <p className="text-gray-600 text-sm sm:text-base">
                 Your information is protected with industry-standard security.
               </p>
             </div>
