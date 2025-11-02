@@ -7,8 +7,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Skeleton } from "../ui/skeleton";
+import type { CarouselApi } from "@/components/ui/carousel";
 
 type RelatedProduct = {
   id: string;
@@ -22,6 +23,24 @@ export default function ProductRelated({
   relatedProducts?: RelatedProduct[];
 }) {
   const [isLoading, setIsLoading] = useState(true);
+  const [api, setApi] = useState<CarouselApi>();
+
+  const scrollNext = useCallback(() => {
+    if (api) {
+      api.scrollNext();
+    }
+  }, [api]);
+
+  useEffect(() => {
+    if (!api) return;
+
+    const intervalId = setInterval(() => {
+      scrollNext();
+    }, 3000); // Auto-scroll every 3 seconds
+
+    return () => clearInterval(intervalId);
+  }, [api, scrollNext]);
+
   return (
     <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-[1140px] mt-10 space-y-8">
       <h3 className="text-center text-3xl font-bold text-primary mb-6">
@@ -29,6 +48,7 @@ export default function ProductRelated({
       </h3>
       {relatedProducts.length > 0 ? (
         <Carousel
+          setApi={setApi}
           opts={{
             align: "start",
             loop: true,
