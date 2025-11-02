@@ -36,7 +36,9 @@ export default async function ProductPage({
 
         <ProductSpecs
           physicalSpecs={product.physicalSpecs}
+          physicalSpecs2={product.physicalSpecs2}
           chemicalSpecs={product.chemicalSpecs}
+          nutritionalSpecs={product.nutritionalSpecs}
         />
 
         <ProductOrigin originMapSrc={product.originMapSrc} />

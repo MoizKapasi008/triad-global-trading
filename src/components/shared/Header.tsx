@@ -159,7 +159,7 @@ export default function Header() {
         </div>
 
         {/* Tablet & Mobile */}
-        <div className="xl:hidden flex flex-col items-center justify-center py-2.5 px-4 gap-1.5">
+        {/* <div className="xl:hidden flex flex-col items-center justify-center py-2.5 px-4 gap-1.5">
           <div className="text-sm font-medium text-center">
             Your one-stop solution for all your trading needs.
           </div>
@@ -167,7 +167,7 @@ export default function Header() {
             <Phone size={14} />
             <span>+91 7990429441</span>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Main Navigation */}

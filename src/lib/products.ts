@@ -12,7 +12,9 @@ export type Product = {
   badges?: string[];
   detailSections?: { title: string; items: string[] }[];
   physicalSpecs?: SpecRow[];
+  physicalSpecs2?: SpecRow[];
   chemicalSpecs?: SpecRow[];
+  nutritionalSpecs?: SpecRow[];
   originMapSrc?: string;
   related_products?: { id: string; title: string; image: string }[];
 };
@@ -21,35 +23,76 @@ export const products: Product[] = [
   // -------------------- SPICES --------------------
   {
     id: "whole-chilli",
-    title: "Whole Chilli",
+    title: "Red Chilli Peppers",
     categoryId: "spices",
     description:
-      "Turn up the heat and ignite your taste buds with the fiery kick of chilli!",
-    image: "/images/whole-red-chili-peppers.png",
+      "Turn up the heat and ignite your taste budswith the fiery kick of chilli peppers!",
+    image: "/images/whole-chilli.jpg",
     heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
     detailSections: [
       {
-        title: "Product Information",
-        items: ["S17 Teja Chilli", "Sanam Chilli (334)", "Byadgi Chilli"],
+        title: "Varieties Available",
+        items: [
+          "S17 Teja Chilli (High pungency, bright red color)",
+          "Sanam Chilli (334) (Moderate pungency, deep red color)",
+          "Byadgi Chilli (Mild pungency, rich red color, high oil content)",
+          "Wonder Hot Chilli",
+          "Others : Guntur Chilli, 273 Wrinkle, 341, etc.",
+        ],
       },
       {
         title: "Packing and Shipping Details",
         items: ["PP/Jute Bags: 25kg / 50kg"],
       },
+      {
+        title: "Custom packaging available as per buyer’s requirement.",
+        items: ["Pouches, cartons, jars, etc."],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container : 7-8 Metric Tons, 40 FT Container : 14-15 Metric Tons",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "Uniformly dried to preserve color and pungency",
+          "Free from mold, infestation, and foreign material",
+          "Suitable for direct consumption, grinding, or oleoresin extraction",
+        ],
+      },
     ],
     physicalSpecs: [
-      { parameter: "Length", value: "5–15 cm" },
-      { parameter: "Color", value: "Bright red" },
+      { parameter: "Length", value: "5-15 cm (varies with variety)" },
+      { parameter: "Color", value: "Bright red, deep red (variety-specific)" },
+      {
+        parameter: "Pungency (SHU)",
+        value: "15,000 to 100,000 SHU (variety-dependent)",
+      },
+      { parameter: "Moisture Content", value: "8-12% max" },
+      { parameter: "Skin", value: "Smooth or Wrinkled" },
+      { parameter: "Foreign Matter", value: "1-2% Max" },
+      { parameter: "Broken Chilli", value: "1-2% Max" },
+      { parameter: "Loose Seeds", value: "1-2% Max" },
     ],
-    chemicalSpecs: [{ parameter: "Capsaicin Content", value: "0.2%–0.5%" }],
+    chemicalSpecs: [
+      { parameter: "Capsaicin Content", value: "0.2%–0.5%" },
+      {
+        parameter: "Aflatoxin Level",
+        value: "Below 5-10 ppb (As per EU standards)",
+      },
+      { parameter: "Total Ash", value: "6-8% max" },
+      { parameter: "Non-volatile Ether Extract", value: "10-12%" },
+    ],
     originMapSrc: "/images/product-origin.jpg",
     specs: { "HS Code": "090421", Origin: "India" },
     badges: ["FSSAI", "HACCP"],
     related_products: [
       {
-        id: "turmeric-powder",
-        title: "Turmeric Powder",
-        image: "/images/turmeric-powder.png",
+        id: "turmeric-finger",
+        title: "Turmeric Fingers",
+        image: "/images/turmeric-finger.jpg",
       },
       {
         id: "coriander-powder",
@@ -69,21 +112,21 @@ export const products: Product[] = [
     ],
   },
   {
-    id: "turmeric-powder",
-    title: "Turmeric Powder",
+    id: "turmeric-finger",
+    title: "Turmeric Fingers",
     categoryId: "spices",
     description:
       "Add a pop of color and a burst of flavor to your meals with the golden spice of turmeric.",
-    image: "/images/turmeric-powder.png",
+    image: "/images/turmeric-finger.jpg",
     heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
     detailSections: [
       {
-        title: "Product Information",
+        title: "Varieties Available",
         items: [
-          "Made from high-quality turmeric rhizomes",
-          "Bright yellow-orange color with strong aroma",
-          "Rich in curcumin, known for anti-inflammatory properties",
-          "Uses: Cooking, medicinal formulations, cosmetics, and dyes",
+          "Maharashtra Turmeric (Standard variety, bright yellow color)",
+          "Salem Turmeric (Polished variety with medium curcumin)",
+          "Kaddapa Turmeric (Large size, rich aroma)",
+          "Nizamabad Turmeric (Small to medium size)",
         ],
       },
       {
@@ -103,23 +146,33 @@ export const products: Product[] = [
       {
         title: "Key Features",
         items: [
-          "Naturally sun-dried and finely ground",
-          "Free from artificial colors and preservatives",
-          "High curcumin content for enhanced quality",
+          "High curcumin content (2-5%) ensures vibrant color and health benefits.",
+          "Polished and unpolished turmeric available based on requirement.",
+          "Free from dust, stones, and foreign impurities.",
+          "Suitable for grinding into powder, spice blends, medicinal uses, and curcumin extraction.",
         ],
       },
     ],
     physicalSpecs: [
-      { parameter: "Color", value: "Bright yellow to orange-yellow" },
-      { parameter: "Form", value: "Fine powder" },
-      { parameter: "Moisture Content", value: "8–10% max" },
-      { parameter: "Foreign Matter", value: "< 1%" },
+      { parameter: "Length", value: " 3 to 6 cm" },
+      { parameter: "Color", value: "Bright yellow to deep orange" },
+      { parameter: "Shape", value: "Cylindrical, smooth or rough texture" },
+      { parameter: "Curcumin Content", value: "2% to 5% (variety-specific)" },
+      {
+        parameter: "Moisture Content",
+        value: "8% to 12% max",
+      },
+      { parameter: "Foreign Matter", value: "0.5% to 2% max" },
+      { parameter: "Defective Fingers", value: "2–3% max" },
+      { parameter: "Polishing", value: "Available as polished or unpolished" },
+      { parameter: "Aroma", value: "Earthy, strong and natural" },
     ],
     chemicalSpecs: [
-      { parameter: "Curcumin Content", value: "2–5%" },
-      { parameter: "Total Ash", value: "< 9%" },
-      { parameter: "Acid Insoluble Ash", value: "< 1%" },
-      { parameter: "Lead Content", value: "< 2.5 ppm" },
+      { parameter: "Curcumin Content", value: "1% to 5%" },
+      { parameter: "Moisture", value: "8% to 12%" },
+      { parameter: "Ash Content", value: "6-7% max" },
+      { parameter: "Ash Insoluble in Acid", value: "1% to 2% max" },
+      { parameter: "Volatile Oil", value: "3% to 5%" },
     ],
     originMapSrc: "/images/product-origin.jpg",
     specs: {
@@ -155,28 +208,31 @@ export const products: Product[] = [
     ],
   },
   {
-    id: "black-pepper",
-    title: "Black Pepper",
+    id: "turmeric-powder",
+    title: "Turmeric Powder",
     categoryId: "spices",
     description:
-      "The 'King of Spices', known for its bold flavor and medicinal properties.",
-    image: "/images/black-pepper.webp",
+      "Add a pop of color and a burst of flavor to your meals with the golden spice of turmeric.",
+    image: "/images/turmeric-powder.png",
     heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
     detailSections: [
       {
-        title: "Product Information",
+        title: "Product Details",
         items: [
-          "Whole dried black pepper berries sourced from premium farms",
-          "Pungent aroma and sharp, biting taste",
-          "Widely used as a spice and seasoning in global cuisines",
-          "Applications: Cooking, sauces, spice blends, and medicinal uses",
+          "Product : Turmeric Powder",
+          "Origin : India (Telangana, Andhra Pradesh, Tamil Nadu, Maharashtra, Karnataka)",
+          "Botanical Name : Curcuma longa",
+          "Form :Fine Powder",
+          "Color : Bright Yellow to Golden Yellow",
+          "Shelf Life : Up to 2 years when stored in a cool, dry place, away from moisture, light, and heat.",
         ],
       },
+
       {
         title: "Packing and Shipping Details",
         items: [
-          "PP/Jute Bags: 25kg / 50kg",
-          "Custom packaging available (pouches, cartons, jars)",
+          "PP Bags, Paper Bags, HDPE Bags, or Cartons",
+          "Standard Sizes: 10kg, 25kg, 50kg, or as per buyer requirements",
         ],
       },
       {
@@ -189,21 +245,1001 @@ export const products: Product[] = [
       {
         title: "Key Features",
         items: [
-          "Naturally sun-dried berries",
-          "Free from artificial additives",
-          "High piperine content for strong flavor",
+          "High-quality turmeric powder with consistent color, aroma, and flavor.",
+          "Rich in curcumin content ensuring high medicinal and nutritional value.",
+          "Free from artificial colors, additives, and preservatives.",
+          "Cleaned, processed, and packaged under strict hygiene standards.",
+        ],
+      },
+      {
+        title: "Grades of tumeric powder",
+        items: [
+          "Premium Grade	: 5% or above",
+          "Regular Grade	: 3% to 4%",
+          "Industrial Grade	: 2% to 3%",
         ],
       },
     ],
     physicalSpecs: [
-      { parameter: "Form", value: "Whole dried berries" },
-      { parameter: "Color", value: "Black to dark brown" },
-      { parameter: "Moisture Content", value: "12% max" },
+      { parameter: "Appearance", value: "Fine, smooth, and uniform powder" },
+      { parameter: "Color", value: "Bright yellow to golden yellow" },
+      {
+        parameter: "Particle Size",
+        value: "80-100 mesh (customizable)",
+      },
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      {
+        parameter: "Ash Content",
+        value: "7% to 9% max",
+      },
+      { parameter: "Acid Insoluble Ash", value: "1.5% max" },
+      { parameter: "Foreign Matter", value: "0.5% max" },
+      {
+        parameter: "Volatile Oil Content",
+        value: "2% to 4%",
+      },
+      {
+        parameter: "Flavor/Aroma",
+        value: "Earthy, aromatic, and mildly bitter",
+      },
     ],
     chemicalSpecs: [
-      { parameter: "Piperine Content", value: "3–5%" },
-      { parameter: "Volatile Oil", value: "1–2.5%" },
-      { parameter: "Total Ash", value: "< 7%" },
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      { parameter: "Curcumin Content", value: "2% to 5% (Varies by grade)" },
+      { parameter: "Total Ash", value: "7% to 9% max" },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Lead Content (Pb)", value: "Lessthan 2.5 ppm" },
+      { parameter: "Arsenic Content", value: "Lessthan 1.1 ppm" },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      { parameter: "Microbial Load", value: "As per food safety standards" },
+    ],
+    originMapSrc: "/images/product-origin.jpg",
+    specs: {
+      "HS Code": "091030",
+      Curcumin: "2–5%",
+      Moisture: "< 10%",
+      Admixture: "< 1%",
+      Origin: "India",
+      Packaging: "25kg PP | Retail pouches | Custom",
+    },
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "red-chilli-powder",
+    title: "Red Chilli Powder",
+    categoryId: "spices",
+    description:
+      "Add a fiery kick to your meals with the vibrant and versatile flavor of chili powder - the perfect way to spice up your life.",
+    image: "/images/chillii-powder.jpg",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Details",
+        items: [
+          "Product : Chilli Powder (Red Chili Powder)",
+          "Origin : India (Karnataka, Andhra Pradesh, Telangana, Madhya Pradesh)",
+          "Botanical Name : Capsicum annuum (for most varieties)",
+          "Form : Ground powder from dried red chilies",
+          "Color : Bright red to deep red",
+          "Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from light, heat, and moisture.",
+        ],
+      },
+
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "PP Bags, Paper Bags, HDPE Bags, or Cartons",
+          "Standard Sizes: 10kg, 25kg, 50kg, or as customized packaging per buyer requirements",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container: 10–12 Metric Tons (MT)",
+          "40 FT Container: 20–22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "Made from high-quality, sun-dried red chilies of selected varieties.",
+          "Uniform color, texture, and flavor.",
+          "Free from additives, artificial colors, and preservatives.",
+          "High capsaicin content, providing the desired spiciness and heat.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Premium Grade	: Bright red color, fine texture, minimal impurity",
+          "Regular Grade	: Slightly darker color, coarser texture, with minor impurity",
+          "Industrial Grade	: Coarser grind, moderate color intensity, used in bulk production",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Fine, smooth, and uniform powder" },
+      { parameter: "Color", value: "Bright red to deep red" },
+      {
+        parameter: "Particle Size",
+        value: "80-100 mesh (customizable)",
+      },
+      {
+        parameter: "Capsaicin Content",
+        value: "0.5% to 1.5% (depending on variety)",
+      },
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      {
+        parameter: "Ash Content",
+        value: "6% to 8% max",
+      },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Foreign Matter", value: "0.5% max" },
+      {
+        parameter: "Volatile Oil Content",
+        value: "0.5% to 1.5%",
+      },
+      {
+        parameter: "Flavor/Aroma",
+        value: "Spicy, pungent, and aromatic",
+      },
+    ],
+    chemicalSpecs: [
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      {
+        parameter: "Capsaicin Content",
+        value: "0.5% to 1.5% (Varies by variety)",
+      },
+      { parameter: "Total Ash", value: "6% to 8% max" },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Lead Content (Pb)", value: "Lessthan 2.5 ppm" },
+      { parameter: "Arsenic Content", value: "Lessthan 1.1 ppm" },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      { parameter: "Microbial Load", value: "As per food safety standards" },
+    ],
+    originMapSrc: "/images/product-origin.jpg",
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "nutmeg-whole",
+    title: "Nutmeg Whole",
+    categoryId: "spices",
+    description:
+      "Grate fresh nutmeg for a rich, aromatic flavor that enhances any dish with a warm, sweet touch.",
+    image: "/images/nutmeg-whole.webp",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Details",
+        items: [
+          "Product : Whole Nutmeg",
+          "Origin : India (Primarily Kerala, Tamil Nadu)",
+          "Botanical Name :Myristica fragrans",
+          "Form :Whole dried nutmeg seed",
+          "Family :Myristicaceae",
+          "Shelf Life : Up to 2 years if stored in cool, dry conditions, away from direct sunlight and moisture.",
+        ],
+      },
+
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "PP/Jute Bags, Cartons, or as per buyer requirements",
+          "Sizes: 10kg, 25kg, 50kg bags",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container : 10-12 Metric Tons (MT)",
+          "40 FT Container : 20-22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "Indian nutmeg is known for its strong aroma, high volatile oil content (8-15%), and rich myristicin content (4-6%).",
+          "Uniform color, texture, and flavor.",
+          "Free from mold, pest infestation, and impurities.",
+          "Sourced from premium Indian nutmeg-growing regions.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Grade A (Premium)	: Large size (22-26 mm), uniform color, minimal defects",
+          "Grade B	: Medium size (18-22 mm), slightly mixed color",
+          "Grade C	: Small size (lessthan 18 mm), minor defects allowed",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Shape", value: "Oval, elliptical" },
+      { parameter: "Color", value: "Light brown to dark brown" },
+      {
+        parameter: "Size",
+        value: "18 mm to 26 mm (variety-dependent)",
+      },
+      {
+        parameter: "Weight",
+        value: "4 to 7 grams per seed",
+      },
+      { parameter: "Texture", value: "Hard, smooth, and firm" },
+      {
+        parameter: "Aroma",
+        value: "Strong, warm, and aromatic",
+      },
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      { parameter: "Foreign Matter", value: "0.5% to 1% max" },
+      {
+        parameter: "Damaged or Defective",
+        value: "1% to 2% max",
+      },
+    ],
+    chemicalSpecs: [
+      { parameter: "Volatile Oil Content", value: "8% to 15%" },
+      {
+        parameter: "Myristicin Content",
+        value: "4% to 6%",
+      },
+      { parameter: "Moisture", value: "8% to 12% max" },
+      { parameter: "Ash Content", value: "2% to 3% max" },
+    ],
+    originMapSrc: "/images/product-origin.jpg",
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "cumin-powder",
+    title: "Cumin Powder",
+    categoryId: "spices",
+    description: "Spice up your life with the bold flavor of cumin !",
+    image: "/images/cumin-powder.png",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Details",
+        items: [
+          "Product : Cumin Powder (Ground Cumin)",
+          "Origin : India (Rajasthan, Gujarat, Uttar Pradesh, Madhya Pradesh)",
+          "Botanical Name :Cuminum cyminum",
+          "Form :Fine powder made from roasted or raw cumin seeds",
+          "Color :Light brown to yellowish-brown",
+        ],
+      },
+
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "PP Bags, Paper Bags, HDPE Bags, or Cartons",
+          "Standard Sizes: 10kg, 25kg, 50kg, or as customized packaging per buyer requirements",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container: 10–12 Metric Tons (MT)",
+          "40 FT Container: 20–22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "Prepared from premium-grade cumin seeds, cleaned and ground under hygienic conditions.",
+          "Rich, earthy aroma and warm, slightly bitter taste distinctive of quality cumin.",
+          "Uniform texture and natural color with no artificial additives or preservatives.",
+          "Retains natural essential oils for enhanced flavor and digestive benefits.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Premium Grade	: Fine texture, strong aroma, uniform color",
+          "Regular Grade	: Slightly coarser texture, with slight discoloration",
+          "Industrial Grade	: Slightly coarser texture, with slight discoloration",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Fine, smooth, and uniform powder" },
+      { parameter: "Color", value: "Light brown to yellowish-brown" },
+      {
+        parameter: "Particle Size",
+        value: "80-100 mesh (customizable)",
+      },
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      {
+        parameter: "Ash Content",
+        value: "6% to 8% max",
+      },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Foreign Matter", value: "0.5% max" },
+      {
+        parameter: "Volatile Oil Content",
+        value: "0.5% to 1.5%",
+      },
+    ],
+    chemicalSpecs: [
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      { parameter: "Total Ash", value: "6% to 8% max" },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Volatile Oil Content", value: "2% to 4%" },
+      { parameter: "Fat Content", value: "10% to 15%" },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      { parameter: "Microbial Load", value: "As per food safety standards" },
+    ],
+    originMapSrc: "/images/product-origin.jpg",
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "cinnamon-cassia",
+    title: "Cinnamon & Cassia",
+    categoryId: "spices",
+    description:
+      "Infuse your dishes with cassia—a warm, sweet spice that adds rich flavor and a comforting aroma.",
+    image: "/images/cinnamon-cassia.png",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Details",
+        items: [
+          "Product Name : Imported Cinnamon",
+          "Botanical Name : Cinnamomum verum (True Cinnamon)",
+          "Family : Lauraceae",
+          "Types : True Cinnamon (Ceylon Cinnamon), Cassia Cinnamon",
+          "Origin : Sri Lanka (Ceylon Cinnamon), Vietnam, Indonesia",
+          "Description : Imported cinnamon is known for its distinct aroma, sweet-spicy flavor, and various applications in cooking, baking, and health remedies. Ceylon cinnamon is softer and more aromatic, while Cassia cinnamon is robust and spicy.",
+        ],
+      },
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "Food-grade bags or cartons, vacuum-sealed packs available.",
+          "Common sizes: 10kg, 25kg, or customized.",
+        ],
+      },
+      {
+        title: "Storage :",
+        items: [
+          "Store in a cool, dry place, away from direct sunlight and moisture.",
+          "Shelf Life :12–18 months under proper storage conditions.",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container: 10–12 Metric Tons (MT)",
+          "40 FT Container: 20–22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "Prepared from premium-grade cumin seeds, cleaned and ground under hygienic conditions.",
+          "Rich, earthy aroma and warm, slightly bitter taste distinctive of quality cumin.",
+          "Uniform texture and natural color with no artificial additives or preservatives.",
+          "Retains natural essential oils for enhanced flavor and digestive benefits.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Premium Grade	: Fine texture, strong aroma, uniform color",
+          "Regular Grade	: Slightly coarser texture, with slight discoloration",
+          "Industrial Grade	: Slightly coarser texture, with slight discoloration",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "type", value: "Ceylon Cinnamon" },
+      { parameter: "Appearance", value: "Thick, hard bark sticks" },
+      { parameter: "Color", value: "Dark reddish-brown" },
+      {
+        parameter: "Length of Quills",
+        value: "5–20 cm or custom-cut",
+      },
+      { parameter: "Thickness", value: "1–3 mm" },
+      {
+        parameter: "Moisture Content",
+        value: "≤ 12%",
+      },
+      { parameter: "Purity", value: "≥ 99%" },
+      { parameter: "Foreign Matter", value: "≤ 0.5%" },
+    ],
+    physicalSpecs2: [
+      { parameter: "type", value: "Cassia Cinnamon" },
+      { parameter: "Appearance", value: "Thin, delicate quills" },
+      { parameter: "Color", value: "Light tan to golden brown" },
+      {
+        parameter: "Length of Quills",
+        value: "5–10 cm, 15 cm, or custom-cut",
+      },
+      { parameter: "Thickness", value: "0.2–0.35 mm" },
+      {
+        parameter: "Moisture Content",
+        value: "≤ 12%",
+      },
+      { parameter: "Purity", value: "≥ 99%" },
+      { parameter: "Foreign Matter", value: "≤ 0.5%" },
+    ],
+    chemicalSpecs: [
+      {
+        parameter: "Volatile Oil Content",
+        value: "≥ 1% (Ceylon); ≥ 2% (Cassia)",
+      },
+      { parameter: "Cinnamaldehyde Content", value: "≥ 55–65%" },
+      { parameter: "Coumarin Content", value: "Low in Ceylon; High in Cassia" },
+      { parameter: "Ash Content", value: "≤ 4%" },
+      { parameter: "Acid Insoluble Ash", value: "≤ 1%" },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      {
+        parameter: "Microbial Load",
+        value: "Compliant with food safety standards",
+      },
+    ],
+    nutritionalSpecs: [
+      { parameter: "Energy", value: "247 kcal" },
+      { parameter: "Carbohydrates	", value: "81g" },
+      { parameter: "Sugars", value: "2.2g" },
+      { parameter: "Dietary Fiber", value: "53g" },
+      { parameter: "Protein", value: "4g" },
+      { parameter: "Fat", value: "1.2g" },
+      { parameter: "Calcium", value: "1002mg" },
+      { parameter: "Iron", value: "8.3mg" },
+    ],
+    originMapSrc: "/images/cassiamap.jpg",
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "corriander-powder",
+    title: "Corriander Powder",
+    categoryId: "spices",
+    description:
+      "Add a burst of freshness to your dishes with the zesty aroma of coriander !",
+    image: "/images/cumin-powder.png",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Details",
+        items: [
+          "Product : Coriander Powder (Ground Coriander)",
+          "Origin : India",
+          "Botanical Name :Coriandrum sativum",
+          "Form :Fine powder made from dried coriander seeds",
+          "Color :Light brown to yellowish-brown",
+          "Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat",
+        ],
+      },
+
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "PP Bags, Paper Bags, or Cartons",
+          "Standard Sizes: 10kg, 25kg, 50kg, or customized packing",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container : 10-12 Metric Tons (MT)",
+          "40 FT Container : 20-22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "Made from high-quality coriander seeds that are cleaned, dried, and finely ground.",
+          "Rich, citrusy flavor and aromatic profile.",
+          "Free from additives, artificial colors, and preservatives.",
+          "Consistent color, texture, and flavor.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Premium Grade	: Fine texture, strong aroma, uniform color",
+          "Regular Grade	: Slightly coarser texture, minor discoloration",
+          "Industrial Grade	: Coarser grind, used in bulk food processing",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Fine, smooth, and uniform powder" },
+      { parameter: "Color", value: "Light brown to yellowish-brown" },
+      {
+        parameter: "Particle Size",
+        value: "80-100 mesh (customizable)",
+      },
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      {
+        parameter: "Flavor/Aroma",
+        value: "Warm, earthy, citrus-like with a mild sweetness",
+      },
+      {
+        parameter: "Ash Content",
+        value: "6% to 8% max",
+      },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Foreign Matter", value: "0.5% max" },
+      {
+        parameter: "Volatile Oil Content",
+        value: "0.5% to 1.5%",
+      },
+    ],
+    chemicalSpecs: [
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      { parameter: "Total Ash", value: "6% to 8% max" },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Volatile Oil Content", value: "0.5% to 1.0%" },
+      { parameter: "Fat Content", value: "10% to 15%" },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      { parameter: "Microbial Load", value: "As per food safety standards" },
+    ],
+    originMapSrc: "/images/product-origin.jpg",
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "cloves",
+    title: "Cloves",
+    categoryId: "spices",
+    description:
+      "Add a warm, aromatic touch to your dishes with cloves—a potent spice that brings depth and a hint of sweetness.",
+    image: "/images/clove.png",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Information",
+        items: [
+          "Product Name : Cloves (Whole)",
+          "Botanical Name : Syzygium aromaticum",
+          "Form : Whole dried flower buds",
+          "Origin : India (Kerala, Tamil Nadu, Karnataka), Sri Lanka, Indonesia, Madagascar",
+          "Shelf Life : Up to 2 years when stored in a cool, dry place, away from moisture and sunlight.",
+        ],
+      },
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "PP/Jute Bags or Cartons",
+          "Standard Sizes: 10kg, 25kg, 50kg bags",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container: 10–12 Metric Tons (MT)",
+          "40 FT Container: 20-22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "High volatile oil and eugenol content ensuring rich aroma and strong flavor.",
+          "Handpicked and machine-cleaned for premium quality.",
+          "Free from foreign matter, stems, and infestation.",
+          "Available in multiple grades to meet various requirements.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Handpicked Superior (HPS) : Uniform size, color, and aroma",
+          "Grade 1	: Clean, dark brown, less broken",
+          "Grade 2	: Slight variation in size and color",
+          "Grade 3	: Broken or smaller cloves",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Whole, dried flower buds" },
+      { parameter: "Color", value: "Dark brown to reddish-brown" },
+      { parameter: "Size", value: "10 mm to 16 mm" },
+      { parameter: "Length", value: "1.2 cm to 2.0 cm" },
+      { parameter: "Head", value: "Intact, round, firm, 4-6 mm diameter" },
+      { parameter: "Texture", value: "Firm, hard, and aromatic" },
+      { parameter: "Moisture Content", value: "10% to 12% max" },
+      { parameter: "Foreign Matter", value: "0.5% to 1% max" },
+      { parameter: "Stems", value: "1% to 3% max" },
+      { parameter: "Damaged/Discolored Cloves", value: "2% max" },
+      {
+        parameter: "Volatile Oil Content",
+        value: "12% to 18% (High Eugenol Content)",
+      },
+      {
+        parameter: "Eugenol Content",
+        value: "70% to 85%",
+      },
+      {
+        parameter: "Density",
+        value: "140 to 160 grams per 100 ml",
+      },
+      {
+        parameter: "Odor/Aroma",
+        value: "Strong, spicy, and aromatic",
+      },
+      {
+        parameter: "Taste",
+        value: "Pungent, warm, and slightly bitter",
+      },
+    ],
+    chemicalSpecs: [
+      { parameter: "Volatile Oil Content", value: "12% to 18%" },
+      { parameter: "Eugenol Content", value: "70% to 85%" },
+      { parameter: "Moisture Content", value: "10% to 12% max" },
+      { parameter: "Total Ash", value: "5% to 7% max" },
+      {
+        parameter: "Acid Insoluble Ash",
+        value: "1% to 2% max",
+      },
+    ],
+    originMapSrc: "/images/clovesmap.jpg",
+    specs: {
+      "HS Code": "090411",
+      Origin: "India",
+      Packaging: "25kg PP | Retail jars | Custom",
+    },
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "turmeric-powder",
+        title: "Turmeric Powder",
+        image: "/images/turmeric-powder.png",
+      },
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "fenugreek-powder",
+    title: "Fenugreek Powder",
+    categoryId: "spices",
+    description:
+      "Boost your dishes with the unique, aromatic flavor of fenugreek powder – a perfect addition to any meal.",
+    image: "/images/fenugreek-powder.webp",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Details",
+        items: [
+          "Product : Fenugreek Powder",
+          "Origin : India (Rajasthan, Gujarat, Tamil Nadu, Uttar Pradesh)",
+          "Botanical Name :Trigonella foenum-graecum",
+          "Form :Fine powder made from dried fenugreek seeds",
+          "Color : Yellowish-brown to light brown",
+          "Shelf Life :Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat.",
+        ],
+      },
+
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "PP Bags, Paper Bags, or Cartons",
+          "Standard Sizes: 10kg, 25kg, 50kg, or customized packing",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container: 10–12 Metric Tons (MT)",
+          "40 FT Container: 20–22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "Prepared from premium-grade cumin seeds, cleaned and ground under hygienic conditions.",
+          "Rich, earthy aroma and warm, slightly bitter taste distinctive of quality cumin.",
+          "Uniform texture and natural color with no artificial additives or preservatives.",
+          "Retains natural essential oils for enhanced flavor and digestive benefits.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Premium Grade	: Fine texture, uniform color, and minimal impurities",
+          "Regular Grade	: Slightly coarser texture, mild discoloration",
+          "Industrial Grade	: Coarser grind, used for bulk production and food processing",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Fine, smooth, and uniform powder" },
+      { parameter: "Color", value: "Yellowish-brown to light brown" },
+      {
+        parameter: "Particle Size",
+        value: "80-100 mesh (customizable)",
+      },
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      {
+        parameter: "Flavor/Aromas",
+        value: "Slightly bitter, earthy, and mustard-like",
+      },
+      {
+        parameter: "Ash Content",
+        value: "6% to 8% max",
+      },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Foreign Matter", value: "0.5% max" },
+      {
+        parameter: "Volatile Oil Content",
+        value: "0.5% to 1.5%",
+      },
+    ],
+    chemicalSpecs: [
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      { parameter: "Total Ash", value: "6% to 8% max" },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Volatile Oil Content", value: "0.5% to 1.5%" },
+      { parameter: "Fat Content", value: "10% to 15%" },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      { parameter: "Microbial Load", value: "As per food safety standards" },
+    ],
+    originMapSrc: "/images/product-origin.jpg",
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "dry-ginger",
+    title: "Dry Ginger",
+    categoryId: "spices",
+    description:
+      "Add a bold, spicy kick to your dishes with the intense flavor of dry ginger.",
+    image: "/images/dryginger.webp",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Information",
+        items: [
+          "Product : Dry Ginger (Whole)",
+          "Origin : India (Kerala, Karnataka, Tamil Nadu, and Northeastern regions)",
+          "Botanical Name :Zingiber officinale",
+          "Form :Whole dried ginger roots",
+          "Family :Zingiberaceae",
+          "Shelf Life : Up to 2 years when stored in a cool, dry place, away from sunlight and moisture",
+        ],
+      },
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "PP Bags, Paper Bags, or Cartons",
+          "Standard Sizes: 10kg, 25kg, 50kg",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container: 10–12 Metric Tons (MT)",
+          "40 FT Container: 20-22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "High volatile oil content for strong aroma and flavor.",
+          "Naturally dried to retain pungency and freshness.",
+          "Free from foreign matter, stems, and infestation.",
+          "Sourced from premium ginger-growing regions in India.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Grade A (Premium) : Large size, uniform light color, clean",
+          "Grade B : Medium size, slight discoloration",
+          "Grade C : Smaller pieces, irregular shapes",
+          "Splits	: Broken ginger pieces",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Clean, fibrous, whole dried roots" },
+      { parameter: "Color", value: "Light brown or pale yellow" },
+      { parameter: "Shape", value: "Irregular, knobby fingers" },
+      { parameter: "Length", value: "4 to 12 cm" },
+      { parameter: "Diameter", value: "1 to 3 cm" },
+      { parameter: "Texture", value: "Hard, rough, and fibrous" },
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      { parameter: "Foreign Matter", value: "0.5% to 1% max" },
+      { parameter: "Impurities", value: "1% max" },
+      { parameter: "Damaged/Discolored", value: "2% max" },
+      { parameter: "Flavor/Aroma", value: "Strong, pungent, and aromatic" },
+    ],
+    chemicalSpecs: [
+      { parameter: "Volatile Oil Content", value: "1.5% to 2.5%" },
+      { parameter: "Gingerol Content", value: "1% to 2.5%" },
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      { parameter: "Ash Content", value: "6% max" },
+      {
+        parameter: "Acid Insoluble Ash",
+        value: "1.5% max",
+      },
+      {
+        parameter: "Fiber Content",
+        value: "4% to 6% max",
+      },
     ],
     originMapSrc: "/images/product-origin.jpg",
     specs: {
@@ -235,75 +1271,106 @@ export const products: Product[] = [
       },
     ],
   },
-
   {
-    id: "coriander-powder",
-    title: "Coriander Powder",
+    id: "nutmeg-powder",
+    title: "Nutmeg Powder",
     categoryId: "spices",
-    description: "A staple spice with a warm, citrusy flavor.",
-    image: "/images/corriander-powder.png",
+    description:
+      "Boost your dishes with the unique, aromatic flavor of fenugreek powder – a perfect addition to any meal.",
+    image: "/images/nutmeg-powder.webp",
     heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
     detailSections: [
       {
-        title: "Product Information",
+        title: "Product Details",
         items: [
-          "Made from freshly ground, high-quality coriander seeds",
-          "Aromatic spice with a mild, citrusy, and nutty flavor",
-          "Commonly used in curries, spice blends, soups, and pickles",
-          "Adds freshness and depth to culinary preparations",
+          "Product : Nutmeg Powder",
+          "Origin : India (Kerala, Tamil Nadu, Karnataka)",
+          "Botanical Name : Myristica fragrans",
+          "Form :Fine powder made from dried nutmeg seeds",
+          "Color : Light brown to yellowish-brown",
+          "Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat.",
         ],
       },
+
       {
         title: "Packing and Shipping Details",
         items: [
-          "PP/HDPE Bags with poly liner: 25kg / 50kg",
-          "Custom packaging options (pouches, cartons, jars)",
+          "PP Bags, Paper Bags, or Cartons",
+          "Standard Sizes: 10kg, 25kg, 50kg, or customized packing",
         ],
       },
       {
         title: "Container Load",
         items: [
           "20 FT Container: 10–12 Metric Tons (MT)",
-          "40 FT Container: 20–24 Metric Tons (MT)",
+          "40 FT Container: 20–22 Metric Tons (MT)",
         ],
       },
       {
         title: "Key Features",
         items: [
-          "Finely ground for smooth texture",
-          "Free from artificial colors and preservatives",
-          "Rich in natural essential oils for enhanced aroma",
+          "Made from high-quality nutmeg seeds, carefully cleaned and ground to fine powder.",
+          "Distinctive aroma with a warm, sweet flavor profile.",
+          "Free from additives, artificial colors, and preservatives.",
+          "Consistent color, texture, and flavor for uniform quality.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Premium Grade	: Fine texture, rich flavor, and uniform aroma",
+          "Regular Grade	: Slightly coarser texture, minimal discoloration",
+          "Industrial Grade	: Coarser grind, used in bulk food production and processing",
         ],
       },
     ],
     physicalSpecs: [
-      { parameter: "Color", value: "Light brown to greenish-brown" },
-      { parameter: "Form", value: "Fine powder" },
-      { parameter: "Moisture Content", value: "8–10% max" },
-      { parameter: "Foreign Matter", value: "< 1%" },
-    ],
-    chemicalSpecs: [
-      { parameter: "Volatile Oil", value: "0.3–1%" },
-      { parameter: "Total Ash", value: "< 9%" },
-      { parameter: "Acid Insoluble Ash", value: "< 1%" },
-    ],
-    originMapSrc: "/images/product-origin.jpg",
-    specs: {
-      "HS Code": "090921",
-      Origin: "India",
-      Packaging: "25kg PP | Retail pouches | Custom",
-    },
-    badges: ["FSSAI", "HACCP"],
-    related_products: [
+      { parameter: "Appearance", value: "Fine, smooth, and uniform powder" },
+      { parameter: "Color", value: "Light brown to yellowish-brown" },
       {
-        id: "turmeric-powder",
-        title: "Turmeric Powder",
-        image: "/images/turmeric-powder.png",
+        parameter: "Particle Size",
+        value: "80-100 mesh (customizable)",
+      },
+      { parameter: "Moisture Content", value: "8% to 10% max" },
+      {
+        parameter: "Flavor/Aromas",
+        value: "Warm, slightly sweet, and aromatic with hints of clove",
       },
       {
-        id: "cumin-seeds",
-        title: "Cumin Seeds",
-        image: "/images/cumin-seeds-in-bowl.png",
+        parameter: "Ash Content",
+        value: "6% to 8% max",
+      },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Foreign Matter", value: "0.5% max" },
+      {
+        parameter: "Volatile Oil Content",
+        value: "6% to 8%",
+      },
+    ],
+    chemicalSpecs: [
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      { parameter: "Total Ash", value: "6% to 8% max" },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Volatile Oil Content", value: "6% to 8%" },
+      { parameter: "Fat Content", value: "35% to 40%" },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      { parameter: "Microbial Load", value: "As per food safety standards" },
+    ],
+    originMapSrc: "/images/product-origin.jpg",
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
       },
       {
         id: "black-pepper",
@@ -311,9 +1378,864 @@ export const products: Product[] = [
         image: "/images/black-pepper.webp",
       },
       {
-        id: "curry-leaves",
-        title: "Curry Leaves",
-        image: "/images/curry-leaves.jpg",
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "black-pepper",
+    title: "Black Pepper",
+    categoryId: "spices",
+    description:
+      "Enhance your meals with black pepper—a bold and versatile spice that brings warmth and depth to any dish.",
+    image: "/images/black-pepper.webp",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Information",
+        items: [
+          "Product Name : Imported Black Pepper",
+          "Origin : Vietnam, Indonesia, Brazil, Sri Lanka, or other exporting countries",
+          "Botanical Name :Piper nigrum",
+          "Type :Whole Black Pepper",
+          "Family :Piperaceae",
+        ],
+      },
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "Food-grade polybags, jute bags with liners, or customized vacuum-sealed packs.",
+          "Common sizes: 25kg, 50kg, or tailored per buyer specifications.",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container: 10–12 Metric Tons (MT)",
+          "40 FT Container: 20-22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Storage",
+        items: [
+          "Store in a cool, dry place, away from direct sunlight and moisture.",
+          "Up to 12–18 months under optimal storage conditions.",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "High piperine content for intense pungency and robust flavor.",
+          "Uniform, bold, and fully matured peppercorns with rich black color.",
+          "Naturally sun-dried to preserve aroma and essential oils.",
+          "Free from adulteration, foreign matter, and moisture contamination.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Grade A (Premium) : Large size, uniform light color, clean",
+          "Grade B : Medium size, slight discoloration",
+          "Grade C : Smaller pieces, irregular shapes",
+          "Splits	: Broken ginger pieces",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Round, wrinkled berries" },
+      { parameter: "Color", value: "Dark brown to black" },
+      { parameter: "Shape", value: "Irregular, knobby fingers" },
+      { parameter: "Length", value: "4 to 12 cm" },
+      { parameter: "Diameter", value: "1 to 3 cm" },
+      { parameter: "Texture", value: "Hard, rough, and fibrous" },
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      { parameter: "Foreign Matter", value: "0.5% to 1% max" },
+      { parameter: "Impurities", value: "1% max" },
+      { parameter: "Damaged/Discolored", value: "2% max" },
+      { parameter: "Flavor/Aroma", value: "Strong, pungent, and aromatic" },
+    ],
+    chemicalSpecs: [
+      { parameter: "Volatile Oil Content", value: "1.5% to 2.5%" },
+      { parameter: "Gingerol Content", value: "1% to 2.5%" },
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      { parameter: "Ash Content", value: "6% max" },
+      {
+        parameter: "Acid Insoluble Ash",
+        value: "1.5% max",
+      },
+      {
+        parameter: "Fiber Content",
+        value: "4% to 6% max",
+      },
+    ],
+    nutritionalSpecs: [
+      { parameter: "Energy", value: "255 kcal" },
+      { parameter: "Carbohydrates", value: "65g" },
+      { parameter: "Sugars", value: "0g" },
+      { parameter: "Dietary Fiber", value: "26g" },
+      { parameter: "Protein", value: "10g" },
+      { parameter: "Fat", value: "3.3g" },
+      { parameter: "Calcium", value: "437mg" },
+      { parameter: "Iron", value: "9.7mg" },
+      { parameter: "Potassium", value: "1329mg" },
+    ],
+    originMapSrc: "/images/black-peppermap.jpg",
+    specs: {
+      "HS Code": "090411",
+      Origin: "India",
+      Packaging: "25kg PP | Retail jars | Custom",
+    },
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "turmeric-powder",
+        title: "Turmeric Powder",
+        image: "/images/turmeric-powder.png",
+      },
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "cinnamon-powder",
+    title: "Cinnamon Powder",
+    categoryId: "spices",
+    description:
+      "Infuse your dishes with the sweet and spicy warmth of cinnamon powder for a delightful flavor boost.",
+    image: "/images/nutmeg-powder.webp",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Details",
+        items: [
+          "Product : Cinnamon Powder",
+          "Origin : Sri Lanka, India, Vietnam, Indonesia",
+          "Botanical Name :Cinnamomum verum (True Cinnamon) or Cinnamomum cassia (Cassia Cinnamon)",
+          "Form :Fine powder made from ground cinnamon sticks (bark)",
+          "Color : Light brown to reddish-brown",
+          "Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat.",
+        ],
+      },
+
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "PP Bags, Paper Bags, or Cartons",
+          "Standard Sizes: 10kg, 25kg, 50kg, or customized packing",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container: 10–12 Metric Tons (MT)",
+          "40 FT Container: 20–22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "Made from high-quality cinnamon bark, carefully ground to a fine powder.",
+          "Distinctive sweet, warm aroma with a slightly spicy flavor profile.",
+          "Free from additives, artificial colors, and preservatives.",
+          "Consistent color, texture, and flavor for uniform quality.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Premium Grade	: Fine texture, rich flavor, and uniform aroma",
+          "Regular Grade	: Slightly coarser texture, minimal discoloration",
+          "Industrial Grade	: Coarser grind, used in bulk food production and processing",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Fine, smooth, and uniform powder" },
+      { parameter: "Color", value: "Light brown to reddish-brown" },
+      {
+        parameter: "Particle Size",
+        value: "80-100 mesh (customizable)",
+      },
+      { parameter: "Moisture Content", value: "10% to 12% max" },
+      {
+        parameter: "Flavor/Aromas",
+        value: "Sweet, warm, and aromatic with hints of spice",
+      },
+      {
+        parameter: "Ash Content",
+        value: "6% to 8% max",
+      },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Foreign Matter", value: "0.5% max" },
+      {
+        parameter: "Volatile Oil Content",
+        value: "1.5% to 2.5%",
+      },
+    ],
+    chemicalSpecs: [
+      { parameter: "Moisture Content", value: "10% to 12% max" },
+      { parameter: "Total Ash", value: "6% to 8% max" },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Volatile Oil Content", value: "1.5% to 2.5%" },
+      {
+        parameter: "Cinnamaldehyde Content",
+        value: "60% to 75% (for Cassia Cinnamon)",
+      },
+      {
+        parameter: "Fat Content",
+        value: "5% to 7%",
+      },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      { parameter: "Microbial Load", value: "As per food safety standards" },
+    ],
+    originMapSrc: "/images/product-origin.jpg",
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "star-anise",
+    title: "Star Anise",
+    categoryId: "spices",
+    description:
+      "Elevate your dishes with star anise—a unique spice that offers a sweet, licorice-like flavor and an exotic touch.",
+    image: "/images/star-anise.png",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Information",
+        items: [
+          "Product Name : Imported Star Anise",
+          "Origin : China, Vietnam, India",
+          "Botanical Name :Illicium verum",
+          "Type :Whole, Broken, Powdered",
+          "Family : Schisandraceae",
+          "Description : Star anise is a fragrant spice with a distinctive star-shaped appearance, widely used for its strong licorice-like flavor in culinary, medicinal, and aromatic applications.",
+        ],
+      },
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "Food-grade polybags or cartons, vacuum-sealed packs available.",
+          "Common sizes: 10kg, 20kg, 25kg, or customized as per buyer requirements .",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container : Up to 9–10 MT (Metric Tons)",
+          "40 FT Container : Up to 18–20 MT (Metric Tons)",
+        ],
+      },
+      {
+        title: "Storage",
+        items: [
+          "Store in a cool, dry place, away from direct sunlight and moisture.",
+          "12–18 months under proper storage conditions.",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "Sourced from premium-quality star-shaped pods with uniform size and natural luster.",
+          "Rich in anethole, providing a strong, sweet-licorice aroma and flavor.",
+          "Naturally sun-dried to retain volatile oils and aromatic intensity.",
+          "Free from broken pods, foreign matter, and artificial additives.",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Star-shaped pods with 6–10 arms" },
+      { parameter: "Color", value: "Reddish-brown to dark brown" },
+      { parameter: "Odor", value: "Strong, sweet licorice aroma" },
+      { parameter: "Size", value: "2–4 cm diameter" },
+      { parameter: "Diameter", value: "1 to 3 cm" },
+      { parameter: "Moisture Content", value: "≤ 13%" },
+      { parameter: "Foreign Matter", value: "≤ 0.5%" },
+      { parameter: "Purity", value: "≥ 99%" },
+      { parameter: "Broken Pods", value: "≤ 5%" },
+      { parameter: "Seeds Content", value: "≥ 70% (in whole pods)" },
+    ],
+    chemicalSpecs: [
+      { parameter: "Essential Oil Content", value: "≥ 8%" },
+      { parameter: "Trans-Anethole Content", value: "≥ 85%" },
+      { parameter: "Ash Content", value: "≤ 5%" },
+      { parameter: "Acid Insoluble Ash", value: "≤ 1%" },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      {
+        parameter: "Aflatoxin Levels",
+        value: "≤ 10 ppb (As per EU/US standards)",
+      },
+      {
+        parameter: "Microbial Load",
+        value: "Compliant with food safety standards",
+      },
+    ],
+    nutritionalSpecs: [
+      { parameter: "Energy", value: "337 kcal" },
+      { parameter: "Carbohydrates", value: "50g" },
+      { parameter: "Sugars", value: "0g" },
+      { parameter: "Dietary Fiber", value: "14g" },
+      { parameter: "Protein", value: "18g" },
+      { parameter: "Fat", value: "16g" },
+      { parameter: "Calcium", value: "646mg" },
+      { parameter: "Iron", value: "36.96mg" },
+      { parameter: "Magnesium", value: "170mg" },
+    ],
+    originMapSrc: "/images/star-anisemap.jpg",
+    specs: {
+      "HS Code": "090411",
+      Origin: "India",
+      Packaging: "25kg PP | Retail jars | Custom",
+    },
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "turmeric-powder",
+        title: "Turmeric Powder",
+        image: "/images/turmeric-powder.png",
+      },
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "curry-powder",
+    title: "Curry Powder",
+    categoryId: "spices",
+    description:
+      "Elevate your meals with the bold, aromatic flavor of curry powder – a perfect blend for any dish.",
+    image: "/images/currypowder.webp",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Details",
+        items: [
+          "Product : Indian Curry Powder",
+          "Origin : India",
+          "Botanical Name :Cinnamomum verum (True Cinnamon) or Cinnamomum cassia (Cassia Cinnamon)",
+          "Form :Fine powder made from a blend of various ground spices",
+          "Color : Golden yellow to reddish-brown",
+          "Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat.",
+        ],
+      },
+
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "PP Bags, Paper Bags, or Cartons",
+          "Standard Sizes: 10kg, 25kg, 50kg, or customized packing",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container: 10–12 Metric Tons (MT)",
+          "40 FT Container: 20–22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "A blend of high-quality spices, carefully selected and ground to ensure rich, authentic flavor.",
+          "Aromatic with a balance of sweet, spicy, and earthy flavors.",
+          "Free from additives, artificial colors, and preservatives.",
+          "Customizable blend to suit regional preferences or specific culinary needs.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Premium Grade	: Fine texture, rich flavor, and uniform aroma",
+          "Regular Grade	: Slightly coarser texture, minimal discoloration",
+          "Industrial Grade	: Coarser grind, used in bulk food production and processing",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Fine, smooth, and uniform powder" },
+      { parameter: "Color", value: "Golden yellow to reddish-brown" },
+      {
+        parameter: "Particle Size",
+        value: "80-100 mesh (customizable)",
+      },
+      { parameter: "Moisture Content", value: "10% to 12% max" },
+      {
+        parameter: "Flavor/Aromas",
+        value:
+          "Warm, earthy, aromatic, with mild heat from chilies and spiciness from cloves and cinnamon",
+      },
+      {
+        parameter: "Ash Content",
+        value: "6% to 8% max",
+      },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Foreign Matter", value: "0.5% max" },
+      {
+        parameter: "Volatile Oil Content",
+        value: "1% to 3%",
+      },
+    ],
+    chemicalSpecs: [
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      { parameter: "Total Ash", value: "6% to 8% max" },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Volatile Oil Content", value: "1% to 3%" },
+
+      {
+        parameter: "Fat Content",
+        value: "10% to 15%",
+      },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      { parameter: "Microbial Load", value: "As per food safety standards" },
+    ],
+    originMapSrc: "/images/product-origin.jpg",
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "green-cardamom",
+    title: "Green Cardamom",
+    categoryId: "spices",
+    description:
+      "Spice up your life with cardamom—a versatile, healthy spice that adds luxury to any dish.",
+    image: "/images/cardamom.png",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Information",
+        items: [
+          "Product Name : Green Cardamom",
+          "Common Names : Elaichi, True Cardamom, Chhoti Elaichi",
+          "Origin : India",
+          "Botanical Name : Elettaria cardamomum",
+          "Shape : Oval-shaped pods with distinct ridges",
+          "color : Bright green for premium quality",
+          "Shelf Life :Up to 1.5 years when stored in a cool, dry place, away from moisture, light, and heat.",
+        ],
+      },
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "Food-grade poly bags, jute bags, or vacuum-sealed packs",
+          "Standard Sizes: 1kg, 5kg, 25kg, or customized packing",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container : 10 Metric Tons (MT)",
+          "40 FT Container : 20 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Storage",
+        items: [
+          "Store in a cool, dry place, away from direct sunlight and moisture.",
+          "12–18 months under proper storage conditions.",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "Sourced from premium-quality star-shaped pods with uniform size and natural luster.",
+          "Rich in anethole, providing a strong, sweet-licorice aroma and flavor.",
+          "Naturally sun-dried to retain volatile oils and aromatic intensity.",
+          "Free from broken pods, foreign matter, and artificial additives.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Grade : Bold	, Size : >8mm	, Purity : 99.5%",
+          "Grade : Super Bold , Size : >10mm , Purity : 99.5%",
+          "Grade : Regular Grade , Size : 6mm to 8mm , Purity : 99%",
+          "Grade : Mixed Grade , Size : Various sizes	, Purity : 98%",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Oval, smooth pods with ridges" },
+      { parameter: "Color", value: "Bright green (uniform)" },
+      {
+        parameter: "Pod Size",
+        value: "6mm to 8mm (Small), 8mm to 10mm (Medium), >10mm (Large)",
+      },
+      { parameter: "Purity", value: "99% to 99.5%" },
+      { parameter: "Diameter", value: "1 to 3 cm" },
+      { parameter: "Moisture Content", value: "10% to 12% max" },
+      { parameter: "Foreign Matter", value: "0.5% max" },
+      { parameter: "Purity", value: "≥ 99%" },
+      { parameter: "Admixture", value: "0.5% max" },
+      { parameter: "Seeds per Pod", value: "15 to 20 seeds on average" },
+      { parameter: "Odor", value: "Strong, sweet, and aromatic" },
+    ],
+    chemicalSpecs: [
+      { parameter: "Moisture Content", value: "10% to 12% max" },
+      { parameter: "Essential Oil Content", value: "4% to 8%" },
+      { parameter: "Volatile Oil Content", value: "2% to 4%" },
+      { parameter: "Protein Content", value: "10% to 12%" },
+      {
+        parameter: "Carbohydrates",
+        value: "40% to 50%",
+      },
+      {
+        parameter: "Fiber Content",
+        value: "20% to 25%",
+      },
+      {
+        parameter: "Ash Content",
+        value: "5% max",
+      },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      {
+        parameter: "Microbial Load",
+        value: "As per food safety standards",
+      },
+    ],
+
+    originMapSrc: "/images/product-origin.jpg",
+    specs: {
+      "HS Code": "090411",
+      Origin: "India",
+      Packaging: "25kg PP | Retail jars | Custom",
+    },
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "turmeric-powder",
+        title: "Turmeric Powder",
+        image: "/images/turmeric-powder.png",
+      },
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "black-pepper-powder",
+    title: "Black Pepper Powder",
+    categoryId: "spices",
+    description:
+      "Enhance your dishes with the bold, zesty kick of black pepper powder.",
+    image: "/images/black-pepper1.png",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Details",
+        items: [
+          "Product : Black Pepper Powder",
+          "Origin : India (Kerala, Karnataka, Tamil Nadu, Andhra Pradesh)",
+          "Botanical Name :Piper nigrum",
+          "Form :Fine powder made from ground black peppercorns",
+          "Color : Dark brown to black",
+          "Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat.",
+        ],
+      },
+
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "PP Bags, Paper Bags, or Cartons",
+          "Standard Sizes: 10kg, 25kg, 50kg, or customized packing",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container: 10–12 Metric Tons (MT)",
+          "40 FT Container: 20–22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "Made from high-quality black peppercorns, finely ground to powder.",
+          "Spicy, pungent flavor with a warm, woody aroma.",
+          "Free from additives, artificial colors, and preservatives.",
+          "Consistent quality, uniform texture, and flavor.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Premium Grade	: Fine texture, rich flavor, and consistent aroma",
+          "Regular Grade	: Slightly coarser texture, minimal discoloration",
+          "Industrial Grade	: Coarser grind, used in bulk food production and processing",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Fine, smooth, and uniform powder" },
+      { parameter: "Color", value: "Dark brown to black" },
+      {
+        parameter: "Particle Size",
+        value: "80-100 mesh (customizable)",
+      },
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      {
+        parameter: "Flavor/Aromas",
+        value: "Pungent, spicy, with a warm, woody aroma",
+      },
+      {
+        parameter: "Ash Content",
+        value: "6% to 8% max",
+      },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Foreign Matter", value: "0.5% max" },
+      {
+        parameter: "Volatile Oil Content",
+        value: "2.5% to 4%",
+      },
+    ],
+    chemicalSpecs: [
+      { parameter: "Moisture Content", value: "8% to 12% max" },
+      { parameter: "Total Ash", value: "6% to 8% max" },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Piperine Content", value: "5% to 9%" },
+      { parameter: "Volatile Oil Content", value: "2.5% to 4%" },
+      {
+        parameter: "Fat Content",
+        value: "7% to 10%",
+      },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      { parameter: "Microbial Load", value: "As per food safety standards" },
+    ],
+    originMapSrc: "/images/product-origin.jpg",
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
+      },
+    ],
+  },
+  {
+    id: "ginger-powder",
+    title: "Ginger Powder",
+    categoryId: "spices",
+    description:
+      "Add a warm, spicy kick to your dishes with the vibrant flavor of ginger powder.",
+    image: "/images/ginger-powder.webp",
+    heroImage: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
+    detailSections: [
+      {
+        title: "Product Details",
+        items: [
+          "Product : Ginger Powder",
+          "Origin : India (Kerala, Karnataka, Tamil Nadu, Odisha, Andhra Pradesh)",
+          "Botanical Name :Zingiber officinale",
+          "Form :Fine powder made from dried ginger rhizomes",
+          "Color :Light brown to yellowish-brown",
+          "Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat.",
+        ],
+      },
+
+      {
+        title: "Packing and Shipping Details",
+        items: [
+          "PP Bags, Paper Bags, or Cartons",
+          "Standard Sizes: 10kg, 25kg, 50kg, or customized packing",
+        ],
+      },
+      {
+        title: "Container Load",
+        items: [
+          "20 FT Container: 10–12 Metric Tons (MT)",
+          "40 FT Container: 20–22 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Key Features",
+        items: [
+          "Made from high-quality ginger rhizomes, carefully cleaned, dried, and ground into a fine powder",
+          "Spicy, pungent flavor with a warm, earthy aroma.",
+          "Free from additives, artificial colors, and preservatives.",
+          "Consistent quality, uniform texture, and flavor.",
+        ],
+      },
+      {
+        title: "Grades",
+        items: [
+          "Premium Grade	: Fine texture, rich flavor, and consistent aroma",
+          "Regular Grade	: Slightly coarser texture, minimal discoloration",
+          "Industrial Grade	: Coarser grind, used in bulk food production and processing",
+        ],
+      },
+    ],
+    physicalSpecs: [
+      { parameter: "Appearance", value: "Fine, smooth, and uniform powder" },
+      { parameter: "Color", value: "Light brown to yellowish-brown" },
+      {
+        parameter: "Particle Size",
+        value: "80-100 mesh (customizable)",
+      },
+      { parameter: "Moisture Content", value: "8% to 10% max" },
+      {
+        parameter: "Flavor/Aromas",
+        value: "Spicy, pungent, with a warm and earthy aroma",
+      },
+      {
+        parameter: "Ash Content",
+        value: "6% to 8% max",
+      },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Foreign Matter", value: "0.5% max" },
+      {
+        parameter: "Volatile Oil Content",
+        value: "1% to 3%",
+      },
+    ],
+    chemicalSpecs: [
+      { parameter: "Moisture Content", value: "8% to 10% max" },
+      { parameter: "Total Ash", value: "6% to 8% max" },
+      { parameter: "Acid Insoluble Ash", value: "1% max" },
+      { parameter: "Pungency (Gingerol content)", value: "5% to 7%" },
+      { parameter: "Volatile Oil Content", value: "1% to 3%" },
+      {
+        parameter: "Fat Content",
+        value: "5% to 8%",
+      },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      { parameter: "Microbial Load", value: "As per food safety standards" },
+    ],
+    originMapSrc: "/images/product-origin.jpg",
+    badges: ["FSSAI", "HACCP", "ISO 22000"],
+    related_products: [
+      {
+        id: "whole-chilli",
+        title: "Whole Chilli",
+        image: "/images/whole-red-chili-peppers.png",
+      },
+      {
+        id: "coriander-powder",
+        title: "Coriander Powder",
+        image: "/images/corriander-powder.png",
+      },
+      {
+        id: "black-pepper",
+        title: "Black Pepper",
+        image: "/images/black-pepper.webp",
+      },
+      {
+        id: "cumin-seeds",
+        title: "Cumin Seeds",
+        image: "/images/cumin-seeds-in-bowl.png",
       },
     ],
   },
@@ -1888,7 +3810,7 @@ export const products: Product[] = [
         image: "/images/robusta-coffee.webp",
       },
     ],
-  }  
+  },
 ];
 
 export function getAllProductSlugs() {

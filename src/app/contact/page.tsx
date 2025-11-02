@@ -90,9 +90,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Our Address</h3>
                     <p className="text-gray-600">
-                      123 Business Street, Suite 100
+                      Bhomeshwar Plot, Jamnagar road
                       <br />
-                      Ahmedabad, Gujarat 380001
+                      Rajkot - 360006, Gujarat
                       <br />
                       India
                     </p>
@@ -106,8 +106,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone</h3>
-                    <p className="text-gray-600">+91 79 1234 5678</p>
-                    <p className="text-gray-600">+91 98765 43210</p>
+                    <p className="text-gray-600">+91 79904 29441</p>
+                    <p className="text-gray-600">+91 63558 94754</p>
                   </div>
                 </div>
 
@@ -118,8 +118,10 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
-                    <p className="text-gray-600">info@company.com</p>
-                    <p className="text-gray-600">support@company.com</p>
+                    <p className="text-gray-600">info@triadglobaltrading.com</p>
+                    <p className="text-gray-600">
+                      support@triadglobaltrading.com
+                    </p>
                   </div>
                 </div>
 
@@ -133,10 +135,10 @@ export default function ContactPage() {
                       Business Hours
                     </h3>
                     <p className="text-gray-600">
-                      Monday - Friday: 9:00 AM - 6:00 PM
+                      Monday - Saturday: 9:00 AM - 6:00 PM
                     </p>
-                    <p className="text-gray-600">Saturday: 9:00 AM - 2:00 PM</p>
-                    <p className="text-gray-600">Sunday: Closed</p>
+
+                    <p className="text-gray-600">Sunday: 9:00 AM - 1:00 PM</p>
                   </div>
                 </div>
               </div>
@@ -147,7 +149,7 @@ export default function ContactPage() {
               <h3 className="text-2xl font-bold text-primary mb-2">
                 Send Us a Message
               </h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-5">
                 Fill out the form and we&apos;ll get back to you within 24
                 hours.
               </p>
@@ -283,7 +285,7 @@ export default function ContactPage() {
           </div>
           <div className="rounded-lg overflow-hidden border border-gray-200 shadow-sm h-96">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235013.7037064155!2d72.41493125000001!3d23.0204978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1234567890"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.548533322894!2d70.78540927505234!3d22.31357667969254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c992a8c31375%3A0x815c11b23ac98c5f!2sBhomeshwar%20Plot%2C%20Rajkot%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1730463600000!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

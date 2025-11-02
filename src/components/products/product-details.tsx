@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function ProductDetails({
   detailSections,
@@ -39,10 +40,12 @@ export default function ProductDetails({
 
       {/* Buttons */}
       <div className="flex flex-wrap gap-3 pt-3">
-        <Button className="rounded-full">INQUIRY NOW</Button>
-        <Button variant="outline" className="rounded-full">
-          DOWNLOAD SPECIFICATIONS
+        <Button className="w-full bg-primary text-white hover:bg-primary/90 px-6 py-3.5 rounded-full transition-all duration-300 font-semibold text-base shadow-lg hover:shadow-xl hover:scale-105">
+          <Link href="/inquiry">INQUIRY NOW</Link>
         </Button>
+        {/* <Button variant="outline" className="rounded-full">
+          DOWNLOAD SPECIFICATIONS
+        </Button> */}
       </div>
     </div>
   );
