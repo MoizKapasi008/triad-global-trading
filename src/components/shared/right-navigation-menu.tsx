@@ -8,19 +8,23 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 
-export function RightNavigationMenu() {
+interface RightNavigationMenuProps {
+  isScrolled?: boolean;
+}
+
+export function RightNavigationMenu({ isScrolled = false }: RightNavigationMenuProps) {
   const pathname = usePathname();
 
   const getLinkClassName = (href: string) => {
     const isActive = pathname === href;
-    return `bg-transparent text-primary-foreground hover:bg-transparent hover:text-secondary focus:bg-transparent focus:text-secondary active:bg-transparent active:text-secondary transition-colors ${
-      isActive ? "text-secondary" : ""
-    }`;
+
+    return `bg-transparent text-white/90 hover:bg-transparent hover:text-secondary focus:bg-transparent focus:text-secondary active:bg-transparent active:text-secondary transition-colors ${isActive ? "text-secondary font-semibold" : ""
+      }`;
   };
 
   return (
     <NavigationMenu viewport={false}>
-      <NavigationMenuList className="text-2xl">
+      <NavigationMenuList className="text-sm font-medium tracking-wide gap-6">
         <NavigationMenuItem>
           <NavigationMenuLink asChild className={getLinkClassName("/inquiry")}>
             <Link href="/inquiry">INQUIRY</Link>

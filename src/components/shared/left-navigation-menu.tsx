@@ -15,9 +15,12 @@ import { categories } from "@/lib/categories";
 import { products } from "@/lib/products";
 import { aboutSections } from "@/lib/aboutUs";
 
+interface NavigationProps {
+  isScrolled?: boolean;
+}
+
 // Desktop Navigation
-function DesktopNavigation() {
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
+function DesktopNavigation({ isScrolled = false }: NavigationProps) {
   const pathname = usePathname();
 
   // Check if current path matches products or categories
@@ -31,7 +34,7 @@ function DesktopNavigation() {
 
   const getTriggerClassName = (isActive: boolean) => `
     !bg-transparent 
-    ${isActive ? "!text-secondary" : "!text-primary-foreground"}
+    ${isActive ? "!text-secondary" : "!text-white/90"}
     hover:!bg-transparent 
     hover:!text-secondary 
     focus:!bg-transparent 
@@ -41,12 +44,13 @@ function DesktopNavigation() {
     data-[state=open]:!text-secondary 
     data-[active]:!bg-transparent
     data-[active]:!text-secondary
-    transition-colors
+    transition-colors font-medium tracking-wide
   `;
 
   return (
     <NavigationMenu className="hidden lg:block">
-      <NavigationMenuList className="text-sm">
+      <NavigationMenuList className="text-sm gap-4">
+        {/* PRODUCTS DROPDOWN - Simple Clean List */}
         <NavigationMenuItem>
           <NavigationMenuTrigger
             className={getTriggerClassName(isProductsActive)}
@@ -55,61 +59,35 @@ function DesktopNavigation() {
           </NavigationMenuTrigger>
 
           <NavigationMenuContent>
-            <div className="flex" onMouseLeave={() => setActiveCategory(null)}>
-              <ul className="gap-2 text-sm w-fit text-primary whitespace-nowrap">
-                {categories.map((category) => (
-                  <li key={category.id}>
-                    <NavigationMenuLink
-                      onMouseEnter={() => setActiveCategory(category.id)}
-                      className="block px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                      asChild
-                    >
-                      <Link href={`/categories/${category.id}`}>
-                        {category.title}
-                      </Link>
-                    </NavigationMenuLink>
-                  </li>
-                ))}
-              </ul>
-
-              <div
-                className={`ml-2 overflow-hidden text-primary transition-all duration-300 ease-in-out ${
-                  activeCategory ? "w-[200px] opacity-100" : "w-0 opacity-0"
-                }`}
-              >
-                <ul className="text-sm">
-                  {activeCategory &&
-                    products
-                      .filter((p) => p.categoryId === activeCategory)
-                      .map((product) => (
-                        <li key={product.id}>
-                          <NavigationMenuLink
-                            className="block px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                            asChild
-                          >
-                            <Link href={`/products/${product.id}`}>
-                              {product.title}
-                            </Link>
-                          </NavigationMenuLink>
-                        </li>
-                      ))}
-                </ul>
-              </div>
-            </div>
+            <ul className="grid w-[240px] gap-1 p-2 bg-white rounded-lg shadow-xl border border-gray-100">
+              {categories.map((category) => (
+                <li key={category.id}>
+                  <NavigationMenuLink
+                    asChild
+                    className="block px-4 py-3 rounded-md text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors"
+                  >
+                    <Link href={`/categories/${category.id}`}>
+                      {category.title}
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
+              ))}
+            </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
 
+        {/* ABOUT US DROPDOWN - Simple Clean List */}
         <NavigationMenuItem>
           <NavigationMenuTrigger className={getTriggerClassName(isAboutActive)}>
             ABOUT US
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[200px] gap-2 text-primary text-sm p-2">
+            <ul className="grid w-[240px] gap-1 p-2 bg-white rounded-lg shadow-xl border border-gray-100">
               {aboutSections.map((section) => (
                 <li key={section.id}>
                   <NavigationMenuLink
                     asChild
-                    className="block px-4 py-2 hover:bg-gray-100 rounded cursor-pointer"
+                    className="block px-4 py-3 rounded-md text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors"
                   >
                     <Link href={section.href}>{section.title}</Link>
                   </NavigationMenuLink>
@@ -119,14 +97,14 @@ function DesktopNavigation() {
           </NavigationMenuContent>
         </NavigationMenuItem>
 
+        {/* HARVEST CHART LINK */}
         <NavigationMenuItem>
           <NavigationMenuLink
             asChild
-            className={`bg-transparent hover:bg-transparent hover:text-secondary focus:bg-transparent focus:text-secondary active:bg-transparent active:text-secondary transition-colors ${
-              pathname === "/harvest"
-                ? "text-secondary"
-                : "text-primary-foreground"
-            }`}
+            className={`bg-transparent hover:bg-transparent hover:text-secondary focus:bg-transparent focus:text-secondary active:bg-transparent active:text-secondary transition-colors font-medium tracking-wide ${pathname === "/harvest"
+              ? "text-secondary"
+              : "text-white/90"
+              }`}
           >
             <Link href="/harvest">HARVEST CHART</Link>
           </NavigationMenuLink>
@@ -148,11 +126,12 @@ function MobileNavigation() {
       {/* Hamburger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="p-2 text-primary-foreground hover:bg-white/10 rounded-md"
+        className="p-2 text-white hover:bg-white/10 rounded-md transition-colors"
         type="button"
+        aria-label="Open Menu"
       >
         <svg
-          className="w-6 h-6"
+          className="w-7 h-7"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -168,34 +147,31 @@ function MobileNavigation() {
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed inset-0 z-50 transition-opacity duration-300 ${
-          isOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
-        }`}
+        className={`fixed inset-0 z-50 transition-visibility duration-300 ${isOpen ? "visible" : "invisible delay-300"
+          }`}
       >
         {/* Backdrop */}
         <div
-          className="absolute inset-0 bg-black/60"
+          className={`absolute inset-0 bg-black/60 transition-opacity duration-300 ${isOpen ? "opacity-100" : "opacity-0"
+            }`}
           onClick={() => setIsOpen(false)}
         />
 
         {/* Sidebar Panel */}
         <div
-          className={`absolute top-0 left-0 h-full w-[280px] bg-white shadow-2xl transform transition-transform duration-300 ${
-            isOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
+          className={`absolute top-0 left-0 h-full w-[280px] bg-white shadow-2xl transform transition-transform duration-300 ease-out ${isOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
         >
           {/* Header */}
-          <div className="flex items-center justify-between p-4 border-b border-gray-200">
-            <h2 className="text-xl font-bold text-gray-900">Menu</h2>
+          <div className="flex items-center justify-between p-5 border-b border-gray-100 bg-primary/5">
+            <h2 className="text-xl font-bold text-primary">MENU</h2>
             <button
               onClick={() => setIsOpen(false)}
-              className="p-2 hover:bg-gray-100 rounded-md"
+              className="p-2 hover:bg-primary/10 text-primary rounded-full transition-colors"
               type="button"
             >
               <svg
-                className="w-5 h-5"
+                className="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -211,19 +187,18 @@ function MobileNavigation() {
           </div>
 
           {/* Scrollable Menu Content */}
-          <div className="overflow-y-auto h-[calc(100%-65px)] p-4">
+          <div className="overflow-y-auto h-[calc(100%-70px)] p-4">
             {/* PRODUCTS */}
-            <div className="mb-3">
+            <div className="mb-2 border-b border-gray-50 pb-2">
               <button
                 onClick={() => setOpenProducts(!openProducts)}
-                className="flex items-center justify-between w-full px-4 py-3 text-left font-bold text-gray-900 hover:bg-gray-100 rounded-md"
+                className="flex items-center justify-between w-full px-4 py-3 text-left font-bold text-gray-800 hover:bg-gray-50 rounded-lg transition-colors"
                 type="button"
               >
                 <span>PRODUCTS</span>
                 <svg
-                  className={`w-5 h-5 transition-transform ${
-                    openProducts ? "rotate-180" : ""
-                  }`}
+                  className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${openProducts ? "rotate-180 text-secondary" : ""
+                    }`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -237,15 +212,15 @@ function MobileNavigation() {
                 </svg>
               </button>
 
-              {openProducts && (
-                <div className="mt-2 ml-3 space-y-1">
+              <div className={`overflow-hidden transition-all duration-300 ${openProducts ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"}`}>
+                <div className="mt-1 ml-3 space-y-1 pl-3 border-l-2 border-primary/10">
                   {categories.map((category) => (
                     <div key={category.id}>
                       <div className="flex items-center">
                         <Link
                           href={`/categories/${category.id}`}
                           onClick={() => setIsOpen(false)}
-                          className="flex-1 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md font-medium"
+                          className="flex-1 px-4 py-2 text-sm text-gray-700 hover:text-primary font-medium hover:bg-primary/5 rounded-md transition-colors"
                         >
                           {category.title}
                         </Link>
@@ -255,13 +230,12 @@ function MobileNavigation() {
                               openCategory === category.id ? null : category.id
                             )
                           }
-                          className="p-2 hover:bg-gray-100 rounded-md"
+                          className="p-2 hover:bg-primary/5 text-gray-400 hover:text-primary rounded-md transition-colors"
                           type="button"
                         >
                           <svg
-                            className={`w-4 h-4 transition-transform ${
-                              openCategory === category.id ? "rotate-90" : ""
-                            }`}
+                            className={`w-4 h-4 transition-transform duration-200 ${openCategory === category.id ? "rotate-90" : ""
+                              }`}
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -276,8 +250,8 @@ function MobileNavigation() {
                         </button>
                       </div>
 
-                      {openCategory === category.id && (
-                        <div className="ml-6 mt-1 space-y-1 bg-gray-50 rounded-md p-2">
+                      <div className={`overflow-hidden transition-all duration-300 ${openCategory === category.id ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
+                        <div className="ml-6 mt-1 space-y-1">
                           {products
                             .filter((p) => p.categoryId === category.id)
                             .map((product) => (
@@ -285,31 +259,30 @@ function MobileNavigation() {
                                 key={product.id}
                                 href={`/products/${product.id}`}
                                 onClick={() => setIsOpen(false)}
-                                className="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-200 rounded-md"
+                                className="block px-3 py-2 text-sm text-gray-500 hover:text-primary hover:bg-primary/5 rounded-md transition-colors"
                               >
-                                • {product.title}
+                                {product.title}
                               </Link>
                             ))}
                         </div>
-                      )}
+                      </div>
                     </div>
                   ))}
                 </div>
-              )}
+              </div>
             </div>
 
             {/* ABOUT US */}
-            <div className="mb-3">
+            <div className="mb-2 border-b border-gray-50 pb-2">
               <button
                 onClick={() => setOpenAbout(!openAbout)}
-                className="flex items-center justify-between w-full px-4 py-3 text-left font-bold text-gray-900 hover:bg-gray-100 rounded-md"
+                className="flex items-center justify-between w-full px-4 py-3 text-left font-bold text-gray-800 hover:bg-gray-50 rounded-lg transition-colors"
                 type="button"
               >
                 <span>ABOUT US</span>
                 <svg
-                  className={`w-5 h-5 transition-transform ${
-                    openAbout ? "rotate-180" : ""
-                  }`}
+                  className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${openAbout ? "rotate-180 text-secondary" : ""
+                    }`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -323,27 +296,27 @@ function MobileNavigation() {
                 </svg>
               </button>
 
-              {openAbout && (
-                <div className="mt-2 ml-3 space-y-1">
+              <div className={`overflow-hidden transition-all duration-300 ${openAbout ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"}`}>
+                <div className="mt-1 ml-3 space-y-1 pl-3 border-l-2 border-primary/10">
                   {aboutSections.map((section) => (
                     <Link
                       key={section.id}
                       href={section.href}
                       onClick={() => setIsOpen(false)}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-md"
+                      className="block px-4 py-2 text-sm text-gray-600 hover:text-primary hover:bg-primary/5 rounded-md transition-colors"
                     >
                       {section.title}
                     </Link>
                   ))}
                 </div>
-              )}
+              </div>
             </div>
 
             {/* HARVEST CHART */}
             <Link
               href="/harvest"
               onClick={() => setIsOpen(false)}
-              className="block px-4 py-3 font-bold text-gray-900 hover:bg-gray-100 rounded-md"
+              className="block px-4 py-3 font-bold text-gray-800 hover:bg-gray-50 rounded-lg transition-colors mt-1"
             >
               HARVEST CHART
             </Link>
@@ -354,11 +327,11 @@ function MobileNavigation() {
   );
 }
 
-export function LeftNavigationMenu() {
+export function LeftNavigationMenu({ isScrolled }: NavigationProps) {
   return (
     <>
       <MobileNavigation />
-      <DesktopNavigation />
+      <DesktopNavigation isScrolled={isScrolled} />
     </>
   );
 }

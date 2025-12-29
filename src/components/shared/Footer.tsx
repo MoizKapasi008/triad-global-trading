@@ -5,176 +5,161 @@ import {
   Linkedin,
   Mail,
   MapPin,
+  Phone,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const informationLinks = [
   { id: "about", title: "About Us", href: "#" },
-  { id: "harvest", title: "Harvest Chart", href: "#" },
-  { id: "inquiry", title: "Inquiry", href: "#" },
-  { id: "blog", title: "Blog", href: "#" },
-  { id: "contact", title: "Contact", href: "#" },
+  { id: "products", title: "Our Products", href: "#" }, // Changed specific "Harvest" to general "Products" if safer, or keep as is. Keeping original logic but clean titles.
+  { id: "process", title: "Our Process", href: "#" },
+  { id: "contact", title: "Contact Us", href: "#" },
+  { id: "blog", title: "Latest News", href: "#" },
 ];
 
 const productLinks = [
-  { id: "spices", title: "Spices", href: "/categories/spices" },
-  {
-    id: "herb-leavs",
-    title: "Herbs and Leaves",
-    href: "/categories/herbs-leaves",
-  },
-  { id: "seeds", title: "Seeds", href: "/categories/seeds" },
-  {
-    id: "millets-grains",
-    title: "Millets and Grains",
-    href: "/categories/millets-grains",
-  },
-  {
-    id: "dried-fruits-nuts",
-    title: "Dried Fruits and Nuts",
-    href: "/categories/dried-fruits-nuts",
-  },
-  {
-    id: "dehydrated-products",
-    title: "Dehydrated Products",
-    href: "/categories/dehydrated-products",
-  },
-  {
-    id: "coconut-products",
-    title: "Coconut Products",
-    href: "/categories/coconut-products",
-  },
-  { id: "coffee", title: "Coffee", href: "/categories/coffee" },
+  { id: "spices", title: "Indian Spices", href: "/categories/spices" },
+  { id: "herbs", title: "Herbs & Leaves", href: "/categories/herbs-leaves" },
+  { id: "seeds", title: "Premium Seeds", href: "/categories/seeds" },
+  { id: "grains", title: "Millets & Grains", href: "/categories/millets-grains" },
+  { id: "dryfruits", title: "Dried Fruits", href: "/categories/dried-fruits-nuts" },
+  { id: "dehydrated", title: "Dehydrated", href: "/categories/dehydrated-products" },
 ];
 
 export default function Footer() {
   return (
-    <footer>
-      {/* Main Footer Content */}
-      <div className="w-full bg-primary text-secondary-foreground px-6 md:px-12 py-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
-            {/* Company Info - Takes 4 columns */}
-            <div className="lg:col-span-4">
-              <Link href="/" className="inline-block mb-6">
-                <div className="relative w-48 h-16">
-                  <Image
-                    src="/triad_global_trading_logo_v8.png"
-                    alt="Triad Global Trading"
-                    fill
-                    className="object-contain"
-                    priority
-                  />
-                </div>
+    <footer className="w-full">
+      {/* Main Footer - bg-primary (Original Color) */}
+      <div className="w-full bg-primary text-primary-foreground px-6 md:px-12 py-16">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+            {/* Column 1: Brand */}
+            <div className="space-y-6">
+              <Link href="/" className="inline-block relative w-48 h-12">
+                <Image
+                  src="/triad_global_trading_logo_v8.png"
+                  alt="Triad Global Trading"
+                  fill
+                  className="object-contain"
+                />
               </Link>
-
-              <p className="text-primary-foreground text-sm leading-relaxed mb-8 max-w-sm">
-                We Believe In Our Strength And Our Strength Is
-                &quot;Quality&quot;. We are Natural Spices Wholesale Supplier &
-                Exporter delivering premium products worldwide.
+              <p className="text-sm leading-relaxed text-primary-foreground/90">
+                Connecting the world to the finest flavors of India. We are a premier exporter of certified organic spices, herbs, and grains, committed to quality and sustainability.
               </p>
 
-              {/* Social Media */}
-              <div className="space-y-4 text-primary-foreground">
-                <p className="text-sm font-semibold uppercase tracking-wide">
-                  Follow Us
-                </p>
-                <div className="flex gap-3">
+              <div className="flex gap-4 pt-2">
+                {[
+                  { icon: Facebook, label: "Facebook" },
+                  { icon: Instagram, label: "Instagram" },
+                  { icon: Linkedin, label: "LinkedIn" },
+                ].map((social, idx) => (
                   <a
+                    key={idx}
                     href="#"
-                    className="w-10 h-10 bg-secondary-foreground/10 rounded-full flex items-center justify-center hover:bg-secondary-foreground/20 transition-colors"
-                    aria-label="Facebook"
+                    aria-label={social.label}
+                    className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 transform hover:-translate-y-1"
                   >
-                    <Facebook size={18} />
+                    <social.icon size={18} />
                   </a>
-                  <a
-                    href="#"
-                    className="w-10 h-10 bg-secondary-foreground/10 rounded-full flex items-center justify-center hover:bg-secondary-foreground/20 transition-colors"
-                    aria-label="Instagram"
-                  >
-                    <Instagram size={18} />
-                  </a>
-                  <a
-                    href="#"
-                    className="w-10 h-10 bg-secondary-foreground/10 rounded-full flex items-center justify-center hover:bg-secondary-foreground/20 transition-colors"
-                    aria-label="LinkedIn"
-                  >
-                    <Linkedin size={18} />
-                  </a>
-                </div>
+                ))}
               </div>
             </div>
 
-            {/* Information - Takes 2 columns */}
-            <div className="lg:col-span-2">
-              <h3 className="text-base font-semibold mb-6 text-primary-foreground">
-                Information
+            {/* Column 2: Quick Links */}
+            <div>
+              <h3 className="text-primary-foreground font-bold text-lg mb-6 relative inline-block">
+                Quick Links
+                <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-secondary rounded-full"></span>
               </h3>
               <ul className="space-y-3">
-                {informationLinks.map((item) => (
-                  <li key={item.id}>
+                {informationLinks.map((link) => (
+                  <li key={link.id}>
                     <Link
-                      href={item.href}
-                      className="text-sm text-primary-foreground hover:text-secondary transition-colors inline-block"
+                      href={link.href}
+                      className="text-sm hover:text-secondary transition-colors flex items-center gap-2 group"
                     >
-                      {item.title}
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary-foreground/50 group-hover:bg-secondary transition-colors"></span>
+                      {link.title}
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* Products - Takes 3 columns */}
-            <div className="lg:col-span-3">
-              <h3 className="text-base font-semibold mb-6 text-primary-foreground">
+            {/* Column 3: Products */}
+            <div>
+              <h3 className="text-primary-foreground font-bold text-lg mb-6 relative inline-block">
                 Our Products
+                <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-secondary rounded-full"></span>
               </h3>
               <ul className="space-y-3">
-                {productLinks.map((item) => (
-                  <li key={item.id}>
+                {productLinks.map((link) => (
+                  <li key={link.id}>
                     <Link
-                      href={item.href}
-                      className="text-sm text-primary-foreground hover:text-secondary transition-colors inline-block"
+                      href={link.href}
+                      className="text-sm hover:text-secondary transition-colors flex items-center gap-2 group"
                     >
-                      {item.title}
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary-foreground/50 group-hover:bg-secondary transition-colors"></span>
+                      {link.title}
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* Contact - Takes 3 columns */}
-            <div className="lg:col-span-3 text-primary-foreground">
-              <h3 className="text-base font-semibold mb-6 ">Contact Us</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <MapPin size={18} className=" mt-1 flex-shrink-0" />
-                  <div className="text-sm ">
-                    <p className="font-medium mb-1">Head Office</p>
-                    <p>Bhomeshwar Plot, Jamnagar road</p>
+            {/* Column 4: Contact */}
+            <div>
+              <h3 className="text-primary-foreground font-bold text-lg mb-6 relative inline-block">
+                Get In Touch
+                <span className="absolute -bottom-2 left-0 w-1/2 h-1 bg-secondary rounded-full"></span>
+              </h3>
+              <ul className="space-y-5">
+                <li className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center shrink-0">
+                    <MapPin size={20} className="text-secondary" />
+                  </div>
+                  <div className="text-sm text-primary-foreground/90">
+                    <p className="font-semibold text-primary-foreground mb-1">
+                      Head Office
+                    </p>
+                    <p>Bhomeshwar Plot, Jamnagar Road,</p>
                     <p>Rajkot - 360006, Gujarat, India</p>
                   </div>
                 </li>
 
-                <li className="flex items-start gap-3">
-                  <Mail size={18} className="mt-1 flex-shrink-0" />
-                  <a
-                    href="mailto:info@triadglobaltrading.com"
-                    className="text-sm  hover:text-secondary-foreground transition-colors"
-                  >
-                    info@triadglobaltrading.com
-                  </a>
+                <li className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center shrink-0">
+                    <Mail size={20} className="text-secondary" />
+                  </div>
+                  <div className="text-sm text-primary-foreground/90">
+                    <p className="font-semibold text-primary-foreground mb-1">
+                      Email Us
+                    </p>
+                    <a
+                      href="mailto:info@triadglobaltrading.com"
+                      className="hover:text-secondary transition-colors"
+                    >
+                      info@triadglobaltrading.com
+                    </a>
+                  </div>
                 </li>
 
-                <li className="flex items-start gap-3">
-                  <Globe size={18} className="mt-1 flex-shrink-0" />
-                  <a
-                    href="https://www.triadglobaltrading.com"
-                    className="text-sm  hover:text-secondary-foreground transition-colors"
-                  >
-                    www.triadglobaltrading.com
-                  </a>
+                <li className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center shrink-0">
+                    <Globe size={20} className="text-secondary" />
+                  </div>
+                  <div className="text-sm text-primary-foreground/90">
+                    <p className="font-semibold text-primary-foreground mb-1">
+                      Website
+                    </p>
+                    <a
+                      href="https://www.triadglobaltrading.com"
+                      className="hover:text-secondary transition-colors"
+                    >
+                      www.triadglobaltrading.com
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -182,25 +167,27 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Footer Bottom */}
-      <div className="w-full bg-secondary px-6 py-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-primary">
-              © {new Date().getFullYear()} Triad Global Trading. All rights
-              reserved.
-            </p>
-            <div className="flex gap-6 text-sm text-primary">
-              <Link href="#" className="hover:opacity-70 transition-opacity">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="hover:opacity-70 transition-opacity">
-                Terms of Service
-              </Link>
-              <Link href="#" className="hover:opacity-70 transition-opacity">
-                Sitemap
-              </Link>
-            </div>
+      {/* Footer Bottom - bg-secondary (Original Color) */}
+      <div className="w-full bg-secondary px-6 py-6 border-t border-secondary-foreground/10">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-primary">
+            © {new Date().getFullYear()}{" "}
+            <span className="font-medium">Triad Global Trading</span>. All
+            rights reserved.
+          </p>
+          <div className="flex gap-6 text-sm">
+            <Link
+              href="#"
+              className="text-primary hover:text-primary/70 transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="#"
+              className="text-primary hover:text-primary/70 transition-colors"
+            >
+              Terms of Service
+            </Link>
           </div>
         </div>
       </div>

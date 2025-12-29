@@ -4,8 +4,9 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, HeadphonesIcon, Zap, ShieldCheck } from "lucide-react";
 import AboutHeroSection from "@/components/shared/hero/about-hero";
+import { cn } from "@/lib/utils";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -66,224 +67,217 @@ export default function ContactPage() {
       />
 
       {/* Contact Section */}
-      <section className="py-12 sm:py-16 md:py-20">
-        <div className="mx-auto max-w-[1140px] px-4 sm:px-6 md:px-8">
-          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
+      <section className="relative py-12 sm:py-16 md:py-24 bg-background overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" aria-hidden="true">
+          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="contact-dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.5" fill="currentColor" className="text-primary" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#contact-dots)" />
+          </svg>
+        </div>
+        <div className="absolute top-1/4 -right-24 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-1/4 -left-24 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
+
+        <div className="relative z-10 mx-auto w-full px-6 lg:px-12 max-w-7xl">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
             {/* Left Side - Contact Information */}
-            <div className="bg-gray-50 p-6 sm:p-8 rounded-lg">
-              <div className="mb-6 sm:mb-8">
-                <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-3 sm:mb-4">
-                  Get In Touch
-                </h2>
-                <p className="text-gray-600 text-sm sm:text-base">
-                  We&apos;d love to hear from you.
+            <div className="space-y-10 animate-in fade-in slide-in-from-left-8 duration-1000">
+              <div className="space-y-6">
+                <div className="flex items-center gap-4">
+                  <div className="h-0.5 w-12 bg-secondary" />
+                  <h2 className="text-sm font-black text-primary uppercase tracking-[0.3em]">
+                    Connect
+                  </h2>
+                </div>
+                <h3 className="text-4xl md:text-5xl font-black text-primary uppercase tracking-tight leading-[1.1]">
+                  Get In <span className="text-secondary">Touch</span>
+                </h3>
+                <p className="text-lg text-gray-600 font-medium max-w-md">
+                  We&apos;d love to hear from you. Our team is ready to assist you with any inquiries or feedback.
                 </p>
               </div>
 
-              {/* Contact Details */}
-              <div className="space-y-5 sm:space-y-6">
-                {/* Address */}
-                <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+              {/* Contact Details Grid */}
+              <div className="grid sm:grid-cols-2 gap-6">
+                {[
+                  {
+                    icon: MapPin,
+                    title: "Our Address",
+                    content: (
+                      <span>
+                        Bhomeshwar Plot, Jamnagar road<br />
+                        Rajkot - 360006, Gujarat, India
+                      </span>
+                    ),
+                  },
+                  {
+                    icon: Phone,
+                    title: "Phone",
+                    content: (
+                      <div className="flex flex-col">
+                        <span>+91 79904 29441</span>
+                        <span>+91 63558 94754</span>
+                      </div>
+                    ),
+                  },
+                  {
+                    icon: Mail,
+                    title: "Email",
+                    content: (
+                      <div className="flex flex-col">
+                        <span className="truncate">info@triadglobaltrading.com</span>
+                        <span className="truncate">support@triadglobaltrading.com</span>
+                        <span className="truncate">export@triadglobaltrading.com</span>
+                        <span className="truncate">import@triadglobaltrading.com</span>
+                      </div>
+                    ),
+                  },
+                  {
+                    icon: Clock,
+                    title: "Business Hours",
+                    content: (
+                      <div className="flex flex-col">
+                        <span>Mon-Sat: 9:00 AM - 6:00 PM</span>
+                        <span>Sun: 9:00 AM - 1:00 PM</span>
+                      </div>
+                    ),
+                  },
+                ].map((item, idx) => (
+                  <div key={idx} className="group relative">
+                    <div className="absolute inset-0 bg-white/40 backdrop-blur-md rounded-3xl border border-white/80 shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1" />
+                    <div className="relative p-6 space-y-4">
+                      <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                        <item.icon className="w-6 h-6 text-secondary" />
+                      </div>
+                      <div className="space-y-1">
+                        <h4 className="text-sm font-black text-primary uppercase tracking-widest">{item.title}</h4>
+                        <div className="text-sm text-gray-600 font-bold leading-relaxed">
+                          {item.content}
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-base sm:text-lg mb-1">
-                      Our Address
-                    </h3>
-                    <p className="text-gray-600 text-sm sm:text-base">
-                      Bhomeshwar Plot, Jamnagar road
-                      <br />
-                      Rajkot - 360006, Gujarat
-                      <br />
-                      India
-                    </p>
-                  </div>
-                </div>
-
-                {/* Phone */}
-                <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-base sm:text-lg mb-1">
-                      Phone
-                    </h3>
-                    <p className="text-gray-600 text-sm sm:text-base">
-                      +91 79904 29441
-                    </p>
-                    <p className="text-gray-600 text-sm sm:text-base">
-                      +91 63558 94754
-                    </p>
-                  </div>
-                </div>
-
-                {/* Email */}
-                <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-base sm:text-lg mb-1">
-                      Email
-                    </h3>
-                    <p className="text-gray-600 text-sm sm:text-base break-words">
-                      info@triadglobaltrading.com
-                    </p>
-                    <p className="text-gray-600 text-sm sm:text-base break-words">
-                      support@triadglobaltrading.com
-                    </p>
-                  </div>
-                </div>
-
-                {/* Business Hours */}
-                <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-base sm:text-lg mb-1">
-                      Business Hours
-                    </h3>
-                    <p className="text-gray-600 text-sm sm:text-base">
-                      Monday - Saturday: 9:00 AM - 6:00 PM
-                    </p>
-                    <p className="text-gray-600 text-sm sm:text-base">
-                      Sunday: 9:00 AM - 1:00 PM
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
 
             {/* Right Side - Contact Form */}
-            <div className="bg-gray-50 p-6 sm:p-8 rounded-lg h-fit">
-              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-2">
-                Send Us a Message
-              </h3>
-              <p className="text-gray-600 mb-5 sm:mb-6 text-sm sm:text-base">
-                Fill out the form and we&apos;ll get back to you within 24
-                hours.
-              </p>
+            <div className="animate-in fade-in slide-in-from-right-8 duration-1000">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-tr from-secondary/20 via-transparent to-primary/10 rounded-[2.5rem] blur-2xl opacity-50 group-hover:opacity-100 transition duration-1000" />
+                <div className="relative bg-white/80 backdrop-blur-xl rounded-[2.5rem] p-8 md:p-12 border border-white shadow-[0_30px_70px_rgba(0,0,0,0.08)]">
+                  <div className="mb-10">
+                    <h3 className="text-3xl font-black text-primary uppercase tracking-tight mb-2">
+                      Send Us a <span className="text-secondary">Message</span>
+                    </h3>
+                    <p className="text-gray-600 font-bold text-sm uppercase tracking-wide">
+                      Fill out the form and we&apos;ll get back to you within 24 hours.
+                    </p>
+                  </div>
 
-              <div className="flex flex-col gap-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                    Name *
-                  </label>
-                  <Input
-                    name="name"
-                    placeholder="Your full name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="text-sm sm:text-base"
-                  />
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="text-[10px] font-black uppercase tracking-[0.2em] text-primary/60 ml-1">
+                          Full Name *
+                        </label>
+                        <Input
+                          name="name"
+                          placeholder="Your full name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          className="h-14 bg-white/50 border-white/80 rounded-2xl focus:ring-secondary/20 focus:border-secondary transition-all"
+                          required
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-[10px] font-black uppercase tracking-[0.2em] text-primary/60 ml-1">
+                          Email Address *
+                        </label>
+                        <Input
+                          name="email"
+                          type="email"
+                          placeholder="name@email.com"
+                          value={formData.email}
+                          onChange={handleChange}
+                          className="h-14 bg-white/50 border-white/80 rounded-2xl focus:ring-secondary/20 focus:border-secondary transition-all"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="text-[10px] font-black uppercase tracking-[0.2em] text-primary/60 ml-1">
+                          Phone Number
+                        </label>
+                        <Input
+                          name="phone"
+                          placeholder="+91 12345 67890"
+                          value={formData.phone}
+                          onChange={handleChange}
+                          className="h-14 bg-white/50 border-white/80 rounded-2xl focus:ring-secondary/20 focus:border-secondary transition-all"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="text-[10px] font-black uppercase tracking-[0.2em] text-primary/60 ml-1">
+                          Subject
+                        </label>
+                        <Input
+                          name="subject"
+                          placeholder="How can we help?"
+                          value={formData.subject}
+                          onChange={handleChange}
+                          className="h-14 bg-white/50 border-white/80 rounded-2xl focus:ring-secondary/20 focus:border-secondary transition-all"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="space-y-2">
+                      <label className="text-[10px] font-black uppercase tracking-[0.2em] text-primary/60 ml-1">
+                        Your Message *
+                      </label>
+                      <Textarea
+                        name="message"
+                        placeholder="Tell us more about your inquiry..."
+                        value={formData.message}
+                        onChange={handleChange}
+                        className="min-h-[160px] bg-white/50 border-white/80 rounded-3xl focus:ring-secondary/20 focus:border-secondary transition-all p-6"
+                        required
+                      />
+                    </div>
+
+                    <Button
+                      type="submit"
+                      disabled={isLoading}
+                      className="w-full h-16 bg-primary hover:bg-primary/90 text-secondary font-black uppercase tracking-[0.2em] rounded-2xl shadow-[0_10px_30px_rgba(238,187,144,0.3)] hover:shadow-[0_15px_40px_rgba(238,187,144,0.4)] transition-all duration-500 flex items-center justify-center gap-3 group/btn"
+                    >
+                      {isLoading ? (
+                        <div className="w-6 h-6 border-4 border-secondary/30 border-t-secondary rounded-full animate-spin" />
+                      ) : (
+                        <>
+                          <span>Send Message</span>
+                          <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                        </>
+                      )}
+                    </Button>
+
+                    {status && (
+                      <div className={cn(
+                        "p-4 rounded-xl text-center font-bold text-sm animate-in fade-in zoom-in duration-300",
+                        status.includes("success")
+                          ? "bg-green-50 text-green-600 border border-green-100"
+                          : "bg-red-50 text-red-600 border border-red-100"
+                      )}>
+                        {status}
+                      </div>
+                    )}
+                  </form>
                 </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                    Email *
-                  </label>
-                  <Input
-                    name="email"
-                    type="email"
-                    placeholder="your.email@example.com"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="text-sm sm:text-base"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                    Phone
-                  </label>
-                  <Input
-                    name="phone"
-                    placeholder="+91 12345 67890"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="text-sm sm:text-base"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                    Subject
-                  </label>
-                  <Input
-                    name="subject"
-                    placeholder="How can we help?"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="text-sm sm:text-base"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1.5">
-                    Message *
-                  </label>
-                  <Textarea
-                    name="message"
-                    placeholder="Tell us more about your inquiry..."
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={5}
-                    required
-                    className="text-sm sm:text-base"
-                  />
-                </div>
-
-                <Button
-                  type="button"
-                  className="w-full text-sm sm:text-base h-10 sm:h-11"
-                  disabled={isLoading}
-                  onClick={handleSubmit}
-                >
-                  {isLoading ? (
-                    <span className="flex items-center justify-center gap-2">
-                      <svg
-                        className="animate-spin h-4 w-4 sm:h-5 sm:w-5"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <circle
-                          className="opacity-25"
-                          cx="12"
-                          cy="12"
-                          r="10"
-                          stroke="currentColor"
-                          strokeWidth="4"
-                        ></circle>
-                        <path
-                          className="opacity-75"
-                          fill="currentColor"
-                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                        ></path>
-                      </svg>
-                      Sending...
-                    </span>
-                  ) : (
-                    "Send Message"
-                  )}
-                </Button>
-
-                {status && (
-                  <p
-                    className={`text-sm text-center font-medium ${
-                      status.includes("success")
-                        ? "text-green-600"
-                        : "text-red-600"
-                    }`}
-                  >
-                    {status}
-                  </p>
-                )}
               </div>
             </div>
           </div>
@@ -291,114 +285,76 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="py-10 sm:py-12">
-        <div className="mx-auto max-w-[1140px] px-4 sm:px-6 md:px-8">
-          <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-2 sm:mb-3">
-              Find Us Here
-            </h2>
-            <p className="text-gray-600 text-sm sm:text-base px-4">
-              Visit our office or explore the surrounding area
+      <section className="py-16 md:py-24 bg-white/30 backdrop-blur-md relative overflow-hidden">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12 relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <div className="h-px w-12 bg-secondary/50" />
+              <h2 className="text-lg font-black text-primary uppercase tracking-[0.3em]">
+                Location
+              </h2>
+              <div className="h-px w-12 bg-secondary/50" />
+            </div>
+            <h3 className="text-3xl md:text-5xl font-black text-primary uppercase tracking-tight">
+              Find Us <span className="text-secondary">Here</span>
+            </h3>
+            <p className="text-lg text-gray-600 font-medium leading-relaxed">
+              Visit our head office or explore the surrounding area of Rajkot, Gujarat.
             </p>
           </div>
-          <div className="rounded-lg overflow-hidden border border-gray-200 shadow-sm h-64 sm:h-80 md:h-96">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.548533322894!2d70.78540927505234!3d22.31357667969254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c992a8c31375%3A0x815c11b23ac98c5f!2sBhomeshwar%20Plot%2C%20Rajkot%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1730463600000!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Office Location"
-            ></iframe>
+
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-tr from-primary/10 via-transparent to-secondary/10 rounded-[2.5rem] blur-xl opacity-50 group-hover:opacity-100 transition duration-1000" />
+            <div className="relative bg-white/80 backdrop-blur-xl p-4 rounded-[2.5rem] shadow-2xl border border-white">
+              <div className="rounded-[1.5rem] overflow-hidden border border-gray-100 h-[400px] md:h-[500px]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.548533322894!2d70.78540927505234!3d22.31357667969254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c992a8c31375%3A0x815c11b23ac98c5f!2sBhomeshwar%20Plot%2C%20Rajkot%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1730463600000!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Office Location"
+                  className="grayscale hover:grayscale-0 transition-all duration-1000"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Additional Info Section */}
-      <section className="py-12 sm:py-16">
-        <div className="mx-auto max-w-[1140px] px-4 sm:px-6 md:px-8">
-          <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-3 sm:mb-4 px-4">
-              We&apos;re Here to Help
+      {/* Additional Info Section / Help Section */}
+      <section className="py-24 bg-background relative overflow-hidden">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12 relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 className="text-3xl md:text-5xl font-black text-primary uppercase tracking-tight">
+              We&apos;re Here to <span className="text-secondary">Help</span>
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base px-4">
-              Whether you have a question about our services, need technical
-              support, or just want to provide feedback, our team is ready to
-              assist you.
+            <p className="text-lg text-gray-600 font-medium leading-relaxed">
+              Whether you have a question about our services, need technical support, or just want to provide feedback.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            <div className="text-center p-5 sm:p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                <svg
-                  className="w-7 h-7 sm:w-8 sm:h-8 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 10V3L4 14h7v7l9-11h-7z"
-                  />
-                </svg>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: Zap, title: "Quick Response", desc: "We respond to all inquiries within 24 business hours." },
+              { icon: HeadphonesIcon, title: "Expert Support", desc: "Our experienced professionals are ready to assist you." },
+              { icon: ShieldCheck, title: "Secure & Private", desc: "Your information is protected with industry-standard security." }
+            ].map((feature, idx) => (
+              <div key={idx} className="group relative h-full">
+                <div className="absolute -inset-0.5 bg-white rounded-3xl blur-sm" />
+                <div className="relative h-full bg-white/80 backdrop-blur-xl p-8 rounded-3xl shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-white hover:shadow-[0_25px_60px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-2 flex flex-col items-center text-center">
+                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary transition-all duration-500 shadow-sm">
+                    <feature.icon className="w-8 h-8 text-primary group-hover:text-secondary" />
+                  </div>
+                  <h4 className="text-lg font-black text-primary mb-3 uppercase tracking-tight">{feature.title}</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed font-medium flex-grow">
+                    {feature.desc}
+                  </p>
+                </div>
               </div>
-              <h3 className="font-semibold text-base sm:text-lg mb-2">
-                Quick Response
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base">
-                We respond to all inquiries within 24 business hours.
-              </p>
-            </div>
-            <div className="text-center p-5 sm:p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                <svg
-                  className="w-7 h-7 sm:w-8 sm:h-8 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-              </div>
-              <h3 className="font-semibold text-base sm:text-lg mb-2">
-                Expert Team
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base">
-                Our experienced professionals are ready to assist you.
-              </p>
-            </div>
-            <div className="text-center p-5 sm:p-6 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow sm:col-span-2 md:col-span-1">
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
-                <svg
-                  className="w-7 h-7 sm:w-8 sm:h-8 text-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-              </div>
-              <h3 className="font-semibold text-base sm:text-lg mb-2">
-                Secure & Private
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base">
-                Your information is protected with industry-standard security.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>

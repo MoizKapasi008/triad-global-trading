@@ -59,8 +59,22 @@ export default async function AboutUsPage({ params }: AboutParams) {
       />
 
       {/* Content Section */}
-      <section className="py-16">
-        <div className="mx-auto w-full px-6 md:px-8 max-w-[1200px]">
+      <section className="relative py-24 mb-0 bg-background overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none" aria-hidden="true">
+          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.5" fill="currentColor" className="text-primary" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#dots)" />
+          </svg>
+        </div>
+        <div className="absolute -top-24 -left-24 w-96 h-96 bg-secondary/5 rounded-full blur-3xl opacity-50" />
+        <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl opacity-50" />
+
+        <div className="relative z-10 mx-auto w-full px-6 lg:px-12 max-w-7xl">
           {/* OUR TEAM SECTION */}
           {section.id === "our-team" && (
             <div className="space-y-16">
@@ -97,49 +111,31 @@ export default async function AboutUsPage({ params }: AboutParams) {
               </div>
 
               {/* Core Values */}
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <Code className="w-6 h-6 text-blue-600" />
+              <div className="grid md:grid-cols-3 gap-8">
+                {[
+                  { title: "Technical Excellence", desc: "Leveraging cutting-edge technology to streamline operations and deliver innovative solutions.", icon: Code, color: "blue" },
+                  { title: "Business Strategy", desc: "Strategic planning and execution that ensures sustainable growth and market leadership.", icon: Briefcase, color: "green" },
+                  { title: "Data-Driven Insights", desc: "Analyzing market trends and opportunities to guide informed business decisions.", icon: BarChart3, color: "purple" }
+                ].map((item, idx) => (
+                  <div key={item.title} className="group relative h-full">
+                    <div className="absolute -inset-0.5 bg-white/40 rounded-3xl blur-sm" />
+                    <div className="relative h-full bg-white/80 backdrop-blur-xl p-8 rounded-3xl shadow-[0_15px_40px_rgba(0,0,0,0.04)] border border-white hover:shadow-[0_25px_60px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-2 group flex flex-col">
+                      <div className={`w-14 h-14 bg-${item.color}-100 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
+                        <item.icon className={`w-7 h-7 text-${item.color}-600`} />
+                      </div>
+                      <h3 className="text-xl font-black text-primary mb-3 uppercase tracking-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed font-medium flex-grow">
+                        {item.desc}
+                      </p>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-semibold text-primary mb-2">
-                    Technical Excellence
-                  </h3>
-                  <p className="text-gray-600">
-                    Leveraging cutting-edge technology to streamline operations
-                    and deliver innovative solutions.
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group">
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <Briefcase className="w-6 h-6 text-green-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-primary mb-2">
-                    Business Strategy
-                  </h3>
-                  <p className="text-gray-600">
-                    Strategic planning and execution that ensures sustainable
-                    growth and market leadership.
-                  </p>
-                </div>
-
-                <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 group">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                    <BarChart3 className="w-6 h-6 text-purple-600" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-primary mb-2">
-                    Data-Driven Insights
-                  </h3>
-                  <p className="text-gray-600">
-                    Analyzing market trends and opportunities to guide informed
-                    business decisions.
-                  </p>
-                </div>
+                ))}
               </div>
 
               {/* Team Members Grid */}
-              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
                 {[
                   {
                     name: "Moiz Kapasi",
@@ -157,7 +153,7 @@ export default async function AboutUsPage({ params }: AboutParams) {
                     description:
                       "Taher manages our business strategy and ensures that we deliver top-quality products and services to our clients.",
                     icon: Briefcase,
-                    color: "green",
+                    color: "amber",
                   },
                   {
                     name: "Vinayak Cheruvil",
@@ -168,74 +164,96 @@ export default async function AboutUsPage({ params }: AboutParams) {
                     icon: BarChart3,
                     color: "purple",
                   },
-                ].map((member) => {
+                ].map((member, idx) => {
                   const IconComponent = member.icon;
                   return (
                     <div
                       key={member.name}
-                      className="bg-white rounded-2xl shadow-md p-8 flex flex-col items-center hover:shadow-xl transition-all duration-300 border border-gray-100 group"
+                      className="animate-in fade-in slide-in-from-bottom-8 duration-700 group relative h-full"
+                      style={{ animationDelay: `${idx * 200}ms` }}
                     >
-                      <div className="relative mb-6">
-                        <Image
-                          src={member.image}
-                          alt={member.name}
-                          width={128}
-                          height={128}
-                          className="w-32 h-32 rounded-full object-cover border-4 border-gray-100 group-hover:scale-105 transition-transform duration-300"
-                        />
-                        <div
-                          className={`absolute -bottom-2 -right-2 w-10 h-10 bg-${member.color}-500 rounded-full flex items-center justify-center border-4 border-white shadow-lg`}
-                        >
-                          <IconComponent className="w-5 h-5 text-white" />
+                      <div className="absolute -inset-1 bg-gradient-to-b from-secondary/10 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition duration-700" />
+                      <div className="relative h-full bg-white/60 backdrop-blur-xl rounded-[2.5rem] p-10 flex flex-col items-center border border-white/80 shadow-[0_20px_50px_rgba(0,0,0,0.03)] hover:shadow-[0_40px_80px_rgba(0,0,0,0.08)] transition-all duration-500 hover:-translate-y-3">
+                        <div className="relative mb-8">
+                          <div className="absolute -inset-4 bg-secondary/20 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-all duration-700" />
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={160}
+                            height={160}
+                            className="w-40 h-40 rounded-full object-cover border-8 border-white shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                          />
+                          <div
+                            className={`absolute bottom-0 right-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center border-4 border-white shadow-xl group-hover:rotate-[360deg] transition-transform duration-700`}
+                          >
+                            <IconComponent className="w-5 h-5 text-secondary" />
+                          </div>
                         </div>
+                        <h3 className="text-2xl font-black text-primary mb-2 uppercase tracking-tight">
+                          {member.name}
+                        </h3>
+                        <div className="flex items-center gap-2 mb-6">
+                          <div className="w-6 h-0.5 bg-secondary" />
+                          <p className="text-[10px] font-black text-primary/50 uppercase tracking-[0.2em]">
+                            {member.role}
+                          </p>
+                          <div className="w-6 h-0.5 bg-secondary" />
+                        </div>
+                        <p className="text-gray-600 text-center leading-relaxed font-medium flex-grow">
+                          {member.description}
+                        </p>
                       </div>
-                      <h3 className="text-xl font-bold text-primary mb-1">
-                        {member.name}
-                      </h3>
-                      <p className="text-sm font-medium text-gray-500 mb-4">
-                        {member.role}
-                      </p>
-                      <p className="text-gray-600 text-center leading-relaxed">
-                        {member.description}
-                      </p>
                     </div>
                   );
                 })}
               </div>
 
               {/* Our Journey Section */}
-              <div className="bg-primary rounded-3xl p-8 md:p-12 text-white">
-                <div className="max-w-3xl mx-auto text-center space-y-6">
-                  <div className="inline-flex items-center justify-center w-14 h-14 bg-white/20 rounded-full mb-4">
-                    <Rocket className="w-7 h-7 text-white" />
-                  </div>
-                  <h3 className="text-3xl md:text-4xl font-bold mb-6">
-                    Our Journey
-                  </h3>
-                  <p className="text-white/90 text-lg leading-relaxed">
-                    From childhood friends to business partners, our journey has
-                    been driven by passion, collaboration, and the desire to
-                    make a difference. Each challenge we faced taught us
-                    valuable lessons, and each milestone we achieved
-                    strengthened our bond.
-                  </p>
-                  <p className="text-white/90 text-lg leading-relaxed">
-                    We believe in combining our unique professional skills with
-                    our shared values to create products that our customers
-                    love, and experiences that make a difference.
-                  </p>
-                  <div className="flex flex-wrap justify-center gap-4 pt-6">
-                    <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-                      <Heart className="w-5 h-5" />
-                      <span className="font-medium">Passion</span>
+              <div className="relative group mt-20">
+                <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 via-primary/5 to-primary/20 rounded-[3rem] blur-2xl opacity-50" />
+                <div className="relative bg-primary rounded-[3rem] p-12 md:p-20 text-white overflow-hidden shadow-2xl">
+                  {/* Decorative element */}
+                  <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -mr-32 -mt-32 blur-[100px]" />
+                  <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full -ml-32 -mb-32 blur-[100px]" />
+
+                  <div className="relative z-10 max-w-4xl mx-auto text-center space-y-10">
+                    <div className="inline-flex items-center justify-center w-20 h-20 bg-white/10 rounded-3xl backdrop-blur-md mb-4 rotate-3 group-hover:rotate-0 transition-transform duration-500">
+                      <Rocket className="w-10 h-10 text-secondary" />
                     </div>
-                    <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-                      <Users className="w-5 h-5" />
-                      <span className="font-medium">Collaboration</span>
+
+                    <div className="space-y-4">
+                      <h3 className="text-4xl md:text-6xl font-black mb-6 uppercase tracking-tight">
+                        Our Journey
+                      </h3>
+                      <div className="w-24 h-1.5 bg-secondary mx-auto rounded-full" />
                     </div>
-                    <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm">
-                      <Lightbulb className="w-5 h-5" />
-                      <span className="font-medium">Innovation</span>
+
+                    <div className="space-y-8 text-lg md:text-xl text-white/90 leading-relaxed font-light">
+                      <p>
+                        From childhood friends to business partners, our journey has
+                        been driven by passion, collaboration, and the desire to
+                        make a difference. Each challenge we faced taught us
+                        valuable lessons, and each milestone we achieved
+                        strengthened our bond.
+                      </p>
+                      <p>
+                        We believe in combining our unique professional skills with
+                        our shared values to create products that our customers
+                        love, and experiences that make a difference.
+                      </p>
+                    </div>
+
+                    <div className="flex flex-wrap justify-center gap-6 pt-10">
+                      {[
+                        { icon: Heart, label: "Passion" },
+                        { icon: Users, label: "Collaboration" },
+                        { icon: Lightbulb, label: "Innovation" }
+                      ].map((item) => (
+                        <div key={item.label} className="flex items-center gap-3 bg-white/10 px-8 py-4 rounded-full backdrop-blur-xl border border-white/10 shadow-lg hover:bg-white/20 transition-all group/tag cursor-default">
+                          <item.icon className="w-5 h-5 text-secondary group-hover/tag:scale-125 transition-transform" />
+                          <span className="font-bold uppercase tracking-[0.2em] text-xs">{item.label}</span>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -265,115 +283,105 @@ export default async function AboutUsPage({ params }: AboutParams) {
 
               {/* Infrastructure Features Grid */}
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all border border-gray-100 group">
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                    <Shield className="w-7 h-7 text-white" />
+                {[
+                  {
+                    title: "Temperature-Controlled Storage",
+                    description: "Climate-optimized warehouses with advanced monitoring systems that maintain ideal conditions for preserving product quality, freshness, and nutritional value.",
+                    icon: Shield,
+                    gradient: "from-blue-500 to-indigo-600"
+                  },
+                  {
+                    title: "Advanced Processing Equipment",
+                    description: "State-of-the-art roasting and grinding machinery that ensures precision, consistency, and efficiency in every batch, delivering products that meet exacting quality specifications.",
+                    icon: Zap,
+                    gradient: "from-green-500 to-emerald-600"
+                  },
+                  {
+                    title: "International Safety Standards",
+                    description: "Facilities fully compliant with global safety and hygiene benchmarks, ensuring every product meets international quality requirements and regulatory standards.",
+                    icon: Award,
+                    gradient: "from-purple-500 to-fuchsia-600"
+                  },
+                  {
+                    title: "Streamlined Operations",
+                    description: "Cutting-edge technology combined with skilled personnel to optimize workflows, minimize wastage, and ensure timely delivery to customers worldwide.",
+                    icon: TrendingUp,
+                    gradient: "from-orange-500 to-amber-600"
+                  }
+                ].map((item, idx) => (
+                  <div
+                    key={item.title}
+                    className="animate-in fade-in slide-in-from-bottom-8 duration-700 group relative h-full"
+                    style={{ animationDelay: `${idx * 150}ms` }}
+                  >
+                    <div className="absolute -inset-0.5 bg-white/40 rounded-[2rem] blur-sm" />
+                    <div className="relative h-full bg-white/80 backdrop-blur-xl rounded-[2rem] p-10 border border-white shadow-[0_15px_50px_rgba(0,0,0,0.06)] hover:shadow-[0_30px_70px_rgba(0,0,0,0.1)] transition-all duration-500 hover:-translate-y-2 group flex flex-col">
+                      <div className={`w-16 h-16 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center mb-8 shadow-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-500`}>
+                        <item.icon className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="text-2xl font-black text-primary mb-4 uppercase tracking-tight leading-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed font-medium flex-grow">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                  <h3 className="text-2xl font-bold text-primary mb-3">
-                    Temperature-Controlled Storage
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Climate-optimized warehouses with advanced monitoring
-                    systems that maintain ideal conditions for preserving
-                    product quality, freshness, and nutritional value throughout
-                    the storage period.
-                  </p>
-                </div>
-
-                <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all border border-gray-100 group">
-                  <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                    <Zap className="w-7 h-7 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-primary mb-3">
-                    Advanced Processing Equipment
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    State-of-the-art roasting and grinding machinery that
-                    ensures precision, consistency, and efficiency in every
-                    batch, delivering products that meet exacting quality
-                    specifications.
-                  </p>
-                </div>
-
-                <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all border border-gray-100 group">
-                  <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                    <Award className="w-7 h-7 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-primary mb-3">
-                    International Safety Standards
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Facilities fully compliant with global safety and hygiene
-                    benchmarks, ensuring every product meets international
-                    quality requirements and regulatory standards.
-                  </p>
-                </div>
-
-                <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-all border border-gray-100 group">
-                  <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-                    <TrendingUp className="w-7 h-7 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-primary mb-3">
-                    Streamlined Operations
-                  </h3>
-                  <p className="text-gray-600 leading-relaxed">
-                    Cutting-edge technology combined with skilled personnel to
-                    optimize workflows, minimize wastage, and ensure timely
-                    delivery to customers worldwide.
-                  </p>
-                </div>
+                ))}
               </div>
 
               {/* Detailed Description */}
-              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-gray-100">
-                <div className="prose prose-lg max-w-none text-gray-700 space-y-4">
-                  <p className="leading-relaxed">
-                    From temperature-controlled storage to advanced roasting and
-                    grinding equipment, we prioritize precision and efficiency
-                    in every operation. Our facilities also comply with
-                    international safety and hygiene standards, ensuring that
-                    every product delivered meets global benchmarks.
-                  </p>
-                  <p className="leading-relaxed">
-                    By combining cutting-edge technology with skilled personnel,
-                    we are able to streamline operations, reduce wastage, and
-                    ensure timely delivery to our customers worldwide. This
-                    robust infrastructure is the backbone of our commitment to
-                    quality, reliability, and excellence in every product we
-                    offer.
-                  </p>
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-white/20 rounded-3xl blur-md" />
+                <div className="relative bg-white/80 backdrop-blur-xl rounded-[2.5rem] p-10 md:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-white">
+                  <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
+                    <p className="leading-relaxed font-medium">
+                      From temperature-controlled storage to advanced roasting and
+                      grinding equipment, we prioritize precision and efficiency
+                      in every operation. Our facilities also comply with
+                      international safety and hygiene standards, ensuring that
+                      every product delivered meets global benchmarks.
+                    </p>
+                    <p className="leading-relaxed font-medium">
+                      By combining cutting-edge technology with skilled personnel,
+                      we are able to streamline operations, reduce wastage, and
+                      ensure timely delivery to our customers worldwide. This
+                      robust infrastructure is the backbone of our commitment to
+                      quality, reliability, and excellence in every product we
+                      offer.
+                    </p>
+                  </div>
                 </div>
               </div>
 
               {/* Key Metrics */}
-              <div className="bg-gradient-to-r from-primary to-primary/90 rounded-2xl p-8 md:p-12 text-white">
-                <h3 className="text-2xl font-bold text-center mb-8">
-                  Infrastructure at a Glance
-                </h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                  <div className="text-center">
-                    <div className="text-4xl md:text-5xl font-bold mb-2">
-                      24/7
-                    </div>
-                    <div className="text-blue-100">Operations</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-4xl md:text-5xl font-bold mb-2">
-                      100%
-                    </div>
-                    <div className="text-blue-100">Quality Assured</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-4xl md:text-5xl font-bold mb-2">
-                      ISO
-                    </div>
-                    <div className="text-blue-100">Certified</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-4xl md:text-5xl font-bold mb-2">
-                      Global
-                    </div>
-                    <div className="text-blue-100">Standards</div>
+              <div className="relative group overflow-hidden rounded-[3rem] shadow-2xl">
+                <div className="absolute inset-0 bg-primary/95 backdrop-blur-md" />
+                <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full -mr-32 -mt-32 blur-3xl" />
+
+                <div className="relative z-10 p-12 md:p-16 text-white text-center">
+                  <h3 className="text-2xl font-black uppercase tracking-[0.4em] mb-12 flex items-center justify-center gap-4">
+                    <div className="h-0.5 w-8 bg-secondary" />
+                    Metrics Overview
+                    <div className="h-0.5 w-8 bg-secondary" />
+                  </h3>
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
+                    {[
+                      { value: "24/7", label: "Operations" },
+                      { value: "100%", label: "Quality Assured" },
+                      { value: "ISO", label: "Certified" },
+                      { value: "GLO", label: "Global Standards", suffix: "BAL" }
+                    ].map((metric) => (
+                      <div key={metric.label} className="group/metric">
+                        <div className="text-4xl md:text-5xl lg:text-6xl font-black mb-3 text-secondary group-hover/metric:scale-110 transition-transform duration-500 flex items-baseline justify-center">
+                          {metric.value}
+                          {metric.suffix && <span className="text-4xl md:text-5xl lg:text-6xl">{metric.suffix}</span>}
+                        </div>
+                        <div className="text-[10px] font-black uppercase tracking-[0.3em] text-white/50">
+                          {metric.label}
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -401,123 +409,82 @@ export default async function AboutUsPage({ params }: AboutParams) {
               </div>
 
               {/* Export Highlights */}
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-gradient-to-br from-blue-50 to-white p-7 rounded-xl border-2 border-blue-100 hover:border-blue-300 transition-all">
-                  <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mb-4">
-                    <Globe2 className="w-6 h-6 text-white" />
+              <div className="grid md:grid-cols-3 gap-8">
+                {[
+                  {
+                    title: "Worldwide Reach",
+                    description: "Established presence across multiple continents including Asia, Europe, North America, and the Middle East.",
+                    icon: Globe2,
+                    gradient: "from-blue-500/10 to-blue-500/5",
+                    borderColor: "border-blue-500/20"
+                  },
+                  {
+                    title: "Quality Assurance",
+                    description: "Every shipment meets international quality standards with rigorous testing and compliance.",
+                    icon: Shield,
+                    gradient: "from-emerald-500/10 to-emerald-500/5",
+                    borderColor: "border-emerald-500/20"
+                  },
+                  {
+                    title: "Reliable Delivery",
+                    description: "Efficient logistics and robust supply chain management ensuring timely deliveries worldwide.",
+                    icon: TrendingUp,
+                    gradient: "from-amber-500/10 to-amber-500/5",
+                    borderColor: "border-amber-500/20"
+                  }
+                ].map((item, idx) => (
+                  <div
+                    key={item.title}
+                    className="relative group animate-in fade-in slide-in-from-right-8 duration-700 h-full"
+                    style={{ animationDelay: `${idx * 200}ms` }}
+                  >
+                    <div className={`relative bg-gradient-to-br ${item.gradient} backdrop-blur-xl p-10 rounded-[2rem] border-2 ${item.borderColor} hover:border-secondary transition-all duration-500 h-full flex flex-col items-center text-center shadow-lg hover:shadow-2xl`}>
+                      <div className="w-20 h-20 bg-primary rounded-3xl flex items-center justify-center mb-8 rotate-3 group-hover:rotate-0 transition-transform duration-500 shadow-xl">
+                        <item.icon className="w-10 h-10 text-secondary" />
+                      </div>
+                      <h3 className="text-2xl font-black text-primary mb-4 uppercase tracking-tight">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-700 font-medium leading-relaxed flex-grow">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-primary mb-2">
-                    Worldwide Reach
-                  </h3>
-                  <p className="text-gray-600">
-                    Established presence across multiple continents including
-                    Asia, Europe, North America, and the Middle East with
-                    growing partnerships.
-                  </p>
-                </div>
-
-                <div className="bg-gradient-to-br from-green-50 to-white p-7 rounded-xl border-2 border-green-100 hover:border-green-300 transition-all">
-                  <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mb-4">
-                    <Shield className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-primary mb-2">
-                    Quality Assurance
-                  </h3>
-                  <p className="text-gray-600">
-                    Every shipment meets international quality standards with
-                    rigorous testing and compliance with all regulatory
-                    requirements.
-                  </p>
-                </div>
-
-                <div className="bg-gradient-to-br from-purple-50 to-white p-7 rounded-xl border-2 border-purple-100 hover:border-purple-300 transition-all">
-                  <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
-                    <TrendingUp className="w-6 h-6 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold text-primary mb-2">
-                    Reliable Delivery
-                  </h3>
-                  <p className="text-gray-600">
-                    Efficient logistics and robust supply chain management
-                    ensuring timely deliveries while maintaining product
-                    freshness and integrity.
-                  </p>
-                </div>
+                ))}
               </div>
 
               {/* Detailed Export Info */}
-              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-gray-100 space-y-6">
-                <h3 className="text-2xl font-bold text-primary mb-6">
-                  Our Export Excellence
-                </h3>
-
-                <div className="space-y-5">
-                  <div className="flex gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                      <Zap className="w-5 h-5 text-blue-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">
-                        Efficient Logistics Management
-                      </h4>
-                      <p className="text-gray-600 leading-relaxed">
-                        With efficient logistics and robust supply chain
-                        management, we provide timely deliveries and maintain
-                        product freshness and integrity throughout the entire
-                        shipping process.
-                      </p>
-                    </div>
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-secondary/10 to-transparent rounded-[2.5rem] blur-xl" />
+                <div className="relative bg-white/80 backdrop-blur-xl rounded-2xl p-6 md:p-10 border border-white shadow-[0_15px_50px_rgba(0,0,0,0.06)]">
+                  <div className="flex items-center gap-6 mb-12">
+                    <div className="h-0.5 w-16 bg-secondary" />
+                    <h3 className="text-2xl font-black text-primary uppercase tracking-[0.3em]">
+                      Export Excellence
+                    </h3>
                   </div>
 
-                  <div className="flex gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                      <Users className="w-5 h-5 text-green-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">
-                        International Coordination
-                      </h4>
-                      <p className="text-gray-600 leading-relaxed">
-                        Our team coordinates closely with international partners
-                        to ensure smooth operations and compliance with all
-                        regulatory requirements across different markets and
-                        jurisdictions.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                      <Award className="w-5 h-5 text-purple-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">
-                        Long-Term Partnerships
-                      </h4>
-                      <p className="text-gray-600 leading-relaxed">
-                        By combining high-quality products with reliability and
-                        transparency, we have built long-term relationships with
-                        customers around the globe who trust us for consistent
-                        excellence.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-4">
-                    <div className="flex-shrink-0 w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
-                      <Target className="w-5 h-5 text-orange-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">
-                        Trusted Global Partner
-                      </h4>
-                      <p className="text-gray-600 leading-relaxed">
-                        Our commitment to excellence in every export makes us a
-                        trusted partner for businesses seeking premium
-                        agricultural commodities with reliable service and
-                        competitive pricing.
-                      </p>
-                    </div>
+                  <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
+                    {[
+                      { icon: Zap, color: "blue", title: "Logistics Management", text: "Efficient logistics and robust supply chain management providing timely deliveries and maintaining product integrity." },
+                      { icon: Users, color: "green", title: "Global Coordination", text: "Close coordination with international partners ensuring smooth operations and compliance across all jurisdictions." },
+                      { icon: Award, color: "purple", title: "Partner Trusts", text: "Long-term relationships built on reliability and transparency, earning trust from customers worldwide." },
+                      { icon: Target, color: "amber", title: "Premium Service", text: "Commitment to excellence in every export, providing reliable service and competitive global pricing." }
+                    ].map((item) => (
+                      <div key={item.title} className="flex gap-6 group/item">
+                        <div className="flex-shrink-0 w-16 h-16 bg-primary rounded-2xl flex items-center justify-center group-hover/item:bg-secondary transition-colors duration-500 shadow-xl">
+                          <item.icon className="w-8 h-8 text-secondary group-hover/item:text-primary transition-colors duration-500" />
+                        </div>
+                        <div className="space-y-2">
+                          <h4 className="text-lg font-black text-primary uppercase tracking-tight">
+                            {item.title}
+                          </h4>
+                          <p className="text-gray-600 leading-relaxed font-medium">
+                            {item.text}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>

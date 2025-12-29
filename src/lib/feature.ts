@@ -1,35 +1,54 @@
+import {
+  Award,
+  Globe,
+  Leaf,
+  LucideIcon,
+  Package,
+  Truck,
+  UserCheck,
+  Users,
+} from "lucide-react";
+
 export interface Feature {
-  icon: string;
+  icon: LucideIcon;
   title: string;
+  description: string;
 }
 
 export const features: Feature[] = [
   {
-    icon: "/icons/quality.png",
-    title: "Top Quality At Competitive Prices",
+    icon: Award,
+    title: "Top Quality",
+    description: "Premium grade spices sourced directly from the finest farms.",
   },
   {
-    icon: "/icons/organic.png",
-    title: "No Artificial Colors and Pesticides",
+    icon: Leaf,
+    title: "100% Organic",
+    description: "Free from artificial colors, pesticides, and harmful chemicals.",
   },
   {
-    icon: "/icons/delivery.png",
-    title: "Just-In-Time Delivery",
+    icon: Truck,
+    title: "Fast Delivery",
+    description: "Just-in-time delivery network ensuring fresh supplies globally.",
   },
   {
-    icon: "/icons/happy-customer.png",
-    title: "Morethan 1500+ happy customers",
+    icon: Users,
+    title: "1500+ Happy Customers",
+    description: "Trusted by thousands of contented clients across the world.",
   },
   {
-    icon: "/icons/staff.png",
-    title: "Experienced, Knowledgeable Staff",
+    icon: UserCheck,
+    title: "Expert Team",
+    description: "Managed by experienced and knowledgeable industry professionals.",
   },
   {
-    icon: "/icons/package.png",
-    title: "Moisture Free Packaging",
+    icon: Package,
+    title: "Secure Packaging",
+    description: "Moisture-free hygienic packaging to preserve aroma and taste.",
   },
   {
-    icon: "/icons/worldmarket.png",
-    title: "Widespread Market",
+    icon: Globe,
+    title: "Global Reach",
+    description: "Widespread market presence connecting you to world-class flavors.",
   },
 ];

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="284" height="214" version="1.1">
+    
+    <style type="text/css">
+        rect {stroke-width:1;stroke:#000}
+        text {color:#000;font-family:"Times New Roman",serif;}
+    </style>
+    
+    <rect x="2" y="22" height="20px" width="280px" rx="4" fill="#FAB"/>
+    <rect x="2" y="50" height="20px" width="280px" rx="4" fill="#E86" />
+    <rect x="2" y="78" height="20px" width="280px" rx="4" fill="#ED8" />
+    <rect x="2" y="106" height="20px" width="280px" rx="4" fill="#AA0" />
+    <rect x="2" y="134" height="20px" width="280px" rx="4" fill="#BC3" />
+    <rect x="2" y="162" height="20px" width="280px" rx="4" fill="#4B9" />
+    <rect x="2" y="190" height="20px" width="280px" rx="4" fill="#9DF" />
+    
+    <g font-size="16" text-anchor="middle">
+        <switch transform="translate(142,16)">
+            <text systemLanguage="en">7 Principles of HACCP</text>
+            <text systemLanguage="es">7 principios del APPCC</text>
+            <text systemLanguage="fr">Les 7 principes du HACCP</text>
+            <text>7 Principles of HACCP</text>
+        </switch>
+    </g>
+    
+    <g font-size="12" text-anchor="start">
+        <switch transform="translate(4,36)">
+            <text systemLanguage="en">1. Conduct a hazard analysis</text>
+            <text systemLanguage="es">1. Análisis de riesgos</text>
+            <text systemLanguage="fr">1. Faire une analyse des dangers</text>
+            <text>1. Conduct a hazard analysis</text>
+        </switch>
+        <switch transform="translate(4,64)">
+            <text systemLanguage="en">2. Identify critical control points (CCPs)</text>
+            <text systemLanguage="es">2. Identificar los puntos críticos de control</text>
+            <text systemLanguage="fr">2. Déterminer les points de controle critiques</text>
+            <text>2. Identify critical control points (CCPs)</text>
+        </switch>
+        <switch transform="translate(4,92)">
+            <text systemLanguage="en">3. Establish critical limits</text>
+            <text systemLanguage="es">3. Establecer los límites críticos</text>
+            <text systemLanguage="fr">3. Établir des limites critiques</text>
+            <text>3. Establish critical limits</text>
+        </switch>
+        <switch transform="translate(4,120)">
+            <text systemLanguage="en">4. Establish monitoring procedures</text>
+            <text systemLanguage="es">4. Establecer un sistema de vigilancia</text>
+            <text systemLanguage="fr">4. Établir un système pour surveiller</text>
+            <text>4. Establish monitoring procedures</text>
+        </switch>
+        <switch transform="translate(4,148)">
+            <text systemLanguage="en">5. Establish corrective actions</text>
+            <text systemLanguage="es">5. Establecer las acciones correctivas</text>
+            <text systemLanguage="fr">5. Établir les actions correctives</text>
+            <text>5. Establish corrective actions</text>
+        </switch>
+        <switch transform="translate(4,176)">
+            <text systemLanguage="en">6. Establish verification procedures</text>
+            <text systemLanguage="es">6. Establecer un sistema de verificación</text>
+            <text systemLanguage="fr">6. Vérifier et valider le plan HACCP</text>
+            <text>6. Establish verification procedures</text>
+        </switch>
+        <switch transform="translate(4,204)">
+            <text systemLanguage="en">7. Establish record-keeping procedures</text>
+            <text systemLanguage="es">7. Crear un sistema de documentación</text>
+            <text systemLanguage="fr">7. Enregistrer et constituer des registres</text>
+            <text>7. Establish record-keeping procedures</text>
+        </switch>
+    </g>
+</svg>

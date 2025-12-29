@@ -15,14 +15,13 @@ export function HeroSection() {
       )}
 
       <div
-        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-700 ${
-          isLoading ? "opacity-0" : "opacity-100"
-        }`}
+        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-700 ${isLoading ? "opacity-0" : "opacity-100"
+          }`}
         style={{
           backgroundImage: "url(/images/landing_page.jpg)",
         }}
       >
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
       </div>
       <Image
         src="/images/landing_page.jpg"
@@ -34,21 +33,16 @@ export function HeroSection() {
         onLoadingComplete={() => setIsLoading(false)}
       />
       <div
-        className={`relative z-10 flex flex-col justify-center h-full px-4 sm:px-6 md:px-12 py-8 max-w-lg sm:max-w-xl lg:max-w-2xl transition-opacity duration-700 ${
-          isLoading ? "opacity-0" : "opacity-100"
-        }`}
+        className={`relative z-10 flex flex-col justify-center h-full px-6 sm:px-12 md:px-20 pt-32 pb-12 sm:pt-20 max-w-4xl transition-all duration-1000 ${isLoading ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
+          }`}
       >
-        <h1 className="text-xl sm:text-3xl md:text-3xl font-bold leading-snug sm:leading-tight lg:leading-snug text-primary-foreground">
-          Discover the World&apos;s Best Spices: <br />
-          From Tradition to Innovation!
+        <h1 className="text-2xl sm:text-2xl md:text-2xl lg:text-4xl font-bold leading-tight text-white drop-shadow-lg mb-6">
+          Discover the World&apos;s Best Products <br />
+          <span className="text-secondary">From Tradition to Innovation</span>
         </h1>
-
-        {/* <Button
-          variant="default"
-          className="mt-4 sm:mt-6 w-28 sm:w-32 border border-white hover:text-primary px-3 sm:px-4 py-2 rounded-full text-sm sm:text-base transition duration-300 hover:bg-white hover:border-2"
-        >
-          KNOW MORE
-        </Button> */}
+        <p className="text-lg md:text-2xl text-gray-200 max-w-2xl mb-8 leading-relaxed">
+          Connecting you with nature&apos;s finest harvest. Premium quality spices, oilseeds, and herbs exported globally.
+        </p>
       </div>
     </section>
   );

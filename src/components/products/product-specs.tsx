@@ -15,7 +15,7 @@ export default function ProductSpecs({
     return null;
 
   return (
-    <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-[1140px] mt-10 space-y-8">
+    <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 max-w-[1140px] mt-6 space-y-6">
       {physicalSpecs && (
         <SpecsTable title="Physical Specifications" rows={physicalSpecs} />
       )}

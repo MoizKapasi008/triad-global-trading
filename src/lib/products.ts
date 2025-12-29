@@ -2309,47 +2309,76 @@ export const products: Product[] = [
 
   // -------------------- HERBS & LEAVES --------------------
   {
-    id: "fresh-basil",
-    title: "Fresh Basil",
+    id: "senna-leaves",
+    title: "Senna leaves",
     categoryId: "herbs-leaves",
-    description: "Aromatic herb widely used in Italian and Thai cuisines.",
-    image: "/images/basil-sweet-leaves.webp",
+    description:
+      "Enhance your dishes with Senna leaves—an earthy, refreshing ingredient that adds a unique flavor and aroma.",
+    image: "/images/senna-leaves.png",
     heroImage: "/images/fresh-green-herbs-and-leaves-mint-basil.jpg",
     detailSections: [
       {
         title: "Product Information",
         items: [
-          "Fresh, hand-picked basil leaves",
-          "Strong aroma with a sweet, peppery flavor",
-          "Popular in Italian dishes like pesto and pasta",
-          "Used in Thai curries and stir-fries for its fragrance",
+          "Product Name : Dried Senna Leaves",
+          "Origin : India",
+          "Botanical Name :Cassia angustifolia",
+          "Part Used :Leaves",
+          "Family : Fabaceae",
+          "Description :Naturally dried, light green to pale green leaves, widely used in herbal medicine.",
         ],
       },
       {
         title: "Packing and Shipping Details",
         items: [
-          "Fresh bunches packed in ventilated cartons",
-          "Options: 100g, 250g, and bulk 5kg cartons",
-          "Cold-chain maintained for freshness",
+          "Food-grade polybags or bale packing.",
+          "Standard pack sizes: 5kg, 10kg, 25kg, and 50kg.",
+          "Customized packaging available on request.",
         ],
       },
       {
-        title: "Key Features",
+        title: "Container Load",
         items: [
-          "Farm fresh and naturally grown",
-          "No artificial colors or preservatives",
-          "Rich in antioxidants and essential oils",
+          "20 FT Container : 13 Metric Tons (MT)",
+          "40 FT Container : 26 Metric Tons (MT)",
+        ],
+      },
+      {
+        title: "Shipping",
+        items: [
+          "Bulk shipping in moisture-proof containers.",
+          "Palletized packing for secure transportation",
+        ],
+      },
+      {
+        title: "Storage",
+        items: [
+          "Store in a cool, dry place away from moisture, sunlight, and heat.",
+          "Shelf Life : Up to 24 months under proper storage conditions.",
         ],
       },
     ],
     physicalSpecs: [
-      { parameter: "Color", value: "Bright green leaves" },
-      { parameter: "Form", value: "Fresh leaves" },
-      { parameter: "Moisture Content", value: "75–85%" },
+      { parameter: "Appearance", value: "Flat, uniformly sized leaves" },
+      { parameter: "Color", value: "Light green to pale green" },
+      { parameter: "Odor", value: "Mild, characteristic herbal scent" },
+      { parameter: "Purity", value: "≥ 98%" },
+      { parameter: "Foreign Matter", value: "≤ 1%" },
+      { parameter: "Stem Content", value: "≤ 2%" },
+      { parameter: "Moisture Content", value: "≤ 10%" },
     ],
     chemicalSpecs: [
-      { parameter: "Essential Oil Content", value: "0.5–1.5%" },
-      { parameter: "Volatile Oils", value: "Linalool, Eugenol" },
+      { parameter: "Sennoside Content", value: "≥ 2.5%" },
+      { parameter: "Ash Content", value: "≤ 5%" },
+      { parameter: "Acid Insoluble Ash", value: "≤ 1%" },
+      {
+        parameter: "Pesticide Residue",
+        value: "As per international standards",
+      },
+      {
+        parameter: "Microbial Load",
+        value: "Compliant with food safety standards",
+      },
     ],
     originMapSrc: "/images/product-origin.jpg",
     specs: {

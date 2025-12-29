@@ -2,6 +2,7 @@
 import { Skeleton } from "@/components/ui/skeleton";
 import Image from "next/image";
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 export default function ProductHeroSection({
   title,
@@ -15,35 +16,45 @@ export default function ProductHeroSection({
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <section className="relative grid md:grid-cols-2 min-h-[180px] md:min-h-[220px] lg:min-h-[280px] text-secondary-foreground">
-      {/* Text Section */}
-      <div
-        className=" z-10 flex items-center justify-center text-center px-4 sm:px-6 md:px-10 py-6 sm:py-8 md:py-10 
-            h-full w-full bg-secondary/70 md:bg-secondary"
-      >
-        <div className="max-w-2xl">
-          <h1 className="text-heading">{title}</h1>
+    <section className="relative w-full h-[300px] md:h-[400px] lg:h-[450px] flex items-center justify-center overflow-hidden bg-primary/90">
+      {/* Background Image */}
+      {heroImage && (
+        <>
+          <div className={cn(
+            "absolute inset-0 transition-opacity duration-700 ease-in-out",
+            isLoading ? "opacity-0" : "opacity-100"
+          )}>
+            <Image
+              src={heroImage}
+              alt={title}
+              fill
+              className="object-cover object-center scale-105"
+              priority
+              onLoadingComplete={() => setIsLoading(false)}
+            />
+            {/* Gradient Overlay for Readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-black/90" />
+            <div className="absolute inset-0 bg-black/20" />
+          </div>
+          {isLoading && <Skeleton className="absolute inset-0 w-full h-full bg-gray-800 animate-pulse" />}
+        </>
+      )}
+
+      {/* Hero Content */}
+      <div className="relative z-10 container mx-auto px-6 text-center pt-24 md:pt-32">
+        <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-8 duration-1000">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-2xl line-clamp-2 uppercase">
+            {title}
+          </h1>
+
           {description && (
-            <p className="mt-3 text-sm sm:text-base leading-relaxed">
-              {description}
-            </p>
+            <div className="min-h-[80px] flex items-center justify-center">
+              <p className="text-lg md:text-xl text-white/90 leading-relaxed max-w-2xl mx-auto font-light drop-shadow-lg line-clamp-3">
+                {description}
+              </p>
+            </div>
           )}
         </div>
-      </div>
-
-      {/* Image (background on mobile, side image on desktop) */}
-      <div className="absolute inset-0 md:relative">
-        {isLoading && <Skeleton className="w-full h-full absolute inset-0" />}
-        <Image
-          src={heroImage || ""}
-          alt={title}
-          fill
-          className="object-cover transition-transform duration-300 md:group-hover:scale-105"
-          priority
-          onLoadingComplete={() => setIsLoading(false)}
-        />
-        {/* Dark overlay only on small screens for readability */}
-        <div className="absolute inset-0 bg-black/40 md:hidden"></div>
       </div>
     </section>
   );
