@@ -138,29 +138,29 @@ export default async function AboutUsPage({ params }: AboutParams) {
               <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
                 {[
                   {
-                    name: "Moiz Kapasi",
-                    role: "Manager - Software Engineer",
+                    name: "Anonymous",
+                    role: "Manager",
                     image: "/images/placeholder.png",
                     description:
-                      "Moiz brings his technical expertise and innovative mindset to build scalable solutions for our operations.",
+                      "Person brings his technical expertise and innovative mindset to build scalable solutions for our operations.",
                     icon: Code,
                     color: "blue",
                   },
                   {
-                    name: "Taher Kapasi",
-                    role: "Manager – Business Owner",
-                    image: "/images/taher_kapasi.png",
+                    name: "Anonymous",
+                    role: "Manager",
+                    image: "/images/placeholder.png",
                     description:
-                      "Taher manages our business strategy and ensures that we deliver top-quality products and services to our clients.",
+                      "Person manages our business strategy and ensures that we deliver top-quality products and services to our clients.",
                     icon: Briefcase,
                     color: "amber",
                   },
                   {
-                    name: "Vinayak Cheruvil",
-                    role: "Manager – Business Analyst",
+                    name: "Anonymous",
+                    role: "Manager",
                     image: "/images/placeholder.png",
                     description:
-                      "Vinayak analyzes market trends and business opportunities to guide our growth and decision-making.",
+                      "Person analyzes market trends and business opportunities to guide our growth and decision-making.",
                     icon: BarChart3,
                     color: "purple",
                   },
