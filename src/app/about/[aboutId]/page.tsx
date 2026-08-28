@@ -174,10 +174,10 @@ export default async function AboutUsPage({ params }: AboutParams) {
                 {[
                   {
                     name: "Moiz Kapasi",
-                    role: "Manager - Software Engineer",
+                    role: "Manager",
                     image: "/images/placeholder.png",
                     description:
-                      "Moiz brings his technical expertise and innovative mindset to build scalable solutions for our operations.",
+                      "Person brings his technical expertise and innovative mindset to build scalable solutions for our operations.",
                     icon: Code,
                     color: "blue",
                   },
@@ -186,7 +186,7 @@ export default async function AboutUsPage({ params }: AboutParams) {
                     role: "Manager – Business Owner",
                     image: "/images/placeholder.png",
                     description:
-                      "Taher manages our business strategy and ensures that we deliver top-quality products and services to our clients.",
+                      "Person manages our business strategy and ensures that we deliver top-quality products and services to our clients.",
                     icon: Briefcase,
                     color: "amber",
                   },
@@ -195,7 +195,7 @@ export default async function AboutUsPage({ params }: AboutParams) {
                     role: "Manager",
                     image: "/images/placeholder.png",
                     description:
-                      "Vinayak analyzes market trends and business opportunities to guide our growth and decision-making.",
+                      "Person analyzes market trends and business opportunities to guide our growth and decision-making.",
                     icon: BarChart3,
                     color: "purple",
                   },
