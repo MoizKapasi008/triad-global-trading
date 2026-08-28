@@ -67,7 +67,7 @@ export default function ContactPage() {
       />
 
       {/* Contact Section */}
-      <section className="relative py-12 sm:py-16 md:py-24 bg-background overflow-hidden">
+      <section className="relative py-12 md:py-16 bg-background overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none" aria-hidden="true">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -83,7 +83,7 @@ export default function ContactPage() {
         <div className="absolute bottom-1/4 -left-24 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
 
         <div className="relative z-10 mx-auto w-full px-6 lg:px-12 max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-stretch">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
             {/* Left Side - Contact Information */}
             <div className="space-y-10 animate-in fade-in slide-in-from-left-8 duration-1000">
               <div className="space-y-6">
@@ -285,9 +285,9 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="py-16 md:py-24 bg-white/30 backdrop-blur-md relative overflow-hidden">
+      <section className="py-12 md:py-16 bg-white/30 backdrop-blur-md relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 lg:px-12 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div className="text-center max-w-3xl mx-auto mb-10 space-y-4">
             <div className="flex items-center justify-center gap-4 mb-4">
               <div className="h-px w-12 bg-secondary/50" />
               <h2 className="text-lg font-black text-primary uppercase tracking-[0.3em]">
@@ -325,9 +325,9 @@ export default function ContactPage() {
       </section>
 
       {/* Additional Info Section / Help Section */}
-      <section className="py-24 bg-background relative overflow-hidden">
+      <section className="py-12 md:py-16 bg-background relative overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 lg:px-12 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <div className="text-center max-w-3xl mx-auto mb-10 space-y-4">
             <h2 className="text-3xl md:text-5xl font-black text-primary uppercase tracking-tight">
               We&apos;re Here to <span className="text-secondary">Help</span>
             </h2>

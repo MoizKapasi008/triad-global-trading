@@ -164,65 +164,57 @@ export default function Header() {
           </div>
         </div>
 
-        {/* MOBILE MENU DRAWER */}
+        {/* MODERN MOBILE MENU OVERLAY - ORIGINAL COLORS */}
         <div
           className={cn(
-            "fixed inset-0 z-[2000] lg:hidden transition-all duration-300",
-            isMobileMenuOpen ? "visible" : "invisible delay-300"
+            "fixed inset-0 z-[2000] lg:hidden flex flex-col bg-white transition-all duration-500 ease-in-out",
+            isMobileMenuOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-4"
           )}
         >
-          {/* Backdrop */}
-          <div
-            className={cn(
-              "absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300",
-              isMobileMenuOpen ? "opacity-100" : "opacity-0"
-            )}
-            onClick={closeMobileMenu}
-          />
-
-          {/* Drawer Panel */}
-          <div
-            className={cn(
-              "absolute top-0 left-0 w-[300px] h-screen bg-white shadow-2xl overflow-y-auto transition-transform duration-300 ease-out",
-              isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-            )}
-          >
-            {/* Drawer Header */}
-            <div className="flex items-center justify-between p-5 bg-primary text-white sticky top-0 z-10 border-b border-white/10">
-              <span className="font-bold tracking-widest text-lg">MENU</span>
-              <Button
-                onClick={closeMobileMenu}
-                variant="ghost"
-                size="icon"
-                className="text-white hover:bg-white/20 rounded-full"
-              >
-                <X size={24} />
-              </Button>
+          {/* Menu Header - Original bg-primary */}
+          <div className="w-full px-6 py-5 flex items-center justify-between bg-primary shadow-md z-10">
+            <div className="w-32 h-10 relative">
+              <Image
+                src="/triad_global_trading_logo_v8.png"
+                alt="Triad Global Trading"
+                fill
+                className="object-contain brightness-0 invert"
+              />
             </div>
+            <Button
+              onClick={closeMobileMenu}
+              variant="ghost"
+              size="icon"
+              className="text-white hover:bg-white/20 rounded-full"
+            >
+              <X size={32} strokeWidth={1.5} />
+            </Button>
+          </div>
 
-            {/* Drawer Content */}
-            <div className="p-4 pb-20 space-y-2">
-              {/* Products Links */}
-              <div className="border-b border-gray-100 pb-2">
+          {/* Menu Content - Original bg-white */}
+          <div className="flex-1 overflow-y-auto overflow-x-hidden bg-white">
+            <div className="flex flex-col min-h-full px-6 py-8 space-y-2">
+              
+              {/* Products */}
+              <div className="flex flex-col">
                 <button
                   onClick={() => toggleCategory("products")}
-                  className="w-full flex items-center justify-between p-3 text-left font-bold text-gray-800 hover:bg-gray-50 rounded-lg transition-colors"
+                  className="w-full flex items-center justify-between text-left group py-3"
                 >
-                  <span>PRODUCTS</span>
+                  <span className="text-xl md:text-2xl font-semibold text-primary group-hover:text-secondary transition-colors">Products</span>
                   <ChevronDown
-                    size={18}
-                    className={cn("text-gray-400 transition-transform", openCategory === "products" && "rotate-180 text-secondary")}
+                    size={20}
+                    className={cn("text-gray-400 transition-transform duration-500", openCategory === "products" && "rotate-180 text-secondary")}
                   />
                 </button>
-
-                <div className={cn("overflow-hidden transition-all duration-300", openCategory === "products" ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0")}>
-                  <div className="pl-4 flex flex-col gap-1">
+                <div className={cn("grid transition-all duration-500 ease-in-out", openCategory === "products" ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0")}>
+                  <div className="overflow-hidden flex flex-col pl-4 border-l-2 border-gray-100">
                     {categories.map((cat) => (
                       <Link
                         key={cat.id}
                         href={`/categories/${cat.id}`}
                         onClick={closeMobileMenu}
-                        className="w-full flex items-center justify-between py-2 px-2 text-sm font-medium text-gray-700 hover:text-primary transition-all duration-300 hover:pl-3"
+                        className="block py-2.5 text-base text-gray-600 hover:text-primary transition-colors font-medium"
                       >
                         {cat.title}
                       </Link>
@@ -231,26 +223,26 @@ export default function Header() {
                 </div>
               </div>
 
-              {/* About Us Links */}
-              <div className="border-b border-gray-100 pb-2">
+              {/* About Us */}
+              <div className="flex flex-col">
                 <button
                   onClick={() => toggleCategory("about")}
-                  className="w-full flex items-center justify-between p-3 text-left font-bold text-gray-800 hover:bg-gray-50 rounded-lg transition-colors"
+                  className="w-full flex items-center justify-between text-left group py-3"
                 >
-                  <span>ABOUT US</span>
+                  <span className="text-xl md:text-2xl font-semibold text-primary group-hover:text-secondary transition-colors">About Us</span>
                   <ChevronDown
-                    size={18}
-                    className={cn("text-gray-400 transition-transform", openCategory === "about" && "rotate-180 text-secondary")}
+                    size={20}
+                    className={cn("text-gray-400 transition-transform duration-500", openCategory === "about" && "rotate-180 text-secondary")}
                   />
                 </button>
-                <div className={cn("overflow-hidden transition-all duration-300", openCategory === "about" ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0")}>
-                  <div className="pl-4 flex flex-col gap-1">
+                <div className={cn("grid transition-all duration-500 ease-in-out", openCategory === "about" ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0")}>
+                  <div className="overflow-hidden flex flex-col pl-4 border-l-2 border-gray-100">
                     {aboutSections.map((section) => (
                       <Link
                         key={section.id}
                         href={section.href}
                         onClick={closeMobileMenu}
-                        className="py-2 px-2 text-sm text-gray-600 hover:text-primary block transition-all duration-300 hover:pl-3"
+                        className="block py-2.5 text-base text-gray-600 hover:text-primary transition-colors font-medium"
                       >
                         {section.title}
                       </Link>
@@ -259,25 +251,23 @@ export default function Header() {
                 </div>
               </div>
 
-              {/* Standard Links */}
-              <Link href="/harvest" onClick={closeMobileMenu} className="block p-3 font-bold text-gray-800 hover:bg-gray-50 rounded-lg">HARVEST CHART</Link>
-              <Link href="/inquiry" onClick={closeMobileMenu} className="block p-3 font-bold text-gray-800 hover:bg-gray-50 rounded-lg">INQUIRY</Link>
-              <Link href="/quality-policy" onClick={closeMobileMenu} className="block p-3 font-bold text-gray-800 hover:bg-gray-50 rounded-lg">QUALITY POLICY</Link>
-              <Link href="/contact" onClick={closeMobileMenu} className="block p-3 font-bold text-gray-800 hover:bg-gray-50 rounded-lg">CONTACT</Link>
+              <Link href="/harvest" onClick={closeMobileMenu} className="block py-3 text-xl md:text-2xl font-semibold text-primary hover:text-secondary transition-colors">Harvest Chart</Link>
+              <Link href="/inquiry" onClick={closeMobileMenu} className="block py-3 text-xl md:text-2xl font-semibold text-primary hover:text-secondary transition-colors">Inquiry</Link>
+              <Link href="/quality-policy" onClick={closeMobileMenu} className="block py-3 text-xl md:text-2xl font-semibold text-primary hover:text-secondary transition-colors">Quality Policy</Link>
+              <Link href="/contact" onClick={closeMobileMenu} className="block py-3 text-xl md:text-2xl font-semibold text-primary hover:text-secondary transition-colors">Contact</Link>
 
-              {/* CTA */}
               <div className="pt-6">
-                <Button className="w-full bg-secondary text-primary hover:bg-primary hover:text-white font-bold tracking-wider py-6 text-md shadow-lg">
+                <Button className="w-full rounded-full bg-secondary text-primary hover:bg-primary hover:text-white font-bold tracking-widest py-6 text-sm shadow-md transition-all duration-300 uppercase">
                   GET BROCHURE
                 </Button>
               </div>
 
-              {/* Socials */}
-              <div className="flex justify-center gap-8 pt-8 text-gray-400">
-                <FaFacebook size={24} className="hover:text-primary transition-colors cursor-pointer" />
-                <FaInstagramSquare size={24} className="hover:text-primary transition-colors cursor-pointer" />
-                <FaLinkedin size={24} className="hover:text-primary transition-colors cursor-pointer" />
+              <div className="flex items-center gap-4 pt-4 pb-4">
+                <Link href="#" className="p-2.5 bg-gray-50 text-gray-500 rounded-full hover:text-primary hover:bg-gray-100 transition-all"><FaFacebook size={18} /></Link>
+                <Link href="#" className="p-2.5 bg-gray-50 text-gray-500 rounded-full hover:text-primary hover:bg-gray-100 transition-all"><FaInstagramSquare size={18} /></Link>
+                <Link href="#" className="p-2.5 bg-gray-50 text-gray-500 rounded-full hover:text-primary hover:bg-gray-100 transition-all"><FaLinkedin size={18} /></Link>
               </div>
+
             </div>
           </div>
         </div>

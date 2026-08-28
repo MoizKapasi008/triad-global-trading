@@ -8,24 +8,14 @@ import { HeroSection } from "@/components/shared/hero/hero";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen flex-col items-center w-full">
       <HeroSection />
       <AboutSection />
-      <div className="flex w-full bg-background py-8 md:py-8">
-        <ProductsSection />
-      </div>
-      <div className="flex w-full bg-background py-8 md:py-8">
-        <CategoriesSection />
-      </div>
-      <div className="flex w-full bg-background text-secondary-foreground py-8 md:py-8">
-        <WhyChooseUsSection />
-      </div>
-      <div className="flex w-full bg-background py-6 md:py-6">
-        <ProofOfExcellenceSections />
-      </div>
-      <div className="flex w-full bg-background py-4 md:py-4">
-        <PackagingSection />
-      </div>
+      <ProductsSection />
+      <CategoriesSection />
+      <WhyChooseUsSection />
+      <ProofOfExcellenceSections />
+      <PackagingSection />
     </main>
   );
 }

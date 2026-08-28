@@ -10,7 +10,7 @@ export default function ProductOrigin({
 }) {
   const [isLoading, setIsLoading] = useState(true);
   return (
-    <div className="mx-auto w-full px-6 lg:px-12 max-w-7xl mt-16 space-y-8 animate-in fade-in slide-in-from-bottom-12 duration-1000">
+    <div className="mx-auto w-full px-6 lg:px-12 max-w-7xl mt-10 space-y-8 animate-in fade-in slide-in-from-bottom-12 duration-1000">
       <div className="relative mb-8 overflow-hidden py-4 text-center">
         <div className="flex items-center justify-center gap-4 mb-4">
           <div className="h-px w-12 bg-secondary/50" />

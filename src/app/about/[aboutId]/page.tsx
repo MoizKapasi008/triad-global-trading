@@ -59,7 +59,7 @@ export default async function AboutUsPage({ params }: AboutParams) {
       />
 
       {/* Content Section */}
-      <section className="relative py-24 mb-0 bg-background overflow-hidden">
+      <section className="relative py-12 md:py-16 mb-0 bg-background overflow-hidden">
         {/* Decorative Background Elements */}
         <div
           className="absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -93,7 +93,7 @@ export default async function AboutUsPage({ params }: AboutParams) {
         <div className="relative z-10 mx-auto w-full px-6 lg:px-12 max-w-7xl">
           {/* OUR TEAM SECTION */}
           {section.id === "our-team" && (
-            <div className="space-y-16">
+            <div className="space-y-10">
               {/* Header with Icon */}
               <div className="text-center max-w-4xl mx-auto space-y-6">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
@@ -174,7 +174,7 @@ export default async function AboutUsPage({ params }: AboutParams) {
                 {[
                   {
                     name: "Moiz Kapasi",
-                    role: "Manager",
+                    role: "Manager – Software Engineer",
                     image: "/images/placeholder.png",
                     description:
                       "Person brings his technical expertise and innovative mindset to build scalable solutions for our operations.",
@@ -244,7 +244,7 @@ export default async function AboutUsPage({ params }: AboutParams) {
               </div>
 
               {/* Our Journey Section */}
-              <div className="relative group mt-20">
+              <div className="relative group mt-12">
                 <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 via-primary/5 to-primary/20 rounded-[3rem] blur-2xl opacity-50" />
                 <div className="relative bg-primary rounded-[3rem] p-12 md:p-20 text-white overflow-hidden shadow-2xl">
                   {/* Decorative element */}
@@ -303,7 +303,7 @@ export default async function AboutUsPage({ params }: AboutParams) {
 
           {/* INFRASTRUCTURE SECTION */}
           {section.id === "infrastructure" && (
-            <div className="space-y-12">
+            <div className="space-y-8">
               {/* Header */}
               <div className="text-center max-w-3xl mx-auto space-y-4">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
@@ -444,7 +444,7 @@ export default async function AboutUsPage({ params }: AboutParams) {
 
           {/* GLOBAL EXPORT SECTION */}
           {section.id === "global-export" && (
-            <div className="space-y-12">
+            <div className="space-y-8">
               {/* Header */}
               <div className="text-center max-w-3xl mx-auto space-y-4">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">

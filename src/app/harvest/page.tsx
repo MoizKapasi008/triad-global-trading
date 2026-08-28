@@ -523,13 +523,13 @@ export default async function HarvestChartPage({ }) {
   ];
 
   return (
-    <main className="min-h-screen bg-[#F8F9FA]">
+    <main className="min-h-screen bg-background">
       <AboutHeroSection
         title="Harvest Chart"
         description="Global availability timeline for our premium agricultural commodities."
       />
 
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-12 md:py-16 overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none" aria-hidden="true">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
@@ -600,7 +600,7 @@ export default async function HarvestChartPage({ }) {
             </div>
           </div>
 
-          <div className="mt-16 text-center animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500">
+          <div className="mt-10 text-center animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-500">
             <div className="inline-flex items-center gap-8 bg-white/80 backdrop-blur-xl px-10 py-5 rounded-full border border-white shadow-2xl">
               <div className="flex items-center gap-3">
                 <span className="w-3 h-3 rounded-full bg-secondary shadow-[0_0_10px_rgba(212,175,55,0.5)]" />

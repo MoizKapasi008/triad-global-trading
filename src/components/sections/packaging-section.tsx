@@ -47,28 +47,30 @@ export default function PackagingSection() {
   // ];
 
   return (
-    <section className="w-full bg-background">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col items-center text-center space-y-6 mb-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary">
-            Premium Packaging for Lasting Freshness
+    <section className="w-full py-12 md:py-16 bg-muted">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="flex flex-col items-center text-center space-y-4 mb-10 md:mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground tracking-wide max-w-4xl leading-tight">
+            Premium Packaging for <span className="font-bold text-primary">Lasting Freshness</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl">
+          <p className="text-base md:text-lg text-muted-foreground max-w-3xl font-light">
             We understand that packaging is as crucial as the product itself. Our export-quality packaging ensures that every spice, herb, and seed retains its original potency, aroma, and freshness from our facility to your doorstep.
           </p>
+          <div className="w-16 h-1 bg-secondary rounded-full mt-4" />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-7xl mx-auto mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group bg-card p-4 rounded-xl border border-border/50 shadow-sm flex flex-col items-center text-center hover:shadow-md hover:border-primary/20 transition-all duration-300 hover:-translate-y-1"
+              className="group bg-card p-6 md:p-8 rounded-2xl border border-border/50 shadow-sm flex flex-col items-center text-center hover:shadow-xl hover:border-primary/20 transition-all duration-500 hover:-translate-y-1"
             >
-              <div className="p-3 bg-primary/10 rounded-full mb-3 group-hover:bg-primary/20 transition-colors">
+              <div className="p-4 bg-primary/5 rounded-full mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-500 text-primary">
+                {/* Clone element if needed, let color inherit */}
                 {feature.icon}
               </div>
-              <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <h3 className="text-lg md:text-xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">{feature.title}</h3>
+              <p className="text-sm md:text-base text-muted-foreground font-light leading-relaxed">
                 {feature.description}
               </p>
             </div>

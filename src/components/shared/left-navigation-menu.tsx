@@ -59,12 +59,12 @@ function DesktopNavigation({ isScrolled = false }: NavigationProps) {
           </NavigationMenuTrigger>
 
           <NavigationMenuContent>
-            <ul className="grid w-[240px] gap-1 p-2 bg-white rounded-lg shadow-xl border border-gray-100">
+            <ul className="grid w-[200px] bg-white rounded-md">
               {categories.map((category) => (
                 <li key={category.id}>
                   <NavigationMenuLink
                     asChild
-                    className="block px-4 py-3 rounded-md text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors"
+                    className="block px-2 py-1.5 rounded-md text-sm text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors font-medium"
                   >
                     <Link href={`/categories/${category.id}`}>
                       {category.title}
@@ -82,12 +82,12 @@ function DesktopNavigation({ isScrolled = false }: NavigationProps) {
             ABOUT US
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[240px] gap-1 p-2 bg-white rounded-lg shadow-xl border border-gray-100">
+            <ul className="grid w-[200px] bg-white rounded-md">
               {aboutSections.map((section) => (
                 <li key={section.id}>
                   <NavigationMenuLink
                     asChild
-                    className="block px-4 py-3 rounded-md text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors"
+                    className="block px-2 py-1.5 rounded-md text-sm text-gray-600 hover:text-primary hover:bg-gray-50 transition-colors font-medium"
                   >
                     <Link href={section.href}>{section.title}</Link>
                   </NavigationMenuLink>

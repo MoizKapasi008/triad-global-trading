@@ -40,7 +40,7 @@ export default function AboutHeroSection({
       {isLoading && <Skeleton className="absolute inset-0 w-full h-full bg-gray-800 animate-pulse" />}
 
       {/* Hero Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center pt-32 md:pt-40">
+      <div className="relative z-10 container mx-auto px-6 text-center pt-24 md:pt-32">
         <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-2xl uppercase">
             {title}

@@ -48,7 +48,7 @@ export default function ProductRelated({
   };
 
   return (
-    <div className="mx-auto w-full px-6 lg:px-12 max-w-7xl mt-16 mb-16 space-y-8 animate-in fade-in slide-in-from-bottom-12 duration-1000">
+    <div className="mx-auto w-full px-6 lg:px-12 max-w-7xl mt-10 mb-10 space-y-8 animate-in fade-in slide-in-from-bottom-12 duration-1000">
       <div className="relative mb-8 overflow-hidden py-4 text-center">
         <div className="flex items-center justify-center gap-4 mb-4">
           <div className="h-px w-12 bg-secondary/50" />
@@ -108,7 +108,7 @@ export default function ProductRelated({
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="flex justify-center gap-6 mt-16">
+          <div className="flex justify-center gap-6 mt-10">
             <CarouselPrevious className="static translate-y-0 h-14 w-14 border-white bg-white/80 backdrop-blur-md hover:bg-primary hover:text-white transition-all shadow-xl rounded-full" />
             <CarouselNext className="static translate-y-0 h-14 w-14 border-white bg-white/80 backdrop-blur-md hover:bg-primary hover:text-white transition-all shadow-xl rounded-full" />
           </div>

@@ -2,47 +2,67 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Button } from "../../ui/button";
-import { Skeleton } from "../../ui/skeleton";
+import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
+import Link from "next/link";
 
 export function HeroSection() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <section className="relative w-full h-[60vh] md:h-[50vh] sm:h-[70vh] lg:h-screen overflow-hidden">
+    <section className="relative w-full min-h-[85dvh] md:min-h-0 md:h-[80vh] lg:h-[90vh] overflow-hidden flex items-center">
       {isLoading && (
-        <Skeleton className="absolute inset-0 w-full h-full rounded-none" />
+        <Skeleton className="absolute inset-0 w-full h-full rounded-none z-10" />
       )}
 
+      {/* Clean Background Image */}
       <div
-        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-700 ${isLoading ? "opacity-0" : "opacity-100"
+        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${isLoading ? "opacity-0" : "opacity-100"
           }`}
         style={{
           backgroundImage: "url(/images/landing_page.jpg)",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+        {/* Simple, soft dark gradient just from the bottom and left for text legibility */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent" />
       </div>
+
       <Image
         src="/images/landing_page.jpg"
         alt="Hero background"
-        width={1920}
-        height={1080}
+        fill
         className="hidden"
         priority
         onLoadingComplete={() => setIsLoading(false)}
       />
+
+      {/* Minimalist Content */}
       <div
-        className={`relative z-10 flex flex-col justify-center h-full px-6 sm:px-12 md:px-20 pt-32 pb-12 sm:pt-20 max-w-4xl transition-all duration-1000 ${isLoading ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
+        className={`relative z-20 container mx-auto px-6 md:px-12 flex flex-col justify-center pt-24 pb-12 md:pt-0 md:justify-end md:pb-24 h-full transition-all duration-1000 delay-300 ${isLoading ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
           }`}
       >
-        <h1 className="text-2xl sm:text-2xl md:text-2xl lg:text-4xl font-bold leading-tight text-white drop-shadow-lg mb-6">
-          Discover the World&apos;s Best Products <br />
-          <span className="text-secondary">From Tradition to Innovation</span>
-        </h1>
-        <p className="text-lg md:text-2xl text-gray-200 max-w-2xl mb-8 leading-relaxed">
-          Connecting you with nature&apos;s finest harvest. Premium quality spices, oilseeds, and herbs exported globally.
-        </p>
+        <div className="max-w-2xl space-y-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wide leading-tight text-white">
+            Discover the World&apos;s <br />
+            <span className="font-bold text-secondary">Finest Harvest</span>
+          </h1>
+          
+          <p className="text-base md:text-lg lg:text-xl text-white/90 max-w-xl leading-relaxed font-light">
+            Premium quality spices, oilseeds, and herbs exported globally. Connecting you with nature&apos;s best from farm to table.
+          </p>
+
+          <div className="pt-4 flex items-center gap-6">
+            <Link href="/products">
+              <Button size="lg" className="rounded-full px-8 py-6 text-xs font-bold tracking-widest shadow-lg hover:-translate-y-0.5 transition-all duration-300 bg-secondary text-primary hover:bg-white hover:text-primary">
+                EXPLORE PRODUCTS
+              </Button>
+            </Link>
+            <Link href="/contact" className="text-white hover:text-secondary text-xs font-bold tracking-widest uppercase transition-colors hidden sm:block">
+              CONTACT US
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );
