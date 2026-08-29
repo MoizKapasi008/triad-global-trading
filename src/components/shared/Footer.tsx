@@ -11,11 +11,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const informationLinks = [
-  { id: "about", title: "About Us", href: "#" },
-  { id: "products", title: "Our Products", href: "#" }, // Changed specific "Harvest" to general "Products" if safer, or keep as is. Keeping original logic but clean titles.
-  { id: "process", title: "Our Process", href: "#" },
-  { id: "contact", title: "Contact Us", href: "#" },
-  { id: "blog", title: "Latest News", href: "#" },
+  { id: "about", title: "About Us", href: "/about/our-team" },
+  { id: "products", title: "Our Products", href: "/products" },
+  { id: "quality", title: "Quality Policy", href: "/quality-policy" },
+  { id: "harvest", title: "Harvest Chart", href: "/harvest" },
+  { id: "contact", title: "Contact Us", href: "/contact" },
 ];
 
 const productLinks = [
