@@ -62,6 +62,13 @@ export const categories: Category[] = [
       "We provide high-quality coffee beans, both roasted and unroasted, suitable for home brewing and commercial use. Our coffee is rich in aroma, flavor, and sourced from top plantations.",
     image: "/images/coffee-beans-roasted-dark.jpg",
   },
+  {
+    id: "sanitary-ware",
+    title: "Sanitary Ware",
+    description:
+      "Explore our premium range of sanitary ware, featuring elegant and durable designs for modern bathrooms. Our products are crafted to offer both style and supreme functionality.",
+    image: "/images/sanitary-ware-hero.webp",
+  },
 ];
 
 export async function getCategoryBySlug(slug: string) {

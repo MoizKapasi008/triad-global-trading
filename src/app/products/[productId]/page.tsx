@@ -90,7 +90,9 @@ export default async function ProductPage({
           nutritionalSpecs={product.nutritionalSpecs}
         />
 
-        <ProductOrigin originMapSrc={product.originMapSrc} />
+        {product.categoryId !== "sanitary-ware" && (
+          <ProductOrigin originMapSrc={product.originMapSrc} />
+        )}
 
         <ProductRelated relatedProducts={product.related_products} />
       </section>

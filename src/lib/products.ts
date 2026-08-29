@@ -3907,6 +3907,249 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    id: "floor-mounted-closet-wpc02931c",
+    title: "Floor Mounted Closet (C02931C)",
+    categoryId: "sanitary-ware",
+    description:
+      "Floor Mounted Closet, 690 x 380 x 820 mm, 27.17 x 14.96 x 32.28 in, NIAGARA - FM - S, Coupled Closet, PARRYWARE. WPC02931C",
+    image: "/images/floor-mounted-closet.jpg",
+    detailSections: [
+      {
+        title: "Product Overview",
+        items: [
+          "Type: Floor Mounted Coupled Closet",
+          "Brand: Parryware",
+          "Model: NIAGARA - FM - S (WPC02931C)",
+          "Dimensions: 690 x 380 x 820 mm (27.17 x 14.96 x 32.28 in)",
+        ],
+      }
+    ],
+    physicalSpecs: [
+      { parameter: "Dimensions (mm)", value: "690 x 380 x 820 mm" },
+      { parameter: "Dimensions (in)", value: "27.17 x 14.96 x 32.28 in" },
+      { parameter: "Installation", value: "Floor Mounted" },
+      { parameter: "Type", value: "Coupled Closet" },
+    ],
+    badges: ["Quality Assured", "Durable"],
+    related_products: []
+  },
+  {
+    id: "wall-hung-closet-wpc022n1c",
+    title: "Wall Hung Closet (C022N1C)",
+    categoryId: "sanitary-ware",
+    description:
+      "Wall Hung Closet, 665 x 360 x 725 mm, 26.18 x 14.17 x 28.54 in, VERVE - WH - S, Wall Hung with Cistern, PARRYWARE. WPC022N1C",
+    image: "/images/wall-hung-closet.jpg",
+    detailSections: [
+      {
+        title: "Product Overview",
+        items: [
+          "Type: Wall Hung with Cistern",
+          "Brand: Parryware",
+          "Model: VERVE - WH - S (WPC022N1C)",
+          "Dimensions: 665 x 360 x 725 mm (26.18 x 14.17 x 28.54 in)",
+        ],
+      }
+    ],
+    physicalSpecs: [
+      { parameter: "Dimensions (mm)", value: "665 x 360 x 725 mm" },
+      { parameter: "Dimensions (in)", value: "26.18 x 14.17 x 28.54 in" },
+      { parameter: "Installation", value: "Wall Hung" },
+      { parameter: "Type", value: "Wall Hung with Cistern" },
+    ],
+    badges: ["Quality Assured", "Durable"],
+    related_products: []
+  },
+  {
+    id: "rivon-wall-hung-closet-round-white-wpc891r46",
+    title: "Rivon Wall Hung Closet - Round -White (C891R46)",
+    categoryId: "sanitary-ware",
+    description:
+      "Rivon Wall Hung Closet - Round -White, 360 x 360 x 520 mm, 14.17 x 14.17 x 20.47 in, RIVON, Wall Hung, PARRYWARE. WPC891R46",
+    image: "/images/rivon-wall-hung-closet.jpg",
+    detailSections: [
+      {
+        title: "Product Overview",
+        items: [
+          "Type: Wall Hung Closet",
+          "Brand: Parryware",
+          "Model: RIVON (WPC891R46)",
+          "Dimensions: 360 x 360 x 520 mm (14.17 x 14.17 x 20.47 in)",
+        ],
+      }
+    ],
+    physicalSpecs: [
+      { parameter: "Dimensions (mm)", value: "360 x 360 x 520 mm" },
+      { parameter: "Dimensions (in)", value: "14.17 x 14.17 x 20.47 in" },
+      { parameter: "Installation", value: "Wall Hung" },
+      { parameter: "Shape", value: "Round" },
+      { parameter: "Color", value: "White" },
+    ],
+    badges: ["Quality Assured", "Durable"],
+    related_products: []
+  },
+  {
+    id: "floor-mounted-ewc-wpc02781c",
+    title: "Floor Mounted EWC (C02781C)",
+    categoryId: "sanitary-ware",
+    description:
+      "Floor Mounted EWC, 530 x 380 x 400 mm, 20.87 x 14.96 x 15.75 in, ELITE - P, EWC, PARRYWARE. WPC02781C",
+    image: "/images/floor-mounted-ewc.jpg",
+    detailSections: [
+      {
+        title: "Product Overview",
+        items: [
+          "Type: Floor Mounted EWC",
+          "Brand: Parryware",
+          "Model: ELITE - P (WPC02781C)",
+          "Dimensions: 530 x 380 x 400 mm (20.87 x 14.96 x 15.75 in)",
+        ],
+      }
+    ],
+    physicalSpecs: [
+      { parameter: "Dimensions (mm)", value: "530 x 380 x 400 mm" },
+      { parameter: "Dimensions (in)", value: "20.87 x 14.96 x 15.75 in" },
+      { parameter: "Installation", value: "Floor Mounted" },
+      { parameter: "Type", value: "EWC" },
+    ],
+    badges: ["Quality Assured", "Durable"],
+    related_products: []
+  },
+  {
+    id: "rimless-single-piece-wc-uf-seat-cover-wpc893546",
+    title: "Rimless Single Piece WC with UF Seat Cover (C893546)",
+    categoryId: "sanitary-ware",
+    description:
+      "Rimless Single Piece WC with UF Seat Cover, 750 x 405 x 780 mm, 29.53 x 15.94 x 30.71 in, INSLIM, One Piece, PARRYWARE. WPC893546",
+    image: "/images/rimless-single-piece-wc.jpg",
+    detailSections: [
+      {
+        title: "Product Overview",
+        items: [
+          "Type: Single Piece WC",
+          "Brand: Parryware",
+          "Model: INSLIM (WPC893546)",
+          "Dimensions: 750 x 405 x 780 mm (29.53 x 15.94 x 30.71 in)",
+        ],
+      }
+    ],
+    physicalSpecs: [
+      { parameter: "Dimensions (mm)", value: "750 x 405 x 780 mm" },
+      { parameter: "Dimensions (in)", value: "29.53 x 15.94 x 30.71 in" },
+      { parameter: "Installation", value: "Floor Mounted" },
+      { parameter: "Type", value: "One Piece" },
+      { parameter: "Features", value: "Rimless, UF Seat Cover" },
+    ],
+    badges: ["Quality Assured", "Durable"],
+    related_products: []
+  },
+  {
+    id: "counter-basin-wpc04071c",
+    title: "Below Counter Basin (C04071C)",
+    categoryId: "sanitary-ware",
+    description:
+      "Below Counter Basin, 555 x 450 x 205 mm, CASCADE NXT, Below Counter Basins, PARRYWARE. WPC04071C",
+    image: "/images/counter-basin.jpg",
+    detailSections: [
+      {
+        title: "Product Overview",
+        items: [
+          "Type: Below Counter Basin",
+          "Brand: Parryware",
+          "Model: CASCADE NXT (WPC04071C)",
+          "Dimensions: 555 x 450 x 205 mm",
+        ],
+      }
+    ],
+    physicalSpecs: [
+      { parameter: "Dimensions (mm)", value: "555 x 450 x 205 mm" },
+      { parameter: "Installation", value: "Below Counter" },
+      { parameter: "Type", value: "Basin" },
+    ],
+    badges: ["Quality Assured", "Durable"],
+    related_products: []
+  },
+  {
+    id: "wall-hung-basin-apex-wpc865646",
+    title: "Wall Hung Basin (C865646)",
+    categoryId: "sanitary-ware",
+    description:
+      "Wall Hung Basin, 320 x 400 x 145 mm, APEX, Wall Hung Basin, PARRYWARE. WPC865646",
+    image: "/images/wall-hung-basin-apex.jpg",
+    detailSections: [
+      {
+        title: "Product Overview",
+        items: [
+          "Type: Wall Hung Basin",
+          "Brand: Parryware",
+          "Model: APEX (WPC865646)",
+          "Dimensions: 320 x 400 x 145 mm",
+        ],
+      }
+    ],
+    physicalSpecs: [
+      { parameter: "Dimensions (mm)", value: "320 x 400 x 145 mm" },
+      { parameter: "Installation", value: "Wall Hung" },
+      { parameter: "Type", value: "Basin" },
+    ],
+    badges: ["Quality Assured", "Durable"],
+    related_products: []
+  },
+  {
+    id: "bowl-basin-calysta-wpc893a46",
+    title: "Bowl Basin (C893A46)",
+    categoryId: "sanitary-ware",
+    description:
+      "Bowl Basin, 390 x 550 x 140 mm, 15.35 x 21.65 x 5.51 in, CALYSTA, Bowl Basins, PARRYWARE. WPC893A46",
+    image: "/images/bowl-basin.jpg",
+    detailSections: [
+      {
+        title: "Product Overview",
+        items: [
+          "Type: Bowl Basin",
+          "Brand: Parryware",
+          "Model: CALYSTA (WPC893A46)",
+          "Dimensions: 390 x 550 x 140 mm (15.35 x 21.65 x 5.51 in)",
+        ],
+      }
+    ],
+    physicalSpecs: [
+      { parameter: "Dimensions (mm)", value: "390 x 550 x 140 mm" },
+      { parameter: "Dimensions (in)", value: "15.35 x 21.65 x 5.51 in" },
+      { parameter: "Installation", value: "Bowl Basin" },
+      { parameter: "Type", value: "Basin" },
+    ],
+    badges: ["Quality Assured", "Durable"],
+    related_products: []
+  },
+  {
+    id: "bowl-basin-calysta-wpc896a46",
+    title: "Bowl Basin (C896A46)",
+    categoryId: "sanitary-ware",
+    description:
+      "Bowl Basin, 420 x 420 x 140 mm, 16.54 x 16.54 x 5.51 in, CALYSTA, Bowl Basins, PARRYWARE. WPC896A46",
+    image: "/images/bowl-basin-wpc896a.jpg",
+    detailSections: [
+      {
+        title: "Product Overview",
+        items: [
+          "Type: Bowl Basin",
+          "Brand: Parryware",
+          "Model: CALYSTA (WPC896A46)",
+          "Dimensions: 420 x 420 x 140 mm (16.54 x 16.54 x 5.51 in)",
+        ],
+      }
+    ],
+    physicalSpecs: [
+      { parameter: "Dimensions (mm)", value: "420 x 420 x 140 mm" },
+      { parameter: "Dimensions (in)", value: "16.54 x 16.54 x 5.51 in" },
+      { parameter: "Installation", value: "Bowl Basin" },
+      { parameter: "Type", value: "Basin" },
+    ],
+    badges: ["Quality Assured", "Durable"],
+    related_products: []
+  },
 ];
 
 export function getAllProductSlugs() {
