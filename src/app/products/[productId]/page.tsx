@@ -25,7 +25,7 @@ export default async function ProductPage({
         heroImage={product.heroImage}
       />
 
-      <section className="relative pt-8 pb-12 bg-background">
+      <section className="relative py-8 bg-background">
         {/* Decorative Background Elements - Clipped in separate container to allow sticky scroll */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10" aria-hidden="true">
           <div className="absolute inset-0 opacity-[0.03]">
@@ -42,7 +42,7 @@ export default async function ProductPage({
           <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl opacity-50" />
         </div>
 
-        <div className="relative z-10 mx-auto w-full px-6 lg:px-12 max-w-7xl grid gap-8 lg:grid-cols-[480px_1fr]">
+        <div className="relative z-10 mx-auto w-full px-6 lg:px-8 max-w-screen-2xl grid gap-6 lg:grid-cols-[480px_1fr]">
           <ProductGallery image={product.image} title={product.title} />
           <ProductDetails
             detailSections={product.detailSections}

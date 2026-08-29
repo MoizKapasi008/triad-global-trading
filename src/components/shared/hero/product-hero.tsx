@@ -41,7 +41,7 @@ export default function ProductHeroSection({
       )}
 
       {/* Hero Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center pt-24 md:pt-32">
+      <div className="relative z-10 container mx-auto px-6 text-center pt-16">
         <div className="max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 tracking-tight drop-shadow-2xl line-clamp-2 uppercase">
             {title}

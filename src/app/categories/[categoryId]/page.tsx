@@ -26,7 +26,7 @@ export default async function CategoryPage({
       />
 
       <section className="py-10">
-        <div className="max-w-[1140px] mx-auto px-container">
+        <div className="max-w-screen-2xl mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {relatedProducts.map((product) => (
               <ProductCard key={product.title} {...product} />

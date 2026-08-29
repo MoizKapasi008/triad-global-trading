@@ -11,8 +11,8 @@ export default function ProductDetails({
   badges?: string[];
 }) {
   return (
-    <div className="space-y-8">
-      <div className="space-y-6">
+    <div className="space-y-6">
+      <div className="space-y-4">
         {detailSections?.map((group, idx) => (
           <div
             key={group.title}
@@ -28,7 +28,7 @@ export default function ProductDetails({
 
             <div className="relative group">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-secondary/20 to-transparent rounded-3xl blur opacity-0 group-hover:opacity-100 transition duration-500" />
-              <div className="relative bg-card backdrop-blur-xl supports-[backdrop-filter]:bg-card rounded-3xl p-8 border border-white shadow-[0_15px_50px_rgba(0,0,0,0.06)] hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)] transition-all duration-500 overflow-hidden">
+              <div className="relative bg-card backdrop-blur-xl supports-[backdrop-filter]:bg-card rounded-3xl p-6 border border-white shadow-[0_15px_50px_rgba(0,0,0,0.06)] hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)] transition-all duration-500 overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -mr-16 -mt-16 blur-2xl" />
 
                 <ul className="grid sm:grid-cols-2 gap-x-12 gap-y-5 text-gray-700 font-medium">
@@ -52,7 +52,7 @@ export default function ProductDetails({
 
       {/* Badges */}
       {badges?.length ? (
-        <div className="flex flex-wrap gap-3 py-6 border-y border-gray-200/50">
+        <div className="flex flex-wrap gap-3 py-4 border-y border-gray-200/50">
           {badges.map((b) => (
             <Badge key={b} variant="outline" className="px-6 py-2 text-[9px] font-black tracking-[0.25em] uppercase border-primary/10 bg-white/80 text-primary hover:bg-primary hover:text-white hover:scale-110 transition-all duration-500 rounded-full shadow-sm">
               {b}

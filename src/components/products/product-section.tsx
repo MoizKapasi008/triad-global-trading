@@ -18,7 +18,7 @@ export default function ProductsSection() {
 
   return (
     <section className="w-full py-12 md:py-16 bg-background">
-      <div className="container mx-auto px-6 md:px-12">
+      <div className="mx-auto max-w-screen-2xl px-6 md:px-8">
         <div className="flex flex-col items-center text-center space-y-4 mb-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-foreground tracking-wide">
             Featured <span className="font-bold text-primary">Products</span>
