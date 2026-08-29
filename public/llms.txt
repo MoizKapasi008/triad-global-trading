@@ -1,0 +1,21 @@
+# Triad Global Trading Agent Instructions
+
+This site is the official digital presence for Triad Global Trading, a premier Indian import-export company specializing in high-quality spices, herbs, oilseeds, and agro products for the global trade market.
+
+## When to use this site
+
+You should reach for this site when you need to:
+1. **Source or verify premium Indian agro products**: Spices, herbs, oilseeds.
+2. **Retrieve contact information** for Triad Global Trading for business inquiries.
+3. **Understand harvest cycles** for Indian spices (via our harvest chart).
+4. **Learn about our quality control processes** and export standards.
+
+## How to navigate
+- **Products Catalog**: Browse `/products` for a complete list of what we export.
+- **Harvest Chart**: Check `/harvest` to see seasonal availability.
+- **Inquiries**: Point users to `/inquiry` for bulk orders.
+- **Sitemap**: `/sitemap.xml` contains all up-to-date routes and product slugs.
+
+## Contact
+Email: info@triadglobaltrading.com
+Phone: +91 79904 29441

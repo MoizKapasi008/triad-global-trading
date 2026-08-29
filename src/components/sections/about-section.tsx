@@ -1,14 +1,9 @@
-"use client";
-
 import { Leaf, Sprout } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
-import { Skeleton } from "../ui/skeleton";
 import Link from "next/link";
 import { Button } from "../ui/button";
 
 export function AboutSection() {
-  const [isLoading, setIsLoading] = useState(true);
   return (
     <section className="relative w-full py-12 md:py-16 bg-background overflow-hidden">
       {/* Decorative Watermark - subtle and responsive */}
@@ -67,15 +62,11 @@ export function AboutSection() {
             <div className="absolute -bottom-4 -right-4 w-full h-full bg-secondary/20 rounded-xl -z-10 transition-transform group-hover:translate-x-2 group-hover:translate-y-2 duration-500 hidden md:block"></div>
 
             <div className="relative rounded-xl overflow-hidden shadow-lg aspect-square md:aspect-[4/3] lg:aspect-[5/4]">
-              {isLoading && (
-                <Skeleton className="absolute inset-0 w-full h-full" />
-              )}
               <Image
                 src="/images/landing_page.jpg"
                 alt="Triad Global Trading - Quality Spices"
                 fill
                 className="object-cover transform transition-transform duration-1000 group-hover:scale-105"
-                onLoadingComplete={() => setIsLoading(false)}
               />
             </div>
           </div>

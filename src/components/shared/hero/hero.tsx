@@ -1,24 +1,14 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/skeleton";
 import Link from "next/link";
 
 export function HeroSection() {
-  const [isLoading, setIsLoading] = useState(true);
-
   return (
     <section className="relative w-full min-h-[85dvh] md:min-h-0 md:h-[80vh] lg:h-[90vh] overflow-hidden flex items-center">
-      {isLoading && (
-        <Skeleton className="absolute inset-0 w-full h-full rounded-none z-10" />
-      )}
 
       {/* Clean Background Image */}
       <div
-        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${isLoading ? "opacity-0" : "opacity-100"
-          }`}
+        className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-100"
         style={{
           backgroundImage: "url(/images/landing_page.jpg)",
         }}
@@ -34,13 +24,11 @@ export function HeroSection() {
         fill
         className="hidden"
         priority
-        onLoadingComplete={() => setIsLoading(false)}
       />
 
       {/* Minimalist Content */}
       <div
-        className={`relative z-20 container mx-auto px-6 md:px-12 flex flex-col justify-center pt-24 pb-12 md:pt-0 md:justify-end md:pb-24 h-full transition-all duration-1000 delay-300 ${isLoading ? "opacity-0 translate-y-4" : "opacity-100 translate-y-0"
-          }`}
+        className="relative z-20 container mx-auto px-6 md:px-12 flex flex-col justify-center pt-24 pb-12 md:pt-0 md:justify-end md:pb-24 h-full"
       >
         <div className="max-w-2xl space-y-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wide leading-tight text-white">
