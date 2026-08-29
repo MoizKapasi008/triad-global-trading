@@ -168,7 +168,7 @@ export default function Header() {
         <div
           className={cn(
             "fixed inset-0 z-[2000] lg:hidden flex flex-col bg-white transition-all duration-500 ease-in-out",
-            isMobileMenuOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-4"
+            isMobileMenuOpen ? "opacity-100 pointer-events-auto translate-y-0" : "opacity-0 pointer-events-none -translate-y-4"
           )}
         >
           {/* Menu Header - Original bg-primary */}
