@@ -1,5 +1,12 @@
 import AboutHeroSection from "@/components/shared/hero/about-hero";
 import { cn } from "@/lib/utils";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Harvest Chart",
+  description: "Explore the seasonal harvest chart from Triad Global Trading. As leading Indian import export global traders, we source premium agro products at their peak for global trade.",
+  keywords: ["import", "export", "trading", "triad", "global", "trade", "traders", "indian import export", "harvest chart", "spice season"],
+};
 
 export default async function HarvestChartPage({ }) {
   // Harvest data for different commodities

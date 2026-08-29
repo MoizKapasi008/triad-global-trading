@@ -6,6 +6,39 @@ import ProductSpecs from "@/components/products/product-specs";
 import ProductOrigin from "@/components/products/product-origin";
 import ProductHeroSection from "@/components/shared/hero/product-hero";
 import ProductRelated from "@/components/products/product-related";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ productId: string }>;
+}): Promise<Metadata> {
+  const { productId } = await params;
+  const product = getProductBySlug(productId);
+
+  if (!product) {
+    return {
+      title: "Product Not Found",
+    };
+  }
+
+  return {
+    title: product.title,
+    description: `${product.description} Sourced by Triad Global Trading, premier Indian import export global traders.`,
+    keywords: ["import", "export", "trading", "triad", "global", "trade", "traders", "indian import export", product.title, "spices export"],
+    openGraph: {
+      title: product.title,
+      description: `${product.description} Sourced by Triad Global Trading, premier Indian import export global traders.`,
+      images: [product.image],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: product.title,
+      description: product.description,
+      images: [product.image],
+    },
+  };
+}
 
 export default async function ProductPage({
   params,

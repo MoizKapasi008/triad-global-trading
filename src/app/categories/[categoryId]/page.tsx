@@ -3,6 +3,39 @@ import ProductHeroSection from "@/components/shared/hero/product-hero";
 import { getCategoryBySlug } from "@/lib/categories";
 import { getProductsByCategory } from "@/lib/products";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ categoryId: string }>;
+}): Promise<Metadata> {
+  const { categoryId } = await params;
+  const category = await getCategoryBySlug(categoryId);
+
+  if (!category) {
+    return {
+      title: "Category Not Found",
+    };
+  }
+
+  return {
+    title: category.title,
+    description: `${category.description} Provided by Triad Global Trading, experts in Indian import export and global trade.`,
+    keywords: ["import", "export", "trading", "triad", "global", "trade", "traders", "indian import export", category.title, "wholesale export"],
+    openGraph: {
+      title: category.title,
+      description: `${category.description} Provided by Triad Global Trading, experts in Indian import export and global trade.`,
+      images: [category.image],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: category.title,
+      description: category.description,
+      images: [category.image],
+    },
+  };
+}
 
 export default async function CategoryPage({
   params,
