@@ -14,14 +14,14 @@ export async function POST(req: NextRequest) {
       port: 465,
       secure: true,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: process.env.NEXT_PUBLIC_EMAIL_USER,
+        pass: process.env.NEXT_PUBLIC_EMAIL_PASS,
       },
     });
 
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
-      to: process.env.EMAIL_USER, // your company email
+      to: process.env.NEXT_PUBLIC_EMAIL_USER, // your company email
       subject: subject || `New Contact Form Inquiry from ${name}`,
       text: `Message: ${message}\nPhone: ${phone || "N/A"}`,
       html: `<p><strong>Message:</strong> ${message}</p><p><strong>Phone:</strong> ${phone || "N/A"}</p><p><strong>Email:</strong> ${email}</p>`,
