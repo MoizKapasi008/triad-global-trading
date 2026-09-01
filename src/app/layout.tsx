@@ -1,4 +1,4 @@
-import ClarityAnalytics from "@/components/ClarityAnalytics";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
 import WhatsAppButton from "@/components/shared/whatsapp";
@@ -86,7 +86,7 @@ export default function RootLayout({
         <Analytics />
         <WhatsAppButton />
         <Footer />
-        <ClarityAnalytics />
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID as string} />
       </body>
     </html>
   );
