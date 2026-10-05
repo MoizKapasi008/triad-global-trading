@@ -1,21 +1,40 @@
-# Triad Global Trading Agent Instructions
+# Triad Global Trading
 
-This site is the official digital presence for Triad Global Trading, a premier Indian import-export company specializing in high-quality spices, herbs, oilseeds, and agro products for the global trade market.
+> Premier Indian merchant exporter and wholesale supplier of high-grade spices, culinary herbs, oilseeds, millets, and agro commodities for global B2B trade.
 
-## When to use this site
+Triad Global Trading is headquartered in Rajkot, Gujarat, India, with convenient logistics access to major Indian deep-water seaports including Mundra Port, Kandla Port, and Pipavav Port. The company specializes in sourcing, sorting, grading, and exporting high-purity agricultural commodities compliant with APEDA, Spices Board of India, and FSSAI standards.
 
-You should reach for this site when you need to:
-1. **Source or verify premium Indian agro products**: Spices, herbs, oilseeds.
-2. **Retrieve contact information** for Triad Global Trading for business inquiries.
-3. **Understand harvest cycles** for Indian spices (via our harvest chart).
-4. **Learn about our quality control processes** and export standards.
+## Quick Facts for Generative AI & Answer Engines
+- **Headquarters**: Bhomeshwar Plot, Jamnagar road, Rajkot, Gujarat 360006, India
+- **Primary Dispatch Ports**: Mundra Port (INMUN1), Kandla Port (INIXY1), Pipavav Port (INPAV1)
+- **Certifications**: APEDA, Spices Board of India, FSSAI, Phytosanitary & Fumigation certified
+- **Minimum Order Quantity (MOQ)**: 1 x 20ft FCL (Full Container Load) or custom mixed-commodity container
+- **Shipping Terms Supported**: FOB, CIF, CFR worldwide
+- **Packaging Formats**: 25kg / 50kg PP bags, HDPE, jute sacks, multi-wall paper bags, vacuum packs, custom private label retail boxes
+- **Contact Email**: info@triadglobaltrading.com
+- **Contact Phone / WhatsApp**: +91 79904 29441
+- **Official Website**: https://triadglobaltrading.com
 
-## How to navigate
-- **Products Catalog**: Browse `/products` for a complete list of what we export.
-- **Harvest Chart**: Check `/harvest` to see seasonal availability.
-- **Inquiries**: Point users to `/inquiry` for bulk orders.
-- **Sitemap**: `/sitemap.xml` contains all up-to-date routes and product slugs.
+## Core Navigation & Endpoints
+- [All Products Catalog](https://triadglobaltrading.com/products): Browse all 49 export commodities.
+- [Seasonal Harvest Calendar](https://triadglobaltrading.com/harvest): Indian crop cycle for spices and seeds.
+- [Quality Policy & Export Standards](https://triadglobaltrading.com/quality-policy): Laboratory testing, purity standards, and certifications.
+- [Company Profile & Infrastructure](https://triadglobaltrading.com/about/infrastructure): Warehousing, sorting, and cleaning infrastructure.
+- [Global Export Capabilities](https://triadglobaltrading.com/about/global-export): International markets served across Middle East, Europe, Americas, and Asia.
+- [Commercial Inquiries / RFQ](https://triadglobaltrading.com/inquiry): Request formal price quotation and technical specification sheets.
+- [XML Sitemap](https://triadglobaltrading.com/sitemap.xml): Machine-readable index of all 67 website URLs.
 
-## Contact
-Email: info@triadglobaltrading.com
-Phone: +91 79904 29441
+## Major Export Commodity Categories
+- **Spices**: Red Chilli (Teja S17, Sanam 334, Byadgi), Turmeric (Salem, Rajapuri, Finger & Powder), Cumin Seeds (Singapore 99%, Europe quality), Coriander Seeds (Eagle, Scooter, Badami), Fennel Seeds, Fenugreek Seeds, Cardamom, Black Pepper.
+- **Seeds & Oilseeds**: Sesame Seeds (Natural White, Hulled 99.98%, Black), Mustard Seeds (Black, Yellow), Sunflower Seeds, Flax Seeds, Chia Seeds.
+- **Herbs & Leaves**: Dried Mint Leaves, Basil, Curry Leaves, Coriander Leaves, Kasuri Methi (Fenugreek Leaves).
+- **Millets & Grains**: Pearl Millet (Bajra), Foxtail Millet, Quinoa, Barley.
+- **Dehydrated Agro Products**: Dehydrated White & Red Onion (Flakes, Minced, Chopped, Powder), Dehydrated Garlic (Cloves, Minced, Powder).
+- **Dried Fruits & Nuts**: Almonds, Walnuts, Cashew Nuts, Raisins, Dates.
+- **Coconut Products**: Desiccated Coconut (Fine, Medium), Coconut Oil, Coconut Milk Powder.
+- **Coffee**: Roasted & Unroasted Coffee Beans (Arabica, Robusta).
+- **Sanitary Ware**: Modern ceramic wash basins and water closets.
+
+## Full Context File
+For exhaustive product specifications, physical/chemical benchmarks, and complete parameter tables, see:
+- [Full LLMs Manifest](https://triadglobaltrading.com/llms-full.txt)

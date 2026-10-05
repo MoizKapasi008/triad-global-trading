@@ -3,12 +3,65 @@ import { cn } from "@/lib/utils";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Harvest Chart",
-  description: "Explore the seasonal harvest chart from Triad Global Trading. As leading Indian import export global traders, we source premium agro products at their peak for global trade.",
-  keywords: ["import", "export", "trading", "triad", "global", "trade", "traders", "indian import export", "harvest chart", "spice season"],
+  title: "Seasonal Harvest Calendar & Crop Cycle Chart | Triad Global Trading",
+  description:
+    "Comprehensive Indian spice and agro commodity harvest calendar. Track peak harvesting seasons for Cardamom, Chilies, Cumin, Turmeric, Coriander, and Oilseeds for timely procurement.",
+  keywords: [
+    "Indian spice harvest chart",
+    "spice harvesting season India",
+    "crop calendar spices",
+    "chilli harvest season",
+    "cumin seed crop cycle",
+    "turmeric harvest India",
+    "Triad Global Trading harvest calendar",
+  ],
+  alternates: {
+    canonical: "https://triadglobaltrading.com/harvest",
+  },
+  openGraph: {
+    title: "Seasonal Harvest Calendar & Crop Cycle Chart | Triad Global Trading",
+    description:
+      "Track peak harvesting seasons for Indian spices, herbs, and oilseeds to plan your bulk B2B procurement.",
+    url: "https://triadglobaltrading.com/harvest",
+    images: ["/images/landing_page.jpg"],
+  },
 };
 
 export default async function HarvestChartPage({ }) {
+  const harvestJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://triadglobaltrading.com/harvest#webpage",
+        url: "https://triadglobaltrading.com/harvest",
+        name: "Indian Agro Commodities & Spices Seasonal Harvest Calendar",
+        description:
+          "Seasonal crop calendar and harvest schedules for key Indian spices and agro commodities.",
+        isPartOf: {
+          "@id": "https://triadglobaltrading.com/#website",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://triadglobaltrading.com/harvest#breadcrumbs",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://triadglobaltrading.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Harvest Chart",
+            item: "https://triadglobaltrading.com/harvest",
+          },
+        ],
+      },
+    ],
+  };
   // Harvest data for different commodities
   const harvestData = [
     // ... same data
@@ -531,6 +584,10 @@ export default async function HarvestChartPage({ }) {
 
   return (
     <main className="min-h-screen bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(harvestJsonLd) }}
+      />
       <AboutHeroSection
         title="Harvest Chart"
         description="Global availability timeline for our premium agricultural commodities."

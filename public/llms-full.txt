@@ -1,0 +1,1638 @@
+# Triad Global Trading - Complete Knowledge Base & Product Directory (llms-full.txt)
+
+> Official exhaustive database of all products, specifications, packaging options, and export guidelines from Triad Global Trading (Rajkot, Gujarat, India).
+
+## Company Profile
+- Legal Name: Triad Global Trading
+- Location: Bhomeshwar Plot, Jamnagar road, Rajkot, Gujarat 360006, India
+- Ports: Mundra Port, Kandla Port, Pipavav Port
+- Export Registrations: APEDA, Spices Board of India, FSSAI
+- Contact: info@triadglobaltrading.com | +91 79904 29441
+- Website: https://triadglobaltrading.com
+- Sitemaps: https://triadglobaltrading.com/sitemap.xml
+
+## Standard Export Terms
+- Minimum Order Quantity (MOQ): 1 x 20ft FCL or custom mixed containers
+- Standard Bulk Packaging: 25kg / 50kg PP bags, HDPE, jute sacks, multi-wall paper bags, vacuum-sealed bags
+- Private Labeling: Custom retail boxes, pouches, pet jars with buyer branding
+- Shipping Terms: FOB (Indian ports), CIF, CFR worldwide
+- Payment Terms: L/C at sight, T/T advance
+
+---
+
+## Complete Product Catalog (49 Products)
+
+### Category: Spices
+Category Description: Asian Spices, specifically Indian Spices are famous all over the world. We at Triad Global Trading are one of the leading exporters of Spices across the globe. We export spices in grounded as well as whole form including Chili, Turmeric, Cumin, Fennel, Fenugreek, Coriander and many more.
+Category URL: https://triadglobaltrading.com/categories/spices
+
+#### Red Chilli Peppers (Slug: whole-chilli)
+- URL: https://triadglobaltrading.com/products/whole-chilli
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/whole-chilli
+- Description: Turn up the heat and ignite your taste budswith the fiery kick of chilli peppers!
+- Varieties Available:
+  * S17 Teja Chilli (High pungency, bright red color)
+  * Sanam Chilli (334) (Moderate pungency, deep red color)
+  * Byadgi Chilli (Mild pungency, rich red color, high oil content)
+  * Wonder Hot Chilli
+  * Others : Guntur Chilli, 273 Wrinkle, 341, etc.
+- Packing and Shipping Details:
+  * PP/Jute Bags: 25kg / 50kg
+- Custom packaging available as per buyer’s requirement.:
+  * Pouches, cartons, jars, etc.
+- Container Load:
+  * 20 FT Container : 7-8 Metric Tons, 40 FT Container : 14-15 Metric Tons
+- Key Features:
+  * Uniformly dried to preserve color and pungency
+  * Free from mold, infestation, and foreign material
+  * Suitable for direct consumption, grinding, or oleoresin extraction
+- Technical Specifications:
+  * Length: 5-15 cm (varies with variety)
+  * Color: Bright red, deep red (variety-specific)
+  * Pungency (SHU): 15,000 to 100,000 SHU (variety-dependent)
+  * Moisture Content: 8-12% max
+  * Skin: Smooth or Wrinkled
+  * Foreign Matter: 1-2% Max
+  * Broken Chilli: 1-2% Max
+  * Loose Seeds: 1-2% Max
+  * Capsaicin Content: 0.2%–0.5%
+  * Aflatoxin Level: Below 5-10 ppb (As per EU standards)
+  * Total Ash: 6-8% max
+  * Non-volatile Ether Extract: 10-12%
+
+#### Turmeric Fingers (Slug: turmeric-finger)
+- URL: https://triadglobaltrading.com/products/turmeric-finger
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/turmeric-finger
+- Description: Add a pop of color and a burst of flavor to your meals with the golden spice of turmeric.
+- Varieties Available:
+  * Maharashtra Turmeric (Standard variety, bright yellow color)
+  * Salem Turmeric (Polished variety with medium curcumin)
+  * Kaddapa Turmeric (Large size, rich aroma)
+  * Nizamabad Turmeric (Small to medium size)
+- Packing and Shipping Details:
+  * PP/HDPE Bags with poly liner: 25kg / 50kg
+  * Custom packaging options available (pouches, cartons, jars)
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–24 Metric Tons (MT)
+- Key Features:
+  * High curcumin content (2-5%) ensures vibrant color and health benefits.
+  * Polished and unpolished turmeric available based on requirement.
+  * Free from dust, stones, and foreign impurities.
+  * Suitable for grinding into powder, spice blends, medicinal uses, and curcumin extraction.
+- Technical Specifications:
+  * Length:  3 to 6 cm
+  * Color: Bright yellow to deep orange
+  * Shape: Cylindrical, smooth or rough texture
+  * Curcumin Content: 2% to 5% (variety-specific)
+  * Moisture Content: 8% to 12% max
+  * Foreign Matter: 0.5% to 2% max
+  * Defective Fingers: 2–3% max
+  * Polishing: Available as polished or unpolished
+  * Aroma: Earthy, strong and natural
+  * Curcumin Content: 1% to 5%
+  * Moisture: 8% to 12%
+  * Ash Content: 6-7% max
+  * Ash Insoluble in Acid: 1% to 2% max
+  * Volatile Oil: 3% to 5%
+
+#### Turmeric Powder (Slug: turmeric-powder)
+- URL: https://triadglobaltrading.com/products/turmeric-powder
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/turmeric-powder
+- Description: Add a pop of color and a burst of flavor to your meals with the golden spice of turmeric.
+- Product Details:
+  * Product : Turmeric Powder
+  * Origin : India (Telangana, Andhra Pradesh, Tamil Nadu, Maharashtra, Karnataka)
+  * Botanical Name : Curcuma longa
+  * Form :Fine Powder
+  * Color : Bright Yellow to Golden Yellow
+  * Shelf Life : Up to 2 years when stored in a cool, dry place, away from moisture, light, and heat.
+- Packing and Shipping Details:
+  * PP Bags, Paper Bags, HDPE Bags, or Cartons
+  * Standard Sizes: 10kg, 25kg, 50kg, or as per buyer requirements
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–24 Metric Tons (MT)
+- Key Features:
+  * High-quality turmeric powder with consistent color, aroma, and flavor.
+  * Rich in curcumin content ensuring high medicinal and nutritional value.
+  * Free from artificial colors, additives, and preservatives.
+  * Cleaned, processed, and packaged under strict hygiene standards.
+- Grades of tumeric powder:
+  * Premium Grade	: 5% or above
+  * Regular Grade	: 3% to 4%
+  * Industrial Grade	: 2% to 3%
+- Technical Specifications:
+  * Appearance: Fine, smooth, and uniform powder
+  * Color: Bright yellow to golden yellow
+  * Particle Size: 80-100 mesh (customizable)
+  * Moisture Content: 8% to 12% max
+  * Ash Content: 7% to 9% max
+  * Acid Insoluble Ash: 1.5% max
+  * Foreign Matter: 0.5% max
+  * Volatile Oil Content: 2% to 4%
+  * Flavor/Aroma: Earthy, aromatic, and mildly bitter
+  * Moisture Content: 8% to 12% max
+  * Curcumin Content: 2% to 5% (Varies by grade)
+  * Total Ash: 7% to 9% max
+  * Acid Insoluble Ash: 1% max
+  * Lead Content (Pb): Lessthan 2.5 ppm
+  * Arsenic Content: Lessthan 1.1 ppm
+  * Pesticide Residue: As per international standards
+  * Microbial Load: As per food safety standards
+
+#### Red Chilli Powder (Slug: red-chilli-powder)
+- URL: https://triadglobaltrading.com/products/red-chilli-powder
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/red-chilli-powder
+- Description: Add a fiery kick to your meals with the vibrant and versatile flavor of chili powder - the perfect way to spice up your life.
+- Product Details:
+  * Product : Chilli Powder (Red Chili Powder)
+  * Origin : India (Karnataka, Andhra Pradesh, Telangana, Madhya Pradesh)
+  * Botanical Name : Capsicum annuum (for most varieties)
+  * Form : Ground powder from dried red chilies
+  * Color : Bright red to deep red
+  * Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from light, heat, and moisture.
+- Packing and Shipping Details:
+  * PP Bags, Paper Bags, HDPE Bags, or Cartons
+  * Standard Sizes: 10kg, 25kg, 50kg, or as customized packaging per buyer requirements
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–22 Metric Tons (MT)
+- Key Features:
+  * Made from high-quality, sun-dried red chilies of selected varieties.
+  * Uniform color, texture, and flavor.
+  * Free from additives, artificial colors, and preservatives.
+  * High capsaicin content, providing the desired spiciness and heat.
+- Grades:
+  * Premium Grade	: Bright red color, fine texture, minimal impurity
+  * Regular Grade	: Slightly darker color, coarser texture, with minor impurity
+  * Industrial Grade	: Coarser grind, moderate color intensity, used in bulk production
+- Technical Specifications:
+  * Appearance: Fine, smooth, and uniform powder
+  * Color: Bright red to deep red
+  * Particle Size: 80-100 mesh (customizable)
+  * Capsaicin Content: 0.5% to 1.5% (depending on variety)
+  * Moisture Content: 8% to 12% max
+  * Ash Content: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Foreign Matter: 0.5% max
+  * Volatile Oil Content: 0.5% to 1.5%
+  * Flavor/Aroma: Spicy, pungent, and aromatic
+  * Moisture Content: 8% to 12% max
+  * Capsaicin Content: 0.5% to 1.5% (Varies by variety)
+  * Total Ash: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Lead Content (Pb): Lessthan 2.5 ppm
+  * Arsenic Content: Lessthan 1.1 ppm
+  * Pesticide Residue: As per international standards
+  * Microbial Load: As per food safety standards
+
+#### Nutmeg Whole (Slug: nutmeg-whole)
+- URL: https://triadglobaltrading.com/products/nutmeg-whole
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/nutmeg-whole
+- Description: Grate fresh nutmeg for a rich, aromatic flavor that enhances any dish with a warm, sweet touch.
+- Product Details:
+  * Product : Whole Nutmeg
+  * Origin : India (Primarily Kerala, Tamil Nadu)
+  * Botanical Name :Myristica fragrans
+  * Form :Whole dried nutmeg seed
+  * Family :Myristicaceae
+  * Shelf Life : Up to 2 years if stored in cool, dry conditions, away from direct sunlight and moisture.
+- Packing and Shipping Details:
+  * PP/Jute Bags, Cartons, or as per buyer requirements
+  * Sizes: 10kg, 25kg, 50kg bags
+- Container Load:
+  * 20 FT Container : 10-12 Metric Tons (MT)
+  * 40 FT Container : 20-22 Metric Tons (MT)
+- Key Features:
+  * Indian nutmeg is known for its strong aroma, high volatile oil content (8-15%), and rich myristicin content (4-6%).
+  * Uniform color, texture, and flavor.
+  * Free from mold, pest infestation, and impurities.
+  * Sourced from premium Indian nutmeg-growing regions.
+- Grades:
+  * Grade A (Premium)	: Large size (22-26 mm), uniform color, minimal defects
+  * Grade B	: Medium size (18-22 mm), slightly mixed color
+  * Grade C	: Small size (lessthan 18 mm), minor defects allowed
+- Technical Specifications:
+  * Shape: Oval, elliptical
+  * Color: Light brown to dark brown
+  * Size: 18 mm to 26 mm (variety-dependent)
+  * Weight: 4 to 7 grams per seed
+  * Texture: Hard, smooth, and firm
+  * Aroma: Strong, warm, and aromatic
+  * Moisture Content: 8% to 12% max
+  * Foreign Matter: 0.5% to 1% max
+  * Damaged or Defective: 1% to 2% max
+  * Volatile Oil Content: 8% to 15%
+  * Myristicin Content: 4% to 6%
+  * Moisture: 8% to 12% max
+  * Ash Content: 2% to 3% max
+
+#### Cumin Powder (Slug: cumin-powder)
+- URL: https://triadglobaltrading.com/products/cumin-powder
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/cumin-powder
+- Description: Spice up your life with the bold flavor of cumin !
+- Product Details:
+  * Product : Cumin Powder (Ground Cumin)
+  * Origin : India (Rajasthan, Gujarat, Uttar Pradesh, Madhya Pradesh)
+  * Botanical Name :Cuminum cyminum
+  * Form :Fine powder made from roasted or raw cumin seeds
+  * Color :Light brown to yellowish-brown
+- Packing and Shipping Details:
+  * PP Bags, Paper Bags, HDPE Bags, or Cartons
+  * Standard Sizes: 10kg, 25kg, 50kg, or as customized packaging per buyer requirements
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–22 Metric Tons (MT)
+- Key Features:
+  * Prepared from premium-grade cumin seeds, cleaned and ground under hygienic conditions.
+  * Rich, earthy aroma and warm, slightly bitter taste distinctive of quality cumin.
+  * Uniform texture and natural color with no artificial additives or preservatives.
+  * Retains natural essential oils for enhanced flavor and digestive benefits.
+- Grades:
+  * Premium Grade	: Fine texture, strong aroma, uniform color
+  * Regular Grade	: Slightly coarser texture, with slight discoloration
+  * Industrial Grade	: Slightly coarser texture, with slight discoloration
+- Technical Specifications:
+  * Appearance: Fine, smooth, and uniform powder
+  * Color: Light brown to yellowish-brown
+  * Particle Size: 80-100 mesh (customizable)
+  * Moisture Content: 8% to 12% max
+  * Ash Content: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Foreign Matter: 0.5% max
+  * Volatile Oil Content: 0.5% to 1.5%
+  * Moisture Content: 8% to 12% max
+  * Total Ash: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Volatile Oil Content: 2% to 4%
+  * Fat Content: 10% to 15%
+  * Pesticide Residue: As per international standards
+  * Microbial Load: As per food safety standards
+
+#### Cinnamon & Cassia (Slug: cinnamon-cassia)
+- URL: https://triadglobaltrading.com/products/cinnamon-cassia
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/cinnamon-cassia
+- Description: Infuse your dishes with cassia—a warm, sweet spice that adds rich flavor and a comforting aroma.
+- Product Details:
+  * Product Name : Imported Cinnamon
+  * Botanical Name : Cinnamomum verum (True Cinnamon)
+  * Family : Lauraceae
+  * Types : True Cinnamon (Ceylon Cinnamon), Cassia Cinnamon
+  * Origin : Sri Lanka (Ceylon Cinnamon), Vietnam, Indonesia
+  * Description : Imported cinnamon is known for its distinct aroma, sweet-spicy flavor, and various applications in cooking, baking, and health remedies. Ceylon cinnamon is softer and more aromatic, while Cassia cinnamon is robust and spicy.
+- Packing and Shipping Details:
+  * Food-grade bags or cartons, vacuum-sealed packs available.
+  * Common sizes: 10kg, 25kg, or customized.
+- Storage ::
+  * Store in a cool, dry place, away from direct sunlight and moisture.
+  * Shelf Life :12–18 months under proper storage conditions.
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–22 Metric Tons (MT)
+- Key Features:
+  * Prepared from premium-grade cumin seeds, cleaned and ground under hygienic conditions.
+  * Rich, earthy aroma and warm, slightly bitter taste distinctive of quality cumin.
+  * Uniform texture and natural color with no artificial additives or preservatives.
+  * Retains natural essential oils for enhanced flavor and digestive benefits.
+- Grades:
+  * Premium Grade	: Fine texture, strong aroma, uniform color
+  * Regular Grade	: Slightly coarser texture, with slight discoloration
+  * Industrial Grade	: Slightly coarser texture, with slight discoloration
+- Technical Specifications:
+  * type: Ceylon Cinnamon
+  * Appearance: Thick, hard bark sticks
+  * Color: Dark reddish-brown
+  * Length of Quills: 5–20 cm or custom-cut
+  * Thickness: 1–3 mm
+  * Moisture Content: ≤ 12%
+  * Purity: ≥ 99%
+  * Foreign Matter: ≤ 0.5%
+  * type: Cassia Cinnamon
+  * Appearance: Thin, delicate quills
+  * Color: Light tan to golden brown
+  * Length of Quills: 5–10 cm, 15 cm, or custom-cut
+  * Thickness: 0.2–0.35 mm
+  * Moisture Content: ≤ 12%
+  * Purity: ≥ 99%
+  * Foreign Matter: ≤ 0.5%
+  * Volatile Oil Content: ≥ 1% (Ceylon); ≥ 2% (Cassia)
+  * Cinnamaldehyde Content: ≥ 55–65%
+  * Coumarin Content: Low in Ceylon; High in Cassia
+  * Ash Content: ≤ 4%
+  * Acid Insoluble Ash: ≤ 1%
+  * Pesticide Residue: As per international standards
+  * Microbial Load: Compliant with food safety standards
+  * Energy: 247 kcal
+  * Carbohydrates	: 81g
+  * Sugars: 2.2g
+  * Dietary Fiber: 53g
+  * Protein: 4g
+  * Fat: 1.2g
+  * Calcium: 1002mg
+  * Iron: 8.3mg
+
+#### Corriander Powder (Slug: corriander-powder)
+- URL: https://triadglobaltrading.com/products/corriander-powder
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/corriander-powder
+- Description: Add a burst of freshness to your dishes with the zesty aroma of Corriander !
+- Product Details:
+  * Product : Corriander Powder (Ground Corriander)
+  * Origin : India
+  * Botanical Name :Coriandrum sativum
+  * Form :Fine powder made from dried Corriander seeds
+  * Color :Light brown to yellowish-brown
+  * Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat
+- Packing and Shipping Details:
+  * PP Bags, Paper Bags, or Cartons
+  * Standard Sizes: 10kg, 25kg, 50kg, or customized packing
+- Container Load:
+  * 20 FT Container : 10-12 Metric Tons (MT)
+  * 40 FT Container : 20-22 Metric Tons (MT)
+- Key Features:
+  * Made from high-quality Corriander seeds that are cleaned, dried, and finely ground.
+  * Rich, citrusy flavor and aromatic profile.
+  * Free from additives, artificial colors, and preservatives.
+  * Consistent color, texture, and flavor.
+- Grades:
+  * Premium Grade	: Fine texture, strong aroma, uniform color
+  * Regular Grade	: Slightly coarser texture, minor discoloration
+  * Industrial Grade	: Coarser grind, used in bulk food processing
+- Technical Specifications:
+  * Appearance: Fine, smooth, and uniform powder
+  * Color: Light brown to yellowish-brown
+  * Particle Size: 80-100 mesh (customizable)
+  * Moisture Content: 8% to 12% max
+  * Flavor/Aroma: Warm, earthy, citrus-like with a mild sweetness
+  * Ash Content: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Foreign Matter: 0.5% max
+  * Volatile Oil Content: 0.5% to 1.5%
+  * Moisture Content: 8% to 12% max
+  * Total Ash: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Volatile Oil Content: 0.5% to 1.0%
+  * Fat Content: 10% to 15%
+  * Pesticide Residue: As per international standards
+  * Microbial Load: As per food safety standards
+
+#### Cloves (Slug: cloves)
+- URL: https://triadglobaltrading.com/products/cloves
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/cloves
+- Description: Add a warm, aromatic touch to your dishes with cloves—a potent spice that brings depth and a hint of sweetness.
+- Product Information:
+  * Product Name : Cloves (Whole)
+  * Botanical Name : Syzygium aromaticum
+  * Form : Whole dried flower buds
+  * Origin : India (Kerala, Tamil Nadu, Karnataka), Sri Lanka, Indonesia, Madagascar
+  * Shelf Life : Up to 2 years when stored in a cool, dry place, away from moisture and sunlight.
+- Packing and Shipping Details:
+  * PP/Jute Bags or Cartons
+  * Standard Sizes: 10kg, 25kg, 50kg bags
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20-22 Metric Tons (MT)
+- Key Features:
+  * High volatile oil and eugenol content ensuring rich aroma and strong flavor.
+  * Handpicked and machine-cleaned for premium quality.
+  * Free from foreign matter, stems, and infestation.
+  * Available in multiple grades to meet various requirements.
+- Grades:
+  * Handpicked Superior (HPS) : Uniform size, color, and aroma
+  * Grade 1	: Clean, dark brown, less broken
+  * Grade 2	: Slight variation in size and color
+  * Grade 3	: Broken or smaller cloves
+- Technical Specifications:
+  * Appearance: Whole, dried flower buds
+  * Color: Dark brown to reddish-brown
+  * Size: 10 mm to 16 mm
+  * Length: 1.2 cm to 2.0 cm
+  * Head: Intact, round, firm, 4-6 mm diameter
+  * Texture: Firm, hard, and aromatic
+  * Moisture Content: 10% to 12% max
+  * Foreign Matter: 0.5% to 1% max
+  * Stems: 1% to 3% max
+  * Damaged/Discolored Cloves: 2% max
+  * Volatile Oil Content: 12% to 18% (High Eugenol Content)
+  * Eugenol Content: 70% to 85%
+  * Density: 140 to 160 grams per 100 ml
+  * Odor/Aroma: Strong, spicy, and aromatic
+  * Taste: Pungent, warm, and slightly bitter
+  * Volatile Oil Content: 12% to 18%
+  * Eugenol Content: 70% to 85%
+  * Moisture Content: 10% to 12% max
+  * Total Ash: 5% to 7% max
+  * Acid Insoluble Ash: 1% to 2% max
+
+#### Fenugreek Powder (Slug: fenugreek-powder)
+- URL: https://triadglobaltrading.com/products/fenugreek-powder
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/fenugreek-powder
+- Description: Boost your dishes with the unique, aromatic flavor of fenugreek powder – a perfect addition to any meal.
+- Product Details:
+  * Product : Fenugreek Powder
+  * Origin : India (Rajasthan, Gujarat, Tamil Nadu, Uttar Pradesh)
+  * Botanical Name :Trigonella foenum-graecum
+  * Form :Fine powder made from dried fenugreek seeds
+  * Color : Yellowish-brown to light brown
+  * Shelf Life :Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat.
+- Packing and Shipping Details:
+  * PP Bags, Paper Bags, or Cartons
+  * Standard Sizes: 10kg, 25kg, 50kg, or customized packing
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–22 Metric Tons (MT)
+- Key Features:
+  * Prepared from premium-grade cumin seeds, cleaned and ground under hygienic conditions.
+  * Rich, earthy aroma and warm, slightly bitter taste distinctive of quality cumin.
+  * Uniform texture and natural color with no artificial additives or preservatives.
+  * Retains natural essential oils for enhanced flavor and digestive benefits.
+- Grades:
+  * Premium Grade	: Fine texture, uniform color, and minimal impurities
+  * Regular Grade	: Slightly coarser texture, mild discoloration
+  * Industrial Grade	: Coarser grind, used for bulk production and food processing
+- Technical Specifications:
+  * Appearance: Fine, smooth, and uniform powder
+  * Color: Yellowish-brown to light brown
+  * Particle Size: 80-100 mesh (customizable)
+  * Moisture Content: 8% to 12% max
+  * Flavor/Aromas: Slightly bitter, earthy, and mustard-like
+  * Ash Content: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Foreign Matter: 0.5% max
+  * Volatile Oil Content: 0.5% to 1.5%
+  * Moisture Content: 8% to 12% max
+  * Total Ash: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Volatile Oil Content: 0.5% to 1.5%
+  * Fat Content: 10% to 15%
+  * Pesticide Residue: As per international standards
+  * Microbial Load: As per food safety standards
+
+#### Dry Ginger (Slug: dry-ginger)
+- URL: https://triadglobaltrading.com/products/dry-ginger
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/dry-ginger
+- Description: Add a bold, spicy kick to your dishes with the intense flavor of dry ginger.
+- Product Information:
+  * Product : Dry Ginger (Whole)
+  * Origin : India (Kerala, Karnataka, Tamil Nadu, and Northeastern regions)
+  * Botanical Name :Zingiber officinale
+  * Form :Whole dried ginger roots
+  * Family :Zingiberaceae
+  * Shelf Life : Up to 2 years when stored in a cool, dry place, away from sunlight and moisture
+- Packing and Shipping Details:
+  * PP Bags, Paper Bags, or Cartons
+  * Standard Sizes: 10kg, 25kg, 50kg
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20-22 Metric Tons (MT)
+- Key Features:
+  * High volatile oil content for strong aroma and flavor.
+  * Naturally dried to retain pungency and freshness.
+  * Free from foreign matter, stems, and infestation.
+  * Sourced from premium ginger-growing regions in India.
+- Grades:
+  * Grade A (Premium) : Large size, uniform light color, clean
+  * Grade B : Medium size, slight discoloration
+  * Grade C : Smaller pieces, irregular shapes
+  * Splits	: Broken ginger pieces
+- Technical Specifications:
+  * Appearance: Clean, fibrous, whole dried roots
+  * Color: Light brown or pale yellow
+  * Shape: Irregular, knobby fingers
+  * Length: 4 to 12 cm
+  * Diameter: 1 to 3 cm
+  * Texture: Hard, rough, and fibrous
+  * Moisture Content: 8% to 12% max
+  * Foreign Matter: 0.5% to 1% max
+  * Impurities: 1% max
+  * Damaged/Discolored: 2% max
+  * Flavor/Aroma: Strong, pungent, and aromatic
+  * Volatile Oil Content: 1.5% to 2.5%
+  * Gingerol Content: 1% to 2.5%
+  * Moisture Content: 8% to 12% max
+  * Ash Content: 6% max
+  * Acid Insoluble Ash: 1.5% max
+  * Fiber Content: 4% to 6% max
+
+#### Nutmeg Powder (Slug: nutmeg-powder)
+- URL: https://triadglobaltrading.com/products/nutmeg-powder
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/nutmeg-powder
+- Description: Boost your dishes with the unique, aromatic flavor of fenugreek powder – a perfect addition to any meal.
+- Product Details:
+  * Product : Nutmeg Powder
+  * Origin : India (Kerala, Tamil Nadu, Karnataka)
+  * Botanical Name : Myristica fragrans
+  * Form :Fine powder made from dried nutmeg seeds
+  * Color : Light brown to yellowish-brown
+  * Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat.
+- Packing and Shipping Details:
+  * PP Bags, Paper Bags, or Cartons
+  * Standard Sizes: 10kg, 25kg, 50kg, or customized packing
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–22 Metric Tons (MT)
+- Key Features:
+  * Made from high-quality nutmeg seeds, carefully cleaned and ground to fine powder.
+  * Distinctive aroma with a warm, sweet flavor profile.
+  * Free from additives, artificial colors, and preservatives.
+  * Consistent color, texture, and flavor for uniform quality.
+- Grades:
+  * Premium Grade	: Fine texture, rich flavor, and uniform aroma
+  * Regular Grade	: Slightly coarser texture, minimal discoloration
+  * Industrial Grade	: Coarser grind, used in bulk food production and processing
+- Technical Specifications:
+  * Appearance: Fine, smooth, and uniform powder
+  * Color: Light brown to yellowish-brown
+  * Particle Size: 80-100 mesh (customizable)
+  * Moisture Content: 8% to 10% max
+  * Flavor/Aromas: Warm, slightly sweet, and aromatic with hints of clove
+  * Ash Content: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Foreign Matter: 0.5% max
+  * Volatile Oil Content: 6% to 8%
+  * Moisture Content: 8% to 12% max
+  * Total Ash: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Volatile Oil Content: 6% to 8%
+  * Fat Content: 35% to 40%
+  * Pesticide Residue: As per international standards
+  * Microbial Load: As per food safety standards
+
+#### Black Pepper (Slug: black-pepper)
+- URL: https://triadglobaltrading.com/products/black-pepper
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/black-pepper
+- Description: Enhance your meals with black pepper—a bold and versatile spice that brings warmth and depth to any dish.
+- Product Information:
+  * Product Name : Imported Black Pepper
+  * Origin : Vietnam, Indonesia, Brazil, Sri Lanka, or other exporting countries
+  * Botanical Name :Piper nigrum
+  * Type :Whole Black Pepper
+  * Family :Piperaceae
+- Packing and Shipping Details:
+  * Food-grade polybags, jute bags with liners, or customized vacuum-sealed packs.
+  * Common sizes: 25kg, 50kg, or tailored per buyer specifications.
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20-22 Metric Tons (MT)
+- Storage:
+  * Store in a cool, dry place, away from direct sunlight and moisture.
+  * Up to 12–18 months under optimal storage conditions.
+- Key Features:
+  * High piperine content for intense pungency and robust flavor.
+  * Uniform, bold, and fully matured peppercorns with rich black color.
+  * Naturally sun-dried to preserve aroma and essential oils.
+  * Free from adulteration, foreign matter, and moisture contamination.
+- Grades:
+  * Grade A (Premium) : Large size, uniform light color, clean
+  * Grade B : Medium size, slight discoloration
+  * Grade C : Smaller pieces, irregular shapes
+  * Splits	: Broken ginger pieces
+- Technical Specifications:
+  * Appearance: Round, wrinkled berries
+  * Color: Dark brown to black
+  * Shape: Irregular, knobby fingers
+  * Length: 4 to 12 cm
+  * Diameter: 1 to 3 cm
+  * Texture: Hard, rough, and fibrous
+  * Moisture Content: 8% to 12% max
+  * Foreign Matter: 0.5% to 1% max
+  * Impurities: 1% max
+  * Damaged/Discolored: 2% max
+  * Flavor/Aroma: Strong, pungent, and aromatic
+  * Volatile Oil Content: 1.5% to 2.5%
+  * Gingerol Content: 1% to 2.5%
+  * Moisture Content: 8% to 12% max
+  * Ash Content: 6% max
+  * Acid Insoluble Ash: 1.5% max
+  * Fiber Content: 4% to 6% max
+  * Energy: 255 kcal
+  * Carbohydrates: 65g
+  * Sugars: 0g
+  * Dietary Fiber: 26g
+  * Protein: 10g
+  * Fat: 3.3g
+  * Calcium: 437mg
+  * Iron: 9.7mg
+  * Potassium: 1329mg
+
+#### Cinnamon Powder (Slug: cinnamon-powder)
+- URL: https://triadglobaltrading.com/products/cinnamon-powder
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/cinnamon-powder
+- Description: Infuse your dishes with the sweet and spicy warmth of cinnamon powder for a delightful flavor boost.
+- Product Details:
+  * Product : Cinnamon Powder
+  * Origin : Sri Lanka, India, Vietnam, Indonesia
+  * Botanical Name :Cinnamomum verum (True Cinnamon) or Cinnamomum cassia (Cassia Cinnamon)
+  * Form :Fine powder made from ground cinnamon sticks (bark)
+  * Color : Light brown to reddish-brown
+  * Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat.
+- Packing and Shipping Details:
+  * PP Bags, Paper Bags, or Cartons
+  * Standard Sizes: 10kg, 25kg, 50kg, or customized packing
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–22 Metric Tons (MT)
+- Key Features:
+  * Made from high-quality cinnamon bark, carefully ground to a fine powder.
+  * Distinctive sweet, warm aroma with a slightly spicy flavor profile.
+  * Free from additives, artificial colors, and preservatives.
+  * Consistent color, texture, and flavor for uniform quality.
+- Grades:
+  * Premium Grade	: Fine texture, rich flavor, and uniform aroma
+  * Regular Grade	: Slightly coarser texture, minimal discoloration
+  * Industrial Grade	: Coarser grind, used in bulk food production and processing
+- Technical Specifications:
+  * Appearance: Fine, smooth, and uniform powder
+  * Color: Light brown to reddish-brown
+  * Particle Size: 80-100 mesh (customizable)
+  * Moisture Content: 10% to 12% max
+  * Flavor/Aromas: Sweet, warm, and aromatic with hints of spice
+  * Ash Content: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Foreign Matter: 0.5% max
+  * Volatile Oil Content: 1.5% to 2.5%
+  * Moisture Content: 10% to 12% max
+  * Total Ash: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Volatile Oil Content: 1.5% to 2.5%
+  * Cinnamaldehyde Content: 60% to 75% (for Cassia Cinnamon)
+  * Fat Content: 5% to 7%
+  * Pesticide Residue: As per international standards
+  * Microbial Load: As per food safety standards
+
+#### Star Anise (Slug: star-anise)
+- URL: https://triadglobaltrading.com/products/star-anise
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/star-anise
+- Description: Elevate your dishes with star anise—a unique spice that offers a sweet, licorice-like flavor and an exotic touch.
+- Product Information:
+  * Product Name : Imported Star Anise
+  * Origin : China, Vietnam, India
+  * Botanical Name :Illicium verum
+  * Type :Whole, Broken, Powdered
+  * Family : Schisandraceae
+  * Description : Star anise is a fragrant spice with a distinctive star-shaped appearance, widely used for its strong licorice-like flavor in culinary, medicinal, and aromatic applications.
+- Packing and Shipping Details:
+  * Food-grade polybags or cartons, vacuum-sealed packs available.
+  * Common sizes: 10kg, 20kg, 25kg, or customized as per buyer requirements .
+- Container Load:
+  * 20 FT Container : Up to 9–10 MT (Metric Tons)
+  * 40 FT Container : Up to 18–20 MT (Metric Tons)
+- Storage:
+  * Store in a cool, dry place, away from direct sunlight and moisture.
+  * 12–18 months under proper storage conditions.
+- Key Features:
+  * Sourced from premium-quality star-shaped pods with uniform size and natural luster.
+  * Rich in anethole, providing a strong, sweet-licorice aroma and flavor.
+  * Naturally sun-dried to retain volatile oils and aromatic intensity.
+  * Free from broken pods, foreign matter, and artificial additives.
+- Technical Specifications:
+  * Appearance: Star-shaped pods with 6–10 arms
+  * Color: Reddish-brown to dark brown
+  * Odor: Strong, sweet licorice aroma
+  * Size: 2–4 cm diameter
+  * Diameter: 1 to 3 cm
+  * Moisture Content: ≤ 13%
+  * Foreign Matter: ≤ 0.5%
+  * Purity: ≥ 99%
+  * Broken Pods: ≤ 5%
+  * Seeds Content: ≥ 70% (in whole pods)
+  * Essential Oil Content: ≥ 8%
+  * Trans-Anethole Content: ≥ 85%
+  * Ash Content: ≤ 5%
+  * Acid Insoluble Ash: ≤ 1%
+  * Pesticide Residue: As per international standards
+  * Aflatoxin Levels: ≤ 10 ppb (As per EU/US standards)
+  * Microbial Load: Compliant with food safety standards
+  * Energy: 337 kcal
+  * Carbohydrates: 50g
+  * Sugars: 0g
+  * Dietary Fiber: 14g
+  * Protein: 18g
+  * Fat: 16g
+  * Calcium: 646mg
+  * Iron: 36.96mg
+  * Magnesium: 170mg
+
+#### Curry Powder (Slug: curry-powder)
+- URL: https://triadglobaltrading.com/products/curry-powder
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/curry-powder
+- Description: Elevate your meals with the bold, aromatic flavor of curry powder – a perfect blend for any dish.
+- Product Details:
+  * Product : Indian Curry Powder
+  * Origin : India
+  * Botanical Name :Cinnamomum verum (True Cinnamon) or Cinnamomum cassia (Cassia Cinnamon)
+  * Form :Fine powder made from a blend of various ground spices
+  * Color : Golden yellow to reddish-brown
+  * Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat.
+- Packing and Shipping Details:
+  * PP Bags, Paper Bags, or Cartons
+  * Standard Sizes: 10kg, 25kg, 50kg, or customized packing
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–22 Metric Tons (MT)
+- Key Features:
+  * A blend of high-quality spices, carefully selected and ground to ensure rich, authentic flavor.
+  * Aromatic with a balance of sweet, spicy, and earthy flavors.
+  * Free from additives, artificial colors, and preservatives.
+  * Customizable blend to suit regional preferences or specific culinary needs.
+- Grades:
+  * Premium Grade	: Fine texture, rich flavor, and uniform aroma
+  * Regular Grade	: Slightly coarser texture, minimal discoloration
+  * Industrial Grade	: Coarser grind, used in bulk food production and processing
+- Technical Specifications:
+  * Appearance: Fine, smooth, and uniform powder
+  * Color: Golden yellow to reddish-brown
+  * Particle Size: 80-100 mesh (customizable)
+  * Moisture Content: 10% to 12% max
+  * Flavor/Aromas: Warm, earthy, aromatic, with mild heat from chilies and spiciness from cloves and cinnamon
+  * Ash Content: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Foreign Matter: 0.5% max
+  * Volatile Oil Content: 1% to 3%
+  * Moisture Content: 8% to 12% max
+  * Total Ash: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Volatile Oil Content: 1% to 3%
+  * Fat Content: 10% to 15%
+  * Pesticide Residue: As per international standards
+  * Microbial Load: As per food safety standards
+
+#### Green Cardamom (Slug: green-cardamom)
+- URL: https://triadglobaltrading.com/products/green-cardamom
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/green-cardamom
+- Description: Spice up your life with cardamom—a versatile, healthy spice that adds luxury to any dish.
+- Product Information:
+  * Product Name : Green Cardamom
+  * Common Names : Elaichi, True Cardamom, Chhoti Elaichi
+  * Origin : India
+  * Botanical Name : Elettaria cardamomum
+  * Shape : Oval-shaped pods with distinct ridges
+  * color : Bright green for premium quality
+  * Shelf Life :Up to 1.5 years when stored in a cool, dry place, away from moisture, light, and heat.
+- Packing and Shipping Details:
+  * Food-grade poly bags, jute bags, or vacuum-sealed packs
+  * Standard Sizes: 1kg, 5kg, 25kg, or customized packing
+- Container Load:
+  * 20 FT Container : 10 Metric Tons (MT)
+  * 40 FT Container : 20 Metric Tons (MT)
+- Storage:
+  * Store in a cool, dry place, away from direct sunlight and moisture.
+  * 12–18 months under proper storage conditions.
+- Key Features:
+  * Sourced from premium-quality star-shaped pods with uniform size and natural luster.
+  * Rich in anethole, providing a strong, sweet-licorice aroma and flavor.
+  * Naturally sun-dried to retain volatile oils and aromatic intensity.
+  * Free from broken pods, foreign matter, and artificial additives.
+- Grades:
+  * Grade : Bold	, Size : >8mm	, Purity : 99.5%
+  * Grade : Super Bold , Size : >10mm , Purity : 99.5%
+  * Grade : Regular Grade , Size : 6mm to 8mm , Purity : 99%
+  * Grade : Mixed Grade , Size : Various sizes	, Purity : 98%
+- Technical Specifications:
+  * Appearance: Oval, smooth pods with ridges
+  * Color: Bright green (uniform)
+  * Pod Size: 6mm to 8mm (Small), 8mm to 10mm (Medium), >10mm (Large)
+  * Purity: 99% to 99.5%
+  * Diameter: 1 to 3 cm
+  * Moisture Content: 10% to 12% max
+  * Foreign Matter: 0.5% max
+  * Purity: ≥ 99%
+  * Admixture: 0.5% max
+  * Seeds per Pod: 15 to 20 seeds on average
+  * Odor: Strong, sweet, and aromatic
+  * Moisture Content: 10% to 12% max
+  * Essential Oil Content: 4% to 8%
+  * Volatile Oil Content: 2% to 4%
+  * Protein Content: 10% to 12%
+  * Carbohydrates: 40% to 50%
+  * Fiber Content: 20% to 25%
+  * Ash Content: 5% max
+  * Pesticide Residue: As per international standards
+  * Microbial Load: As per food safety standards
+
+#### Black Pepper Powder (Slug: black-pepper-powder)
+- URL: https://triadglobaltrading.com/products/black-pepper-powder
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/black-pepper-powder
+- Description: Enhance your dishes with the bold, zesty kick of black pepper powder.
+- Product Details:
+  * Product : Black Pepper Powder
+  * Origin : India (Kerala, Karnataka, Tamil Nadu, Andhra Pradesh)
+  * Botanical Name :Piper nigrum
+  * Form :Fine powder made from ground black peppercorns
+  * Color : Dark brown to black
+  * Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat.
+- Packing and Shipping Details:
+  * PP Bags, Paper Bags, or Cartons
+  * Standard Sizes: 10kg, 25kg, 50kg, or customized packing
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–22 Metric Tons (MT)
+- Key Features:
+  * Made from high-quality black peppercorns, finely ground to powder.
+  * Spicy, pungent flavor with a warm, woody aroma.
+  * Free from additives, artificial colors, and preservatives.
+  * Consistent quality, uniform texture, and flavor.
+- Grades:
+  * Premium Grade	: Fine texture, rich flavor, and consistent aroma
+  * Regular Grade	: Slightly coarser texture, minimal discoloration
+  * Industrial Grade	: Coarser grind, used in bulk food production and processing
+- Technical Specifications:
+  * Appearance: Fine, smooth, and uniform powder
+  * Color: Dark brown to black
+  * Particle Size: 80-100 mesh (customizable)
+  * Moisture Content: 8% to 12% max
+  * Flavor/Aromas: Pungent, spicy, with a warm, woody aroma
+  * Ash Content: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Foreign Matter: 0.5% max
+  * Volatile Oil Content: 2.5% to 4%
+  * Moisture Content: 8% to 12% max
+  * Total Ash: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Piperine Content: 5% to 9%
+  * Volatile Oil Content: 2.5% to 4%
+  * Fat Content: 7% to 10%
+  * Pesticide Residue: As per international standards
+  * Microbial Load: As per food safety standards
+
+#### Ginger Powder (Slug: ginger-powder)
+- URL: https://triadglobaltrading.com/products/ginger-powder
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/ginger-powder
+- Description: Add a warm, spicy kick to your dishes with the vibrant flavor of ginger powder.
+- Product Details:
+  * Product : Ginger Powder
+  * Origin : India (Kerala, Karnataka, Tamil Nadu, Odisha, Andhra Pradesh)
+  * Botanical Name :Zingiber officinale
+  * Form :Fine powder made from dried ginger rhizomes
+  * Color :Light brown to yellowish-brown
+  * Shelf Life : Up to 1-2 years when stored in a cool, dry place, away from moisture, light, and heat.
+- Packing and Shipping Details:
+  * PP Bags, Paper Bags, or Cartons
+  * Standard Sizes: 10kg, 25kg, 50kg, or customized packing
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–22 Metric Tons (MT)
+- Key Features:
+  * Made from high-quality ginger rhizomes, carefully cleaned, dried, and ground into a fine powder
+  * Spicy, pungent flavor with a warm, earthy aroma.
+  * Free from additives, artificial colors, and preservatives.
+  * Consistent quality, uniform texture, and flavor.
+- Grades:
+  * Premium Grade	: Fine texture, rich flavor, and consistent aroma
+  * Regular Grade	: Slightly coarser texture, minimal discoloration
+  * Industrial Grade	: Coarser grind, used in bulk food production and processing
+- Technical Specifications:
+  * Appearance: Fine, smooth, and uniform powder
+  * Color: Light brown to yellowish-brown
+  * Particle Size: 80-100 mesh (customizable)
+  * Moisture Content: 8% to 10% max
+  * Flavor/Aromas: Spicy, pungent, with a warm and earthy aroma
+  * Ash Content: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Foreign Matter: 0.5% max
+  * Volatile Oil Content: 1% to 3%
+  * Moisture Content: 8% to 10% max
+  * Total Ash: 6% to 8% max
+  * Acid Insoluble Ash: 1% max
+  * Pungency (Gingerol content): 5% to 7%
+  * Volatile Oil Content: 1% to 3%
+  * Fat Content: 5% to 8%
+  * Pesticide Residue: As per international standards
+  * Microbial Load: As per food safety standards
+
+### Category: Herbs And Leaves
+Category Description: We supply a wide variety of fresh and dried herbs and leaves such as Basil, Mint, Curry Leaves, Coriander, and more. Perfect for culinary, medicinal, and aromatic purposes, sourced directly from trusted farms.
+Category URL: https://triadglobaltrading.com/categories/herbs-leaves
+
+#### Senna leaves (Slug: senna-leaves)
+- URL: https://triadglobaltrading.com/products/senna-leaves
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/senna-leaves
+- Description: Enhance your dishes with Senna leaves—an earthy, refreshing ingredient that adds a unique flavor and aroma.
+- Product Information:
+  * Product Name : Dried Senna Leaves
+  * Origin : India
+  * Botanical Name :Cassia angustifolia
+  * Part Used :Leaves
+  * Family : Fabaceae
+  * Description :Naturally dried, light green to pale green leaves, widely used in herbal medicine.
+- Packing and Shipping Details:
+  * Food-grade polybags or bale packing.
+  * Standard pack sizes: 5kg, 10kg, 25kg, and 50kg.
+  * Customized packaging available on request.
+- Container Load:
+  * 20 FT Container : 13 Metric Tons (MT)
+  * 40 FT Container : 26 Metric Tons (MT)
+- Shipping:
+  * Bulk shipping in moisture-proof containers.
+  * Palletized packing for secure transportation
+- Storage:
+  * Store in a cool, dry place away from moisture, sunlight, and heat.
+  * Shelf Life : Up to 24 months under proper storage conditions.
+- Technical Specifications:
+  * Appearance: Flat, uniformly sized leaves
+  * Color: Light green to pale green
+  * Odor: Mild, characteristic herbal scent
+  * Purity: ≥ 98%
+  * Foreign Matter: ≤ 1%
+  * Stem Content: ≤ 2%
+  * Moisture Content: ≤ 10%
+  * Sennoside Content: ≥ 2.5%
+  * Ash Content: ≤ 5%
+  * Acid Insoluble Ash: ≤ 1%
+  * Pesticide Residue: As per international standards
+  * Microbial Load: Compliant with food safety standards
+
+#### Mint Leaves (Slug: mint-leaves)
+- URL: https://triadglobaltrading.com/products/mint-leaves
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/mint-leaves
+- Description: Refreshing herb used in beverages, chutneys, and medicines.
+- Product Information:
+  * Freshly harvested mint leaves
+  * Intense cooling flavor and aroma
+  * Widely used in teas, cocktails, and chutneys
+  * Applications in culinary, medicinal, and cosmetic industries
+- Packing and Shipping Details:
+  * Packed in ventilated cartons with moisture-retaining liners
+  * Options: 100g pouches, 250g cartons, 5kg bulk packs
+- Key Features:
+  * Naturally grown and pesticide-free
+  * Rich in menthol and essential oils
+  * Helps in digestion and provides cooling effect
+- Technical Specifications:
+  * Color: Bright green leaves
+  * Form: Fresh leaves
+  * Moisture Content: 70–80%
+  * Menthol Content: 40–50%
+  * Volatile Oils: 1–2%
+
+#### Curry Leaves (Slug: curry-leaves)
+- URL: https://triadglobaltrading.com/products/curry-leaves
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/curry-leaves
+- Description: Essential herb in South Indian cooking, aromatic and flavorful.
+- Product Information:
+  * Fresh curry leaves sourced from organic farms
+  * Unique aroma and slightly bitter taste
+  * Integral in South Indian dishes like rasam, sambhar, and curries
+  * Used for flavoring tempering (tadka) in Indian cooking
+- Packing and Shipping Details:
+  * Packed in ventilated cartons or pouches with moisture control
+  * Available in 100g, 500g, and bulk 5kg packs
+- Key Features:
+  * Naturally grown and hand-picked
+  * Rich in antioxidants, iron, and vitamins
+  * Retains aroma when packed under cold-chain conditions
+- Technical Specifications:
+  * Color: Dark green glossy leaves
+  * Form: Fresh leaves
+  * Moisture Content: 70–85%
+  * Alkaloids: Carbazole alkaloids (antioxidant properties)
+  * Volatile Oils: 0.5–1%
+
+### Category: Seeds
+Category Description: Triad Global Trading offers a wide range of healthy seeds including Sunflower, Sesame, Pumpkin, Flax, and Chia seeds. Ideal for cooking, baking, or health supplements, our seeds are high-quality and globally certified.
+Category URL: https://triadglobaltrading.com/categories/seeds
+
+#### Cumin Seeds (Slug: cumin-seeds)
+- URL: https://triadglobaltrading.com/products/cumin-seeds
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/cumin-seeds
+- Description: Spice up your life with the bold flavor of cumin seeds!
+- Product Information:
+  * High-quality dried cumin seeds sourced from premium farms
+  * Distinctive warm, earthy, and nutty flavor
+  * Widely used in spice blends, curries, soups, and snacks
+  * Applications: Culinary, medicinal, and seasoning industries
+- Packing and Shipping Details:
+  * PP/HDPE Bags with poly liner: 25kg / 50kg
+  * Custom packaging available (pouches, jars, cartons)
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–24 Metric Tons (MT)
+- Key Features:
+  * Naturally dried and cleaned
+  * Free from artificial colors and preservatives
+  * Rich in essential oils for strong aroma
+- Technical Specifications:
+  * Form: Whole dried seeds
+  * Color: Brownish-yellow
+  * Moisture Content: 10% max
+  * Volatile Oil: 2.5–4%
+  * Total Ash: < 9%
+  * Acid Insoluble Ash: < 1%
+
+#### Sesame Seeds (Slug: sesame-seeds)
+- URL: https://triadglobaltrading.com/products/sesame-seeds
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/sesame-seeds
+- Description: Nutty-flavored seeds used in bakery, oil extraction, and snacks.
+- Product Information:
+  * Premium quality natural sesame seeds
+  * Nutty flavor with high oil content
+  * Uses: Bakery, confectionery, oil extraction, and snacks
+  * Available in varieties: White, Black, Hulled
+- Packing and Shipping Details:
+  * PP/Jute Bags: 25kg / 50kg
+  * Custom packaging available (retail pouches, cartons, jars)
+- Container Load:
+  * 20 FT Container: 19–20 Metric Tons (MT)
+  * 40 FT Container: 25–26 Metric Tons (MT)
+- Key Features:
+  * High oil content (45–50%)
+  * Rich in protein and minerals
+  * Available in natural and hulled forms
+- Technical Specifications:
+  * Color: White, black, or golden
+  * Form: Whole seeds
+  * Moisture Content: 6–8% max
+  * Oil Content: 45–50%
+  * Protein Content: 18–25%
+  * Ash: < 5%
+
+#### Flax Seeds (Slug: flax-seeds)
+- URL: https://triadglobaltrading.com/products/flax-seeds
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/flax-seeds
+- Description: Rich in omega-3, fiber, and essential nutrients.
+- Product Information:
+  * Premium grade flax seeds (linseeds)
+  * Mild nutty flavor with crunchy texture
+  * Used in bakery, cereals, health foods, and oil extraction
+  * Known for high omega-3 fatty acid content
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 25kg / 50kg
+  * Custom packaging available (pouches, cartons, jars)
+- Container Load:
+  * 20 FT Container: 19–20 Metric Tons (MT)
+  * 40 FT Container: 25–26 Metric Tons (MT)
+- Key Features:
+  * Rich in dietary fiber and omega-3 fatty acids
+  * Gluten-free and 100% natural
+  * Suitable for health-conscious and vegan diets
+- Technical Specifications:
+  * Color: Brown or golden
+  * Form: Whole seeds
+  * Moisture Content: 6–8% max
+  * Oil Content: 35–45%
+  * Protein Content: 18–25%
+  * Fiber Content: 20–25%
+
+### Category: Millets And Grains
+Category Description: Our collection of nutritious millets and grains includes Pearl Millet, Foxtail Millet, Quinoa, Barley, and more. Perfect for healthy diets, cereals, and food processing industries.
+Category URL: https://triadglobaltrading.com/categories/millets-grains
+
+#### Foxtail Millet (Slug: foxtail-millet)
+- URL: https://triadglobaltrading.com/products/foxtail-millet
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/foxtail-millet
+- Description: Highly nutritious millet with low glycemic index.
+- Product Information:
+  * Premium quality foxtail millet, naturally dried
+  * Low glycemic index, rich in protein and fiber
+  * Used for porridge, upma, dosa, and baked goods
+  * Gluten-free and suitable for health-conscious diets
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 25kg / 50kg
+  * Custom packaging available (pouches, cartons, jars)
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–24 Metric Tons (MT)
+- Key Features:
+  * Rich in protein, fiber, and essential minerals
+  * Naturally processed, pesticide-free
+  * Gluten-free and easy to cook
+- Technical Specifications:
+  * Color: Light yellow
+  * Form: Whole grains
+  * Moisture Content: 10% max
+  * Protein: 12–15%
+  * Fiber: 8–10%
+  * Fat: 3–5%
+
+#### Quinoa (Slug: quinoa)
+- URL: https://triadglobaltrading.com/products/quinoa
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/quinoa
+- Description: Superfood rich in protein and fiber, gluten-free grain.
+- Product Information:
+  * Premium quality quinoa, cleaned and sorted
+  * Rich in protein, fiber, and essential amino acids
+  * Used in salads, soups, pilaf, and health foods
+  * Gluten-free superfood for healthy diets
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 25kg / 50kg
+  * Custom packaging available (pouches, cartons, jars)
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–24 Metric Tons (MT)
+- Key Features:
+  * High protein and fiber content
+  * Naturally processed without chemicals
+  * Gluten-free, vegan-friendly, and easy to cook
+- Technical Specifications:
+  * Color: White, red, or black
+  * Form: Whole grains
+  * Moisture Content: 10% max
+  * Protein: 14–18%
+  * Fiber: 7–10%
+  * Fat: 3–6%
+
+#### Barley (Slug: barley)
+- URL: https://triadglobaltrading.com/products/barley
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/barley
+- Description: Versatile grain used in soups, brewing, and health foods.
+- Product Information:
+  * Premium quality barley grains, cleaned and sorted
+  * Used in soups, brewing, multigrain flour, and health foods
+  * Rich in fiber, B vitamins, and minerals
+  * Suitable for healthy diets and livestock feed
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 25kg / 50kg
+  * Custom packaging available (pouches, cartons, jars)
+- Container Load:
+  * 20 FT Container: 10–12 Metric Tons (MT)
+  * 40 FT Container: 20–24 Metric Tons (MT)
+- Key Features:
+  * High fiber content for digestive health
+  * Naturally processed, pesticide-free
+  * Versatile culinary and brewing applications
+- Technical Specifications:
+  * Color: Light brown
+  * Form: Whole grains
+  * Moisture Content: 10% max
+  * Protein: 10–12%
+  * Fiber: 8–12%
+  * Fat: 2–4%
+
+### Category: Dried Fruits And Nuts
+Category Description: We provide premium quality dried fruits and nuts like Almonds, Walnuts, Cashews, Raisins, and Dates. Ideal for snacks, baking, and confectionery, sourced with care to maintain freshness and taste.
+Category URL: https://triadglobaltrading.com/categories/dried-fruits-nuts
+
+#### Almonds (Slug: almonds)
+- URL: https://triadglobaltrading.com/products/almonds
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/almonds
+- Description: Premium California almonds, rich in protein and healthy fats.
+- Product Information:
+  * High-quality California almonds
+  * Rich in protein, fiber, and healthy monounsaturated fats
+  * Used in snacks, confectionery, bakery, and health foods
+  * Naturally crunchy and flavorful
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 25kg / 50kg
+  * Retail packs and custom packaging available
+- Container Load:
+  * 20 FT Container: 8–10 Metric Tons (MT)
+  * 40 FT Container: 16–20 Metric Tons (MT)
+- Key Features:
+  * Rich in vitamin E and antioxidants
+  * Naturally dried, no artificial additives
+  * Ideal for healthy snacking and baking
+- Technical Specifications:
+  * Color: Light brown
+  * Form: Whole nuts
+  * Moisture Content: 5% max
+  * Protein: 20–25%
+  * Fat: 50–55%
+  * Fiber: 10–12%
+
+#### Cashews (Slug: cashews)
+- URL: https://triadglobaltrading.com/products/cashews
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/cashews
+- Description: Crunchy, buttery nuts used in snacks and confectionery.
+- Product Information:
+  * Premium cashew kernels, naturally processed
+  * Buttery taste and crunchy texture
+  * Used in snacks, sweets, bakery, and cooking
+  * High in healthy fats and protein
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 25kg / 50kg
+  * Custom packaging for retail and bulk available
+- Container Load:
+  * 20 FT Container: 7–9 Metric Tons (MT)
+  * 40 FT Container: 15–18 Metric Tons (MT)
+- Key Features:
+  * Rich in monounsaturated fats and minerals
+  * Naturally dried, pesticide-free
+  * Ideal for healthy snacking and cooking
+- Technical Specifications:
+  * Color: Creamy white
+  * Form: Whole nuts
+  * Moisture Content: 5–6% max
+  * Protein: 18–22%
+  * Fat: 45–50%
+  * Fiber: 3–5%
+
+#### Raisins (Slug: raisins)
+- URL: https://triadglobaltrading.com/products/raisins
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/raisins
+- Description: Naturally sun-dried grapes, sweet and chewy.
+- Product Information:
+  * Premium quality sun-dried grapes
+  * Sweet, chewy, and naturally flavored
+  * Used in bakery, cereals, snacks, and cooking
+  * Free from artificial colors and preservatives
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 25kg / 50kg
+  * Retail and bulk packaging options available
+- Container Load:
+  * 20 FT Container: 9–10 Metric Tons (MT)
+  * 40 FT Container: 18–20 Metric Tons (MT)
+- Key Features:
+  * Naturally dried, sweet flavor
+  * Rich in antioxidants and dietary fiber
+  * Perfect for healthy snacking and baking
+- Technical Specifications:
+  * Color: Golden to dark brown
+  * Form: Whole dried grapes
+  * Moisture Content: 15% max
+  * Sugar Content: 60–70%
+  * Fiber: 5–7%
+  * Protein: 2–3%
+
+### Category: Dehydrated Products
+Category Description: Our dehydrated vegetables and fruits are perfect for ready-to-eat meals, food processing, and storage. Products include Onions, Garlic, Tomatoes, Carrots, and more, retaining natural flavor and nutrients.
+Category URL: https://triadglobaltrading.com/categories/dehydrated-products
+
+#### Dehydrated Onion (Slug: dehydrated-onion)
+- URL: https://triadglobaltrading.com/products/dehydrated-onion
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/dehydrated-onion
+- Description: Flakes, kibbled, powder, and granules for food processing.
+- Product Information:
+  * Premium dehydrated onion products
+  * Available as flakes, granules, and powder
+  * Used in soups, sauces, seasonings, and ready-to-eat meals
+  * Long shelf life, easy to store and use
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 25kg / 50kg
+  * Custom packaging for retail and bulk available
+- Container Load:
+  * 20 FT Container: 8–10 Metric Tons (MT)
+  * 40 FT Container: 16–18 Metric Tons (MT)
+- Key Features:
+  * Retains natural flavor and aroma
+  * Uniform size and texture
+  * Ideal for food processing and ready meals
+- Technical Specifications:
+  * Color: Light brown
+  * Form: Flakes / Granules / Powder
+  * Moisture Content: 7% max
+  * Sugar: <5%
+  * Protein: 2–3%
+  * Ash: <2%
+
+#### Dehydrated Garlic (Slug: dehydrated-garlic)
+- URL: https://triadglobaltrading.com/products/dehydrated-garlic
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/dehydrated-garlic
+- Description: Powder and flakes with strong aroma and long shelf life.
+- Product Information:
+  * High-quality dehydrated garlic flakes and powder
+  * Strong aroma, ideal for seasoning and food processing
+  * Long shelf life, easy to store
+  * Used in soups, sauces, and ready meals
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 25kg / 50kg
+  * Retail and bulk packaging options available
+- Container Load:
+  * 20 FT Container: 8–10 Metric Tons (MT)
+  * 40 FT Container: 16–18 Metric Tons (MT)
+- Key Features:
+  * Maintains natural flavor and aroma
+  * Uniform size and texture
+  * Ideal for food processing and culinary applications
+- Technical Specifications:
+  * Color: White to off-white
+  * Form: Flakes / Powder
+  * Moisture Content: 7% max
+  * Protein: 2–3%
+  * Sugar: <5%
+  * Ash: <2%
+
+#### Dehydrated Carrot (Slug: dehydrated-carrot)
+- URL: https://triadglobaltrading.com/products/dehydrated-carrot
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/dehydrated-carrot
+- Description: Convenient dried carrots for soups and ready meals.
+- Product Information:
+  * Premium quality dehydrated carrot flakes and powder
+  * Used in soups, sauces, ready-to-eat meals, and baking
+  * Retains natural color, flavor, and nutrients
+  * Long shelf life, easy to store
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 25kg / 50kg
+  * Retail and bulk packaging options available
+- Container Load:
+  * 20 FT Container: 8–10 Metric Tons (MT)
+  * 40 FT Container: 16–18 Metric Tons (MT)
+- Key Features:
+  * Retains natural nutrients and color
+  * Uniform size and texture
+  * Ideal for food processing and ready meals
+- Technical Specifications:
+  * Color: Orange
+  * Form: Flakes / Powder
+  * Moisture Content: 7% max
+  * Sugar: <6%
+  * Protein: 2–3%
+  * Ash: <2%
+
+### Category: Coconut Products
+Category Description: Triad Global Trading offers a variety of coconut products such as Desiccated Coconut, Coconut Oil, Coconut Milk Powder, and Coconut Chips. Sourced from fresh coconuts for authentic taste and quality.
+Category URL: https://triadglobaltrading.com/categories/coconut-products
+
+#### Desiccated Coconut (Slug: desiccated-coconut)
+- URL: https://triadglobaltrading.com/products/desiccated-coconut
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/desiccated-coconut
+- Description: Finely grated, dried coconut for confectionery and bakery.
+- Product Information:
+  * Premium grade desiccated coconut
+  * Used in confectionery, bakery, and cooking
+  * Retains natural flavor and aroma
+  * Free from artificial additives
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 25kg / 50kg
+  * Retail and bulk packaging available
+- Container Load:
+  * 20 FT Container: 9–10 Metric Tons (MT)
+  * 40 FT Container: 18–20 Metric Tons (MT)
+- Key Features:
+  * Naturally processed and finely grated
+  * Retains natural flavor and aroma
+  * Ideal for baking and confectionery
+- Technical Specifications:
+  * Color: White
+  * Form: Grated / Powder
+  * Moisture Content: 3–5% max
+  * Fat: 60–65%
+  * Protein: 5–6%
+  * Fiber: 10–12%
+
+#### Coconut Oil (Slug: coconut-oil)
+- URL: https://triadglobaltrading.com/products/coconut-oil
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/coconut-oil
+- Description: Cold-pressed and refined coconut oil for cooking and cosmetics.
+- Product Information:
+  * Premium quality coconut oil
+  * Cold-pressed and refined for culinary and cosmetic use
+  * Maintains natural aroma and nutrients
+  * Suitable for cooking, hair, and skin care
+- Packing and Shipping Details:
+  * Tin cans, PET bottles: 1L / 5L / 20L
+  * Custom packaging available
+- Container Load:
+  * 20 FT Container: 18–20 Metric Tons (MT)
+  * 40 FT Container: 36–38 Metric Tons (MT)
+- Key Features:
+  * Cold-pressed, chemical-free
+  * Maintains natural aroma and nutrients
+  * Multi-purpose use (cooking, cosmetics)
+- Technical Specifications:
+  * Color: Clear / Pale yellow
+  * Form: Liquid
+  * Moisture Content: 0% max
+  * Fat: 99–100%
+  * Free Fatty Acid: <0.5%
+
+#### Coconut Milk Powder (Slug: coconut-milk-powder)
+- URL: https://triadglobaltrading.com/products/coconut-milk-powder
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/coconut-milk-powder
+- Description: Spray-dried coconut milk powder for instant use.
+- Product Information:
+  * High-quality spray-dried coconut milk powder
+  * Instant use for beverages, desserts, and cooking
+  * Retains natural flavor and aroma
+  * Free from additives and preservatives
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 25kg / 50kg
+  * Retail and custom packaging options available
+- Container Load:
+  * 20 FT Container: 9–10 Metric Tons (MT)
+  * 40 FT Container: 18–20 Metric Tons (MT)
+- Key Features:
+  * Instant soluble, natural flavor
+  * High quality and shelf-stable
+  * Suitable for beverages, desserts, and cooking
+- Technical Specifications:
+  * Color: White
+  * Form: Powder
+  * Moisture Content: 3–5% max
+  * Fat: 60–65%
+  * Protein: 5–6%
+  * Carbohydrates: 25–30%
+
+### Category: Coffee
+Category Description: We provide high-quality coffee beans, both roasted and unroasted, suitable for home brewing and commercial use. Our coffee is rich in aroma, flavor, and sourced from top plantations.
+Category URL: https://triadglobaltrading.com/categories/coffee
+
+#### Arabica Coffee Beans (Slug: arabica-coffee)
+- URL: https://triadglobaltrading.com/products/arabica-coffee
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/arabica-coffee
+- Description: Smooth, aromatic beans with mild acidity and flavor.
+- Product Information:
+  * Premium Arabica coffee beans
+  * Smooth taste with mild acidity
+  * Used in espresso, filter coffee, and blends
+  * Naturally roasted and aromatic
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 5kg / 10kg / 60kg
+  * Retail and bulk packaging available
+- Container Load:
+  * 20 FT Container: 6–8 Metric Tons (MT)
+  * 40 FT Container: 12–16 Metric Tons (MT)
+- Key Features:
+  * Aromatic and smooth flavor
+  * Premium quality beans, naturally processed
+  * Ideal for cafes, restaurants, and home brewing
+- Technical Specifications:
+  * Color: Brown
+  * Form: Whole beans
+  * Moisture Content: 10% max
+  * Caffeine: 1–1.5%
+  * Fat: 15–17%
+  * Protein: 10–12%
+
+#### Robusta Coffee Beans (Slug: robusta-coffee)
+- URL: https://triadglobaltrading.com/products/robusta-coffee
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/robusta-coffee
+- Description: Strong flavor, high caffeine content, used in blends and espresso.
+- Product Information:
+  * Premium Robusta coffee beans
+  * Strong flavor, high caffeine content
+  * Used in espresso, blends, and instant coffee
+  * Naturally processed and roasted
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 5kg / 10kg / 60kg
+  * Retail and bulk packaging options available
+- Container Load:
+  * 20 FT Container: 6–8 Metric Tons (MT)
+  * 40 FT Container: 12–16 Metric Tons (MT)
+- Key Features:
+  * High caffeine content
+  * Strong aroma and flavor
+  * Ideal for espresso, blends, and commercial use
+- Technical Specifications:
+  * Color: Dark brown
+  * Form: Whole beans
+  * Moisture Content: 10% max
+  * Caffeine: 2–2.5%
+  * Fat: 15–17%
+  * Protein: 10–12%
+
+#### Ground Coffee (Slug: ground-coffee)
+- URL: https://triadglobaltrading.com/products/ground-coffee
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/ground-coffee
+- Description: Freshly roasted and ground coffee, ready for brewing.
+- Product Information:
+  * Freshly roasted and ground coffee
+  * Ready for instant brewing
+  * Retains aroma, flavor, and caffeine content
+  * Used in espresso, filter coffee, and blends
+- Packing and Shipping Details:
+  * PP/HDPE Bags: 1kg / 5kg / 10kg
+  * Retail and bulk packaging available
+- Container Load:
+  * 20 FT Container: 6–8 Metric Tons (MT)
+  * 40 FT Container: 12–16 Metric Tons (MT)
+- Key Features:
+  * Maintains natural aroma and flavor
+  * Premium quality, freshly roasted
+  * Ideal for home and commercial use
+- Technical Specifications:
+  * Color: Brown
+  * Form: Powder
+  * Moisture Content: 5–7% max
+  * Caffeine: 1–1.5%
+  * Fat: 15–17%
+  * Protein: 10–12%
+
+### Category: Sanitary Ware
+Category Description: Explore our premium range of sanitary ware, featuring elegant and durable designs for modern bathrooms. Our products are crafted to offer both style and supreme functionality.
+Category URL: https://triadglobaltrading.com/categories/sanitary-ware
+
+#### Floor Mounted Closet (C02931C) (Slug: floor-mounted-closet-wpc02931c)
+- URL: https://triadglobaltrading.com/products/floor-mounted-closet-wpc02931c
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/floor-mounted-closet-wpc02931c
+- Description: Floor Mounted Closet, 690 x 380 x 820 mm, 27.17 x 14.96 x 32.28 in, NIAGARA - FM - S, Coupled Closet, PARRYWARE. WPC02931C
+- Product Overview:
+  * Type: Floor Mounted Coupled Closet
+  * Brand: Parryware
+  * Model: NIAGARA - FM - S (WPC02931C)
+  * Dimensions: 690 x 380 x 820 mm (27.17 x 14.96 x 32.28 in)
+- Technical Specifications:
+  * Dimensions (mm): 690 x 380 x 820 mm
+  * Dimensions (in): 27.17 x 14.96 x 32.28 in
+  * Installation: Floor Mounted
+  * Type: Coupled Closet
+
+#### Wall Hung Closet (C022N1C) (Slug: wall-hung-closet-wpc022n1c)
+- URL: https://triadglobaltrading.com/products/wall-hung-closet-wpc022n1c
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/wall-hung-closet-wpc022n1c
+- Description: Wall Hung Closet, 665 x 360 x 725 mm, 26.18 x 14.17 x 28.54 in, VERVE - WH - S, Wall Hung with Cistern, PARRYWARE. WPC022N1C
+- Product Overview:
+  * Type: Wall Hung with Cistern
+  * Brand: Parryware
+  * Model: VERVE - WH - S (WPC022N1C)
+  * Dimensions: 665 x 360 x 725 mm (26.18 x 14.17 x 28.54 in)
+- Technical Specifications:
+  * Dimensions (mm): 665 x 360 x 725 mm
+  * Dimensions (in): 26.18 x 14.17 x 28.54 in
+  * Installation: Wall Hung
+  * Type: Wall Hung with Cistern
+
+#### Rivon Wall Hung Closet - Round -White (C891R46) (Slug: rivon-wall-hung-closet-round-white-wpc891r46)
+- URL: https://triadglobaltrading.com/products/rivon-wall-hung-closet-round-white-wpc891r46
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/rivon-wall-hung-closet-round-white-wpc891r46
+- Description: Rivon Wall Hung Closet - Round -White, 360 x 360 x 520 mm, 14.17 x 14.17 x 20.47 in, RIVON, Wall Hung, PARRYWARE. WPC891R46
+- Product Overview:
+  * Type: Wall Hung Closet
+  * Brand: Parryware
+  * Model: RIVON (WPC891R46)
+  * Dimensions: 360 x 360 x 520 mm (14.17 x 14.17 x 20.47 in)
+- Technical Specifications:
+  * Dimensions (mm): 360 x 360 x 520 mm
+  * Dimensions (in): 14.17 x 14.17 x 20.47 in
+  * Installation: Wall Hung
+  * Shape: Round
+  * Color: White
+
+#### Floor Mounted EWC (C02781C) (Slug: floor-mounted-ewc-wpc02781c)
+- URL: https://triadglobaltrading.com/products/floor-mounted-ewc-wpc02781c
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/floor-mounted-ewc-wpc02781c
+- Description: Floor Mounted EWC, 530 x 380 x 400 mm, 20.87 x 14.96 x 15.75 in, ELITE - P, EWC, PARRYWARE. WPC02781C
+- Product Overview:
+  * Type: Floor Mounted EWC
+  * Brand: Parryware
+  * Model: ELITE - P (WPC02781C)
+  * Dimensions: 530 x 380 x 400 mm (20.87 x 14.96 x 15.75 in)
+- Technical Specifications:
+  * Dimensions (mm): 530 x 380 x 400 mm
+  * Dimensions (in): 20.87 x 14.96 x 15.75 in
+  * Installation: Floor Mounted
+  * Type: EWC
+
+#### Rimless Single Piece WC with UF Seat Cover (C893546) (Slug: rimless-single-piece-wc-uf-seat-cover-wpc893546)
+- URL: https://triadglobaltrading.com/products/rimless-single-piece-wc-uf-seat-cover-wpc893546
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/rimless-single-piece-wc-uf-seat-cover-wpc893546
+- Description: Rimless Single Piece WC with UF Seat Cover, 750 x 405 x 780 mm, 29.53 x 15.94 x 30.71 in, INSLIM, One Piece, PARRYWARE. WPC893546
+- Product Overview:
+  * Type: Single Piece WC
+  * Brand: Parryware
+  * Model: INSLIM (WPC893546)
+  * Dimensions: 750 x 405 x 780 mm (29.53 x 15.94 x 30.71 in)
+- Technical Specifications:
+  * Dimensions (mm): 750 x 405 x 780 mm
+  * Dimensions (in): 29.53 x 15.94 x 30.71 in
+  * Installation: Floor Mounted
+  * Type: One Piece
+  * Features: Rimless, UF Seat Cover
+
+#### Below Counter Basin (C04071C) (Slug: counter-basin-wpc04071c)
+- URL: https://triadglobaltrading.com/products/counter-basin-wpc04071c
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/counter-basin-wpc04071c
+- Description: Below Counter Basin, 555 x 450 x 205 mm, CASCADE NXT, Below Counter Basins, PARRYWARE. WPC04071C
+- Product Overview:
+  * Type: Below Counter Basin
+  * Brand: Parryware
+  * Model: CASCADE NXT (WPC04071C)
+  * Dimensions: 555 x 450 x 205 mm
+- Technical Specifications:
+  * Dimensions (mm): 555 x 450 x 205 mm
+  * Installation: Below Counter
+  * Type: Basin
+
+#### Wall Hung Basin (C865646) (Slug: wall-hung-basin-apex-wpc865646)
+- URL: https://triadglobaltrading.com/products/wall-hung-basin-apex-wpc865646
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/wall-hung-basin-apex-wpc865646
+- Description: Wall Hung Basin, 320 x 400 x 145 mm, APEX, Wall Hung Basin, PARRYWARE. WPC865646
+- Product Overview:
+  * Type: Wall Hung Basin
+  * Brand: Parryware
+  * Model: APEX (WPC865646)
+  * Dimensions: 320 x 400 x 145 mm
+- Technical Specifications:
+  * Dimensions (mm): 320 x 400 x 145 mm
+  * Installation: Wall Hung
+  * Type: Basin
+
+#### Bowl Basin (C893A46) (Slug: bowl-basin-calysta-wpc893a46)
+- URL: https://triadglobaltrading.com/products/bowl-basin-calysta-wpc893a46
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/bowl-basin-calysta-wpc893a46
+- Description: Bowl Basin, 390 x 550 x 140 mm, 15.35 x 21.65 x 5.51 in, CALYSTA, Bowl Basins, PARRYWARE. WPC893A46
+- Product Overview:
+  * Type: Bowl Basin
+  * Brand: Parryware
+  * Model: CALYSTA (WPC893A46)
+  * Dimensions: 390 x 550 x 140 mm (15.35 x 21.65 x 5.51 in)
+- Technical Specifications:
+  * Dimensions (mm): 390 x 550 x 140 mm
+  * Dimensions (in): 15.35 x 21.65 x 5.51 in
+  * Installation: Bowl Basin
+  * Type: Basin
+
+#### Bowl Basin (C896A46) (Slug: bowl-basin-calysta-wpc896a46)
+- URL: https://triadglobaltrading.com/products/bowl-basin-calysta-wpc896a46
+- Markdown Endpoint: https://triadglobaltrading.com/api/markdown?path=products/bowl-basin-calysta-wpc896a46
+- Description: Bowl Basin, 420 x 420 x 140 mm, 16.54 x 16.54 x 5.51 in, CALYSTA, Bowl Basins, PARRYWARE. WPC896A46
+- Product Overview:
+  * Type: Bowl Basin
+  * Brand: Parryware
+  * Model: CALYSTA (WPC896A46)
+  * Dimensions: 420 x 420 x 140 mm (16.54 x 16.54 x 5.51 in)
+- Technical Specifications:
+  * Dimensions (mm): 420 x 420 x 140 mm
+  * Dimensions (in): 16.54 x 16.54 x 5.51 in
+  * Installation: Bowl Basin
+  * Type: Basin
+

@@ -19,19 +19,41 @@ export async function generateMetadata({
     };
   }
 
+  const title = `${category.title} Exporter & Wholesale Supplier | Triad Global Trading`;
+  const description = `${category.description} Sourced and exported globally by Triad Global Trading from Gujarat, India. APEDA certified, bulk wholesale packaging, and international compliance.`;
+  const canonicalUrl = `https://triadglobaltrading.com/categories/${category.id}`;
+
   return {
-    title: category.title,
-    description: `${category.description} Provided by Triad Global Trading, experts in Indian import export and global trade.`,
-    keywords: ["import", "export", "trading", "triad", "global", "trade", "traders", "indian import export", category.title, "wholesale export"],
+    title,
+    description,
+    keywords: [
+      category.title,
+      `${category.title} exporter India`,
+      `${category.title} wholesale supplier`,
+      "Indian agro export",
+      "Triad Global Trading",
+      "bulk spice trading Rajkot",
+    ],
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
-      title: category.title,
-      description: `${category.description} Provided by Triad Global Trading, experts in Indian import export and global trade.`,
-      images: [category.image],
+      title,
+      description,
+      url: canonicalUrl,
+      images: [
+        {
+          url: category.image,
+          width: 800,
+          height: 600,
+          alt: category.title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
-      title: category.title,
-      description: category.description,
+      title,
+      description,
       images: [category.image],
     },
   };
@@ -42,7 +64,6 @@ export default async function CategoryPage({
 }: {
   params: Promise<{ categoryId: string }>;
 }) {
-  // Await the params first
   const { categoryId } = await params;
 
   const category = await getCategoryBySlug(categoryId);
@@ -50,8 +71,68 @@ export default async function CategoryPage({
 
   if (!category) return notFound();
 
+  const categoryUrl = `https://triadglobaltrading.com/categories/${category.id}`;
+
+  const categoryJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${categoryUrl}#collection`,
+        url: categoryUrl,
+        name: `${category.title} - Wholesale & Export`,
+        description: category.description,
+        isPartOf: {
+          "@id": "https://triadglobaltrading.com/#website",
+        },
+        about: {
+          "@id": "https://triadglobaltrading.com/#organization",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${categoryUrl}#breadcrumbs`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://triadglobaltrading.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Categories",
+            item: "https://triadglobaltrading.com/products",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: category.title,
+            item: categoryUrl,
+          },
+        ],
+      },
+      {
+        "@type": "ItemList",
+        "@id": `${categoryUrl}#itemlist`,
+        name: `${category.title} Catalog`,
+        itemListElement: relatedProducts.map((p, idx) => ({
+          "@type": "ListItem",
+          position: idx + 1,
+          name: p.title,
+          url: `https://triadglobaltrading.com/products/${p.id}`,
+        })),
+      },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryJsonLd) }}
+      />
       <ProductHeroSection
         title={category.title}
         description={category.description}

@@ -6,6 +6,7 @@ import ProductSpecs from "@/components/products/product-specs";
 import ProductOrigin from "@/components/products/product-origin";
 import ProductHeroSection from "@/components/shared/hero/product-hero";
 import ProductRelated from "@/components/products/product-related";
+import ProductFaq from "@/components/products/product-faq";
 import { Metadata } from "next";
 
 export async function generateMetadata({
@@ -22,19 +23,44 @@ export async function generateMetadata({
     };
   }
 
+  const title = `${product.title} Wholesale Exporter & Supplier | Triad Global Trading`;
+  const description = `${product.description} Sourced and exported from India by Triad Global Trading (Rajkot, Gujarat). High purity, custom packaging, and international export compliance.`;
+  const canonicalUrl = `https://triadglobaltrading.com/products/${product.id}`;
+
   return {
-    title: product.title,
-    description: `${product.description} Sourced by Triad Global Trading, premier Indian import export global traders.`,
-    keywords: ["import", "export", "trading", "triad", "global", "trade", "traders", "indian import export", product.title, "spices export"],
+    title,
+    description,
+    keywords: [
+      product.title,
+      `${product.title} exporter India`,
+      `${product.title} wholesale supplier`,
+      `${product.title} bulk export`,
+      "Indian spices exporter",
+      "Triad Global Trading",
+      "Rajkot Gujarat agro exports",
+      product.categoryId,
+    ],
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
-      title: product.title,
-      description: `${product.description} Sourced by Triad Global Trading, premier Indian import export global traders.`,
-      images: [product.image],
+      title,
+      description,
+      url: canonicalUrl,
+      type: "article",
+      images: [
+        {
+          url: product.image,
+          width: 800,
+          height: 600,
+          alt: product.title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
-      title: product.title,
-      description: product.description,
+      title,
+      description,
       images: [product.image],
     },
   };
@@ -50,8 +76,127 @@ export default async function ProductPage({
   const product = getProductBySlug(productId);
   if (!product) return notFound();
 
+  const productUrl = `https://triadglobaltrading.com/products/${product.id}`;
+
+  const allSpecs = [
+    ...(product.physicalSpecs || []),
+    ...(product.physicalSpecs2 || []),
+    ...(product.chemicalSpecs || []),
+    ...(product.nutritionalSpecs || []),
+  ];
+
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        "@id": `${productUrl}#product`,
+        name: product.title,
+        description: product.description,
+        image: [product.image, product.heroImage].filter(Boolean),
+        sku: product.id,
+        mpn: product.id,
+        category: product.categoryId,
+        brand: {
+          "@type": "Brand",
+          name: "Triad Global Trading",
+        },
+        manufacturer: {
+          "@id": "https://triadglobaltrading.com/#organization",
+        },
+        countryOfOrigin: {
+          "@type": "Country",
+          name: "India",
+        },
+        offers: {
+          "@type": "Offer",
+          url: productUrl,
+          priceCurrency: "USD",
+          price: "0",
+          priceValidUntil: "2027-12-31",
+          availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
+          seller: {
+            "@id": "https://triadglobaltrading.com/#organization",
+          },
+        },
+        additionalProperty: allSpecs.map((s) => ({
+          "@type": "PropertyValue",
+          name: s.parameter,
+          value: s.value,
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${productUrl}#breadcrumbs`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://triadglobaltrading.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Products",
+            item: "https://triadglobaltrading.com/products",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: product.title,
+            item: productUrl,
+          },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${productUrl}#faq`,
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: `What are the quality and export standards for ${product.title}?`,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: `${product.title} exported by Triad Global Trading complies with international food safety benchmarks including APEDA, Spices Board of India, and FSSAI standards. Every consignment is inspected for moisture, purity, cleanliness, and sensory parameters with batch COA (Certificate of Analysis) provided.`,
+            },
+          },
+          {
+            "@type": "Question",
+            name: `What packaging options are available for ${product.title}?`,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: `We supply ${product.title} in customizable export packaging including 25kg / 50kg PP bags, multi-wall paper bags, jute sacks, vacuum-sealed bags, or buyer-specific private label retail packaging with branded barcodes and custom labeling.`,
+            },
+          },
+          {
+            "@type": "Question",
+            name: `What is the Minimum Order Quantity (MOQ) and shipping terms?`,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: `Our standard export orders are fulfilled as 20ft (FCL) or 40ft (FCL) container loads, with mixed-container shipments available across our agro categories. We support FOB (Mundra, Kandla, Pipavav ports), CIF, and CFR Incoterms with prompt dispatch.`,
+            },
+          },
+          {
+            "@type": "Question",
+            name: `Can I request a sample and specification sheet for ${product.title}?`,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: `Yes, commercial buyers can request pre-shipment product samples and complete technical specification sheets by reaching out via our Inquiry page or directly emailing info@triadglobaltrading.com.`,
+            },
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       <ProductHeroSection
         title={product.title}
         description={product.description}
@@ -93,6 +238,8 @@ export default async function ProductPage({
         {product.categoryId !== "sanitary-ware" && (
           <ProductOrigin originMapSrc={product.originMapSrc} />
         )}
+
+        <ProductFaq productTitle={product.title} />
 
         <ProductRelated relatedProducts={product.related_products} />
       </section>

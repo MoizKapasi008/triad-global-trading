@@ -4,14 +4,83 @@ import { products } from "@/lib/products";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "All Products",
-  description: "Browse our complete catalog of premium spices, herbs, oilseeds, and agro products from Triad Global Trading, premier Indian import export global traders.",
-  keywords: ["import", "export", "trading", "triad", "global", "trade", "traders", "indian import export", "all products", "spices catalog"],
+  title: "All Products | Wholesale Indian Spices & Agro Commodities Catalog",
+  description:
+    "Explore our complete export catalog of premium Indian spices, culinary herbs, oilseeds, millets, and dehydrated products. Sourced and exported globally by Triad Global Trading.",
+  keywords: [
+    "Indian spices catalog",
+    "wholesale spices export",
+    "bulk agro commodities",
+    "spices supplier India",
+    "Triad Global Trading products",
+    "Mundra export products",
+  ],
+  alternates: {
+    canonical: "https://triadglobaltrading.com/products",
+  },
+  openGraph: {
+    title: "All Products | Wholesale Indian Spices & Agro Commodities Catalog",
+    description:
+      "Explore our complete export catalog of premium Indian spices, culinary herbs, oilseeds, millets, and dehydrated products.",
+    url: "https://triadglobaltrading.com/products",
+    images: ["/images/landing_page.jpg"],
+  },
 };
 
 export default function AllProductsPage() {
+  const catalogJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://triadglobaltrading.com/products#collection",
+        url: "https://triadglobaltrading.com/products",
+        name: "All Agro Export Products Catalog",
+        description:
+          "Complete catalog of premium Indian spices, herbs, oilseeds, and agro commodities exported by Triad Global Trading.",
+        isPartOf: {
+          "@id": "https://triadglobaltrading.com/#website",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://triadglobaltrading.com/products#breadcrumbs",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://triadglobaltrading.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Products",
+            item: "https://triadglobaltrading.com/products",
+          },
+        ],
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://triadglobaltrading.com/products#itemlist",
+        name: "Export Products List",
+        numberOfItems: products.length,
+        itemListElement: products.map((product, idx) => ({
+          "@type": "ListItem",
+          position: idx + 1,
+          name: product.title,
+          url: `https://triadglobaltrading.com/products/${product.id}`,
+        })),
+      },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(catalogJsonLd) }}
+      />
       <ProductHeroSection
         title="All Products"
         description="Explore our extensive catalog of globally sourced premium spices, herbs, oilseeds, and agro products. As leading global traders, we ensure the highest quality for every commodity."

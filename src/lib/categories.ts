@@ -10,7 +10,7 @@ export const categories: Category[] = [
     id: "spices",
     title: "Spices",
     description:
-      "Asian Spices, specifically Indian Spices are famous all over the world. We at Kore Agro are one of the leading exporters of Spices across the globe. We export spices in grounded as well as whole form including Chili, Turmeric, Cumin, Fennel, Fenugreek, Coriander and many more.",
+      "Asian Spices, specifically Indian Spices are famous all over the world. We at Triad Global Trading are one of the leading exporters of Spices across the globe. We export spices in grounded as well as whole form including Chili, Turmeric, Cumin, Fennel, Fenugreek, Coriander and many more.",
     image: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
   },
   {
@@ -24,7 +24,7 @@ export const categories: Category[] = [
     id: "seeds",
     title: "Seeds",
     description:
-      "Kore Agro offers a wide range of healthy seeds including Sunflower, Sesame, Pumpkin, Flax, and Chia seeds. Ideal for cooking, baking, or health supplements, our seeds are high-quality and globally certified.",
+      "Triad Global Trading offers a wide range of healthy seeds including Sunflower, Sesame, Pumpkin, Flax, and Chia seeds. Ideal for cooking, baking, or health supplements, our seeds are high-quality and globally certified.",
     image: "/images/various-seeds-sesame-sunflower-black-seeds.jpg",
   },
   {
@@ -52,7 +52,7 @@ export const categories: Category[] = [
     id: "coconut-products",
     title: "Coconut Products",
     description:
-      "Kore Agro offers a variety of coconut products such as Desiccated Coconut, Coconut Oil, Coconut Milk Powder, and Coconut Chips. Sourced from fresh coconuts for authentic taste and quality.",
+      "Triad Global Trading offers a variety of coconut products such as Desiccated Coconut, Coconut Oil, Coconut Milk Powder, and Coconut Chips. Sourced from fresh coconuts for authentic taste and quality.",
     image: "/images/coconut-products-desiccated-coconut-halves.jpg",
   },
   {

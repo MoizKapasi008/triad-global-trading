@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "sitemap": "node scripts/generate-sitemap.js"
+    "sitemap": "node scripts/generate-sitemap.js",
+    "llms": "node scripts/generate-llms-full.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

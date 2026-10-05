@@ -35,12 +35,38 @@ export async function generateMetadata({
   if (!section) {
     return {
       title: "Not Found",
-      description: "The requested about section does not exist.",
     };
   }
+
+  const title = `${section.title} | Triad Global Trading`;
+  const description = `Learn about ${section.title} at Triad Global Trading — premier Indian merchant exporter of spices, herbs, and agro commodities based in Rajkot, Gujarat.`;
+  const canonicalUrl = `https://triadglobaltrading.com/about/${section.id}`;
+
   return {
-    title: section.title,
-    description: `Learn more about our ${section.title}.`,
+    title,
+    description,
+    keywords: [
+      section.title,
+      "Triad Global Trading",
+      "Indian spice export infrastructure",
+      "global export capabilities",
+      "Rajkot Gujarat agro exporter",
+    ],
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      images: ["/images/landing_page.jpg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/images/landing_page.jpg"],
+    },
   };
 }
 
@@ -50,8 +76,57 @@ export default async function AboutUsPage({ params }: AboutParams) {
   const section = aboutSections.find((s) => s.id === aboutId);
   if (!section) return notFound();
 
+  const pageUrl = `https://triadglobaltrading.com/about/${section.id}`;
+
+  const aboutJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": `${pageUrl}#about`,
+        url: pageUrl,
+        name: section.title,
+        description: `Overview of ${section.title} at Triad Global Trading.`,
+        isPartOf: {
+          "@id": "https://triadglobaltrading.com/#website",
+        },
+        about: {
+          "@id": "https://triadglobaltrading.com/#organization",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${pageUrl}#breadcrumbs`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://triadglobaltrading.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "About Us",
+            item: "https://triadglobaltrading.com/about/infrastructure",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: section.title,
+            item: pageUrl,
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
+      />
       {/* Hero Section */}
       <AboutHeroSection
         title={section.title}
