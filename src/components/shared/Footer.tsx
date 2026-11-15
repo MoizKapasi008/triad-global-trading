@@ -20,10 +20,10 @@ const informationLinks = [
 
 const productLinks = [
   { id: "spices", title: "Indian Spices", href: "/categories/spices" },
-  { id: "herbs", title: "Herbs & Leaves", href: "/categories/herbs-leaves" },
-  { id: "seeds", title: "Premium Seeds", href: "/categories/seeds" },
-  { id: "grains", title: "Millets & Grains", href: "/categories/millets-grains" },
-  { id: "dryfruits", title: "Dried Fruits", href: "/categories/dried-fruits-nuts" },
+  // { id: "herbs", title: "Herbs & Leaves", href: "/categories/herbs-leaves" }, // Temporarily paused
+  // { id: "seeds", title: "Premium Seeds", href: "/categories/seeds" }, // Temporarily paused
+  // { id: "grains", title: "Millets & Grains", href: "/categories/millets-grains" }, // Temporarily paused
+  // { id: "dryfruits", title: "Dried Fruits", href: "/categories/dried-fruits-nuts" }, // Temporarily paused
   { id: "dehydrated", title: "Dehydrated", href: "/categories/dehydrated-products" },
 ];
 

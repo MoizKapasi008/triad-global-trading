@@ -99,11 +99,13 @@ export const products: Product[] = [
         title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
+      /*
       {
         id: "cumin-seeds",
         title: "Cumin Seeds",
         image: "/images/cumin-seeds-in-bowl.png",
       },
+      */
       {
         id: "dry-ginger",
         title: "Dry Ginger",
@@ -200,11 +202,13 @@ export const products: Product[] = [
         title: "Corriander Powder",
         image: "/images/corriander-powder.png",
       },
+      /*
       {
         id: "cumin-seeds",
         title: "Cumin Seeds",
         image: "/images/cumin-seeds-in-bowl.png",
       },
+      */
       {
         id: "dry-ginger",
         title: "Dry Ginger",
@@ -2307,7 +2311,7 @@ export const products: Product[] = [
     ],
   },
 
-  // -------------------- HERBS & LEAVES --------------------
+  /* -------------------- HERBS & LEAVES (TEMPORARILY PAUSED) --------------------
   {
     id: "senna-leaves",
     title: "Senna leaves",
@@ -2550,8 +2554,9 @@ export const products: Product[] = [
       },
     ],
   },
+  ----------------------------------------------------------------------------- */
 
-  // -------------------- SEEDS --------------------
+  /* -------------------- SEEDS (TEMPORARILY PAUSED) --------------------
   {
     id: "cumin-seeds",
     title: "Cumin Seeds",
@@ -2785,8 +2790,9 @@ export const products: Product[] = [
       },
     ],
   },
+  ----------------------------------------------------------------------------- */
 
-  // -------------------- MILLETS & GRAINS --------------------
+  /* -------------------- MILLETS & GRAINS (TEMPORARILY PAUSED) --------------------
   {
     id: "foxtail-millet",
     title: "Foxtail Millet",
@@ -2855,11 +2861,11 @@ export const products: Product[] = [
         title: "Barley",
         image: "/images/barley.jpg",
       },
-      {
-        id: "flax-seeds",
-        title: "Flax Seeds",
-        image: "/images/flax-seeds.jpg",
-      },
+      // {
+      //   id: "flax-seeds",
+      //   title: "Flax Seeds",
+      //   image: "/images/flax-seeds.jpg",
+      // },
     ],
   },
   {
@@ -2930,11 +2936,11 @@ export const products: Product[] = [
         title: "Barley",
         image: "/images/barley.jpg",
       },
-      {
-        id: "flax-seeds",
-        title: "Flax Seeds",
-        image: "/images/flax-seeds.jpg",
-      },
+      // {
+      //   id: "flax-seeds",
+      //   title: "Flax Seeds",
+      //   image: "/images/flax-seeds.jpg",
+      // },
     ],
   },
   {
@@ -3005,15 +3011,16 @@ export const products: Product[] = [
         title: "Foxtail Millet",
         image: "/images/foxtail-millet.jpg",
       },
-      {
-        id: "flax-seeds",
-        title: "Flax Seeds",
-        image: "/images/flax-seeds.jpg",
-      },
+      // {
+      //   id: "flax-seeds",
+      //   title: "Flax Seeds",
+      //   image: "/images/flax-seeds.jpg",
+      // },
     ],
   },
+  ----------------------------------------------------------------------------- */
 
-  // -------------------- DRIED FRUITS & NUTS --------------------
+  /* -------------------- DRIED FRUITS & NUTS (TEMPORARILY PAUSED) --------------------
   {
     id: "almonds",
     title: "Almonds",
@@ -3083,11 +3090,11 @@ export const products: Product[] = [
         title: "Raisins",
         image: "/images/raisins.jpg",
       },
-      {
-        id: "sesame-seeds",
-        title: "Sesame Seeds",
-        image: "/images/sesame-seeds.jpg",
-      },
+      // {
+      //   id: "sesame-seeds",
+      //   title: "Sesame Seeds",
+      //   image: "/images/sesame-seeds.jpg",
+      // },
     ],
   },
   {
@@ -3240,6 +3247,7 @@ export const products: Product[] = [
       },
     ],
   },
+  ----------------------------------------------------------------------------- */
 
   // -------------------- DEHYDRATED PRODUCTS --------------------
   {
@@ -3468,7 +3476,7 @@ export const products: Product[] = [
     ],
   },
 
-  // -------------------- COCONUT PRODUCTS --------------------
+  /* -------------------- COCONUT PRODUCTS (TEMPORARILY PAUSED) --------------------
   {
     id: "desiccated-coconut",
     title: "Desiccated Coconut",
@@ -3612,11 +3620,11 @@ export const products: Product[] = [
         title: "Coconut Milk Powder",
         image: "/images/coconut-milk-powder.jpeg",
       },
-      {
-        id: "sesame-seeds",
-        title: "Sesame Seeds",
-        image: "/images/sesame-seeds.jpg",
-      },
+      // {
+      //   id: "sesame-seeds",
+      //   title: "Sesame Seeds",
+      //   image: "/images/sesame-seeds.jpg",
+      // },
     ],
   },
   {
@@ -3694,8 +3702,9 @@ export const products: Product[] = [
       },
     ],
   },
+  ----------------------------------------------------------------------------- */
 
-  // -------------------- COFFEE --------------------
+  /* -------------------- COFFEE (TEMPORARILY PAUSED) --------------------
   {
     id: "arabica-coffee",
     title: "Arabica Coffee Beans",
@@ -3907,6 +3916,7 @@ export const products: Product[] = [
       },
     ],
   },
+  ----------------------------------------------------------------------------- */
   {
     id: "floor-mounted-closet-wpc02931c",
     title: "Floor Mounted Closet (C02931C)",

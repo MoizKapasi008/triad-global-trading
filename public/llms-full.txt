@@ -900,6 +900,7 @@ Category URL: https://triadglobaltrading.com/categories/spices
   * Pesticide Residue: As per international standards
   * Microbial Load: As per food safety standards
 
+<!-- Temporarily paused - Herbs & Leaves Category
 ### Category: Herbs And Leaves
 Category Description: We supply a wide variety of fresh and dried herbs and leaves such as Basil, Mint, Curry Leaves, Coriander, and more. Perfect for culinary, medicinal, and aromatic purposes, sourced directly from trusted farms.
 Category URL: https://triadglobaltrading.com/categories/herbs-leaves
@@ -987,7 +988,9 @@ Category URL: https://triadglobaltrading.com/categories/herbs-leaves
   * Moisture Content: 70–85%
   * Alkaloids: Carbazole alkaloids (antioxidant properties)
   * Volatile Oils: 0.5–1%
+-->
 
+<!-- Temporarily paused - Seeds Category
 ### Category: Seeds
 Category Description: Triad Global Trading offers a wide range of healthy seeds including Sunflower, Sesame, Pumpkin, Flax, and Chia seeds. Ideal for cooking, baking, or health supplements, our seeds are high-quality and globally certified.
 Category URL: https://triadglobaltrading.com/categories/seeds
@@ -1072,7 +1075,9 @@ Category URL: https://triadglobaltrading.com/categories/seeds
   * Oil Content: 35–45%
   * Protein Content: 18–25%
   * Fiber Content: 20–25%
+-->
 
+<!-- Temporarily paused - Millets & Grains and Dried Fruits & Nuts Categories
 ### Category: Millets And Grains
 Category Description: Our collection of nutritious millets and grains includes Pearl Millet, Foxtail Millet, Quinoa, Barley, and more. Perfect for healthy diets, cereals, and food processing industries.
 Category URL: https://triadglobaltrading.com/categories/millets-grains
@@ -1242,6 +1247,7 @@ Category URL: https://triadglobaltrading.com/categories/dried-fruits-nuts
   * Sugar Content: 60–70%
   * Fiber: 5–7%
   * Protein: 2–3%
+-->
 
 ### Category: Dehydrated Products
 Category Description: Our dehydrated vegetables and fruits are perfect for ready-to-eat meals, food processing, and storage. Products include Onions, Garlic, Tomatoes, Carrots, and more, retaining natural flavor and nutrients.
@@ -1328,6 +1334,7 @@ Category URL: https://triadglobaltrading.com/categories/dehydrated-products
   * Protein: 2–3%
   * Ash: <2%
 
+<!-- Temporarily paused - Coconut Products and Coffee Categories
 ### Category: Coconut Products
 Category Description: Triad Global Trading offers a variety of coconut products such as Desiccated Coconut, Coconut Oil, Coconut Milk Powder, and Coconut Chips. Sourced from fresh coconuts for authentic taste and quality.
 Category URL: https://triadglobaltrading.com/categories/coconut-products
@@ -1496,6 +1503,7 @@ Category URL: https://triadglobaltrading.com/categories/coffee
   * Caffeine: 1–1.5%
   * Fat: 15–17%
   * Protein: 10–12%
+-->
 
 ### Category: Sanitary Ware
 Category Description: Explore our premium range of sanitary ware, featuring elegant and durable designs for modern bathrooms. Our products are crafted to offer both style and supreme functionality.

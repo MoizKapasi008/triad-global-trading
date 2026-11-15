@@ -13,6 +13,8 @@ export const categories: Category[] = [
       "Asian Spices, specifically Indian Spices are famous all over the world. We at Triad Global Trading are one of the leading exporters of Spices across the globe. We export spices in grounded as well as whole form including Chili, Turmeric, Cumin, Fennel, Fenugreek, Coriander and many more.",
     image: "/images/various-colorful-spices-in-bowls-turmeric-red-chil.jpg",
   },
+  // Temporarily paused - uncomment when selling resumes
+  /*
   {
     id: "herbs-leaves",
     title: "Herbs And Leaves",
@@ -20,6 +22,9 @@ export const categories: Category[] = [
       "We supply a wide variety of fresh and dried herbs and leaves such as Basil, Mint, Curry Leaves, Coriander, and more. Perfect for culinary, medicinal, and aromatic purposes, sourced directly from trusted farms.",
     image: "/images/fresh-green-herbs-and-leaves-mint-basil.jpg",
   },
+  */
+  // Temporarily paused - uncomment when selling resumes
+  /*
   {
     id: "seeds",
     title: "Seeds",
@@ -27,6 +32,9 @@ export const categories: Category[] = [
       "Triad Global Trading offers a wide range of healthy seeds including Sunflower, Sesame, Pumpkin, Flax, and Chia seeds. Ideal for cooking, baking, or health supplements, our seeds are high-quality and globally certified.",
     image: "/images/various-seeds-sesame-sunflower-black-seeds.jpg",
   },
+  */
+  // Temporarily paused - uncomment when selling resumes
+  /*
   {
     id: "millets-grains",
     title: "Millets And Grains",
@@ -41,6 +49,7 @@ export const categories: Category[] = [
       "We provide premium quality dried fruits and nuts like Almonds, Walnuts, Cashews, Raisins, and Dates. Ideal for snacks, baking, and confectionery, sourced with care to maintain freshness and taste.",
     image: "/images/dried-fruits-and-nuts-almonds-walnuts.jpg",
   },
+  */
   {
     id: "dehydrated-products",
     title: "Dehydrated Products",
@@ -48,6 +57,8 @@ export const categories: Category[] = [
       "Our dehydrated vegetables and fruits are perfect for ready-to-eat meals, food processing, and storage. Products include Onions, Garlic, Tomatoes, Carrots, and more, retaining natural flavor and nutrients.",
     image: "/images/dehydrated-products-dried-vegetables.jpg",
   },
+  // Temporarily paused - uncomment when selling resumes
+  /*
   {
     id: "coconut-products",
     title: "Coconut Products",
@@ -62,6 +73,7 @@ export const categories: Category[] = [
       "We provide high-quality coffee beans, both roasted and unroasted, suitable for home brewing and commercial use. Our coffee is rich in aroma, flavor, and sourced from top plantations.",
     image: "/images/coffee-beans-roasted-dark.jpg",
   },
+  */
   {
     id: "sanitary-ware",
     title: "Sanitary Ware",

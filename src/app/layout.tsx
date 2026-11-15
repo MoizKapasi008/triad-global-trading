@@ -144,9 +144,9 @@ const organizationSchema = {
       knowsAbout: [
         "Indian Spices Export",
         "Whole and Ground Spices",
-        "Oilseeds (Sesame, Mustard, Sunflower)",
-        "Herbs and Leaves",
-        "Millets and Grains",
+        // "Oilseeds (Sesame, Mustard, Sunflower)", // Temporarily paused
+        // "Herbs and Leaves", // Temporarily paused
+        // "Millets and Grains", // Temporarily paused
         "Dehydrated Onions and Garlic",
         "APEDA Standards",
         "FSSAI Compliance",

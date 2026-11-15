@@ -60,18 +60,23 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- Temporarily paused
   <url>
     <loc>https://triadglobaltrading.com/categories/herbs-leaves</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  -->
+  <!-- Temporarily paused
   <url>
     <loc>https://triadglobaltrading.com/categories/seeds</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  -->
+  <!-- Temporarily paused
   <url>
     <loc>https://triadglobaltrading.com/categories/millets-grains</loc>
     <lastmod>2026-10-05</lastmod>
@@ -84,12 +89,14 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  -->
   <url>
     <loc>https://triadglobaltrading.com/categories/dehydrated-products</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- Temporarily paused
   <url>
     <loc>https://triadglobaltrading.com/categories/coconut-products</loc>
     <lastmod>2026-10-05</lastmod>
@@ -102,6 +109,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  -->
   <url>
     <loc>https://triadglobaltrading.com/categories/sanitary-ware</loc>
     <lastmod>2026-10-05</lastmod>
@@ -222,6 +230,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- Temporarily paused
   <url>
     <loc>https://triadglobaltrading.com/products/senna-leaves</loc>
     <lastmod>2026-10-05</lastmod>
@@ -240,6 +249,8 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  -->
+  <!-- Temporarily paused
   <url>
     <loc>https://triadglobaltrading.com/products/cumin-seeds</loc>
     <lastmod>2026-10-05</lastmod>
@@ -258,6 +269,8 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  -->
+  <!-- Temporarily paused
   <url>
     <loc>https://triadglobaltrading.com/products/foxtail-millet</loc>
     <lastmod>2026-10-05</lastmod>
@@ -294,6 +307,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  -->
   <url>
     <loc>https://triadglobaltrading.com/products/dehydrated-onion</loc>
     <lastmod>2026-10-05</lastmod>
@@ -312,6 +326,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- Temporarily paused
   <url>
     <loc>https://triadglobaltrading.com/products/desiccated-coconut</loc>
     <lastmod>2026-10-05</lastmod>
@@ -348,6 +363,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  -->
   <url>
     <loc>https://triadglobaltrading.com/products/floor-mounted-closet-wpc02931c</loc>
     <lastmod>2026-10-05</lastmod>

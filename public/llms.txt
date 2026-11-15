@@ -26,13 +26,13 @@ Triad Global Trading is headquartered in Rajkot, Gujarat, India, with convenient
 
 ## Major Export Commodity Categories
 - **Spices**: Red Chilli (Teja S17, Sanam 334, Byadgi), Turmeric (Salem, Rajapuri, Finger & Powder), Cumin Seeds (Singapore 99%, Europe quality), Coriander Seeds (Eagle, Scooter, Badami), Fennel Seeds, Fenugreek Seeds, Cardamom, Black Pepper.
-- **Seeds & Oilseeds**: Sesame Seeds (Natural White, Hulled 99.98%, Black), Mustard Seeds (Black, Yellow), Sunflower Seeds, Flax Seeds, Chia Seeds.
-- **Herbs & Leaves**: Dried Mint Leaves, Basil, Curry Leaves, Coriander Leaves, Kasuri Methi (Fenugreek Leaves).
-- **Millets & Grains**: Pearl Millet (Bajra), Foxtail Millet, Quinoa, Barley.
+<!-- - **Seeds & Oilseeds**: Sesame Seeds (Natural White, Hulled 99.98%, Black), Mustard Seeds (Black, Yellow), Sunflower Seeds, Flax Seeds, Chia Seeds. (Temporarily paused) -->
+<!-- - **Herbs & Leaves**: Dried Mint Leaves, Basil, Curry Leaves, Coriander Leaves, Kasuri Methi (Fenugreek Leaves). (Temporarily paused) -->
+<!-- - **Millets & Grains**: Pearl Millet (Bajra), Foxtail Millet, Quinoa, Barley. (Temporarily paused) -->
 - **Dehydrated Agro Products**: Dehydrated White & Red Onion (Flakes, Minced, Chopped, Powder), Dehydrated Garlic (Cloves, Minced, Powder).
-- **Dried Fruits & Nuts**: Almonds, Walnuts, Cashew Nuts, Raisins, Dates.
-- **Coconut Products**: Desiccated Coconut (Fine, Medium), Coconut Oil, Coconut Milk Powder.
-- **Coffee**: Roasted & Unroasted Coffee Beans (Arabica, Robusta).
+<!-- - **Dried Fruits & Nuts**: Almonds, Walnuts, Cashew Nuts, Raisins, Dates. (Temporarily paused) -->
+<!-- - **Coconut Products**: Desiccated Coconut (Fine, Medium), Coconut Oil, Coconut Milk Powder. (Temporarily paused) -->
+<!-- - **Coffee**: Roasted & Unroasted Coffee Beans (Arabica, Robusta). (Temporarily paused) -->
 - **Sanitary Ware**: Modern ceramic wash basins and water closets.
 
 ## Full Context File
